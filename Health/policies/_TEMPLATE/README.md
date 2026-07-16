@@ -1,0 +1,36 @@
+# <Plan Name> — Deep Study
+
+**Insurer:** <insurer>
+**Product / UIN:** <product name> / <UIN>
+**Studied at Sum Insured:** ₹<SI>
+**Policy wording version / date:** <date>
+**Status:** ⬜ Not started · 🔄 In progress · ✅ Complete
+
+## Why shortlisted
+<one line from stage2_shortlist.md — what this plan represents in the finalist set>
+
+## Module progress
+| Module | File | Status | Score /5 |
+|--------|------|:------:|:--------:|
+| 1 Coverage & benefits | `module1_coverage.md` | ⬜ | |
+| 2 Exclusions & waiting | `module2_exclusions.md` | ⬜ | |
+| 3 Claims & servicing | `module3_claims.md` | ⬜ | |
+| 4 Cost & premium | `module4_cost.md` | ⬜ | |
+| 5 Insurer quality | `module5_insurer.md` | ⬜ | |
+| 6 Fine print & longevity | `module6_finprint.md` | ⬜ | |
+
+## Weighted score
+| Module | Score /5 | Weight | Weighted |
+|--------|:--------:|:------:|:--------:|
+| M3 Claims | | 25% | |
+| M1 Coverage | | 25% | |
+| M2 Exclusions | | 20% | |
+| M4 Cost | | 15% | |
+| M5 Insurer | | 10% | |
+| M6 Fine print | | 5% | |
+| **Total** | | **100%** | **/5** |
+
+**Override veto (M6):** ⬜ none / ⚠️ <flag>
+
+## Verdict
+<final take once all 6 modules done>

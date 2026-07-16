@@ -1,0 +1,15 @@
+# Claude Code local (machine-specific) settings — keep out of the shared repo
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+
+# Logs / temp
+*.log
+*.tmp
+scratchpad/
