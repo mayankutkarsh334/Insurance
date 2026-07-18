@@ -101,6 +101,25 @@ This does **not** mean AB underpays individual bills — a low ICR on a **fast-g
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+| Dimension (discovered in) | Activ One MAX result |
+|---|:---|
+| **Benchmark ICR against the correct PEER SEGMENT** *(Care M3)* | ⭐ **Pass.** ABHI is a **standalone health insurer (SAHI)**, so its benchmark is **68.06%** — *not* the blended 85.34% industry figure, which is inflated by PSU insurers at 97.30%. **ABHI's ~71.5% ICR sits ABOVE its own peer segment.** Only **HDFC and MAX** clear their peer benchmarks; **Care is 3.5 pts below its own and ACKO nearly 20 below** |
+| **Settlement-speed distribution (TAT buckets)** *(MAX's own discovery)* | ⭐ **Pass — best possible.** **100% of claims paid within 3 months (FY24-25)** — ahead of ACKO's 99.98% and HDFC's 98.85%. **No slow tail at all** |
+| **Repudiation rate** *(framework)* | ⭐ **Computable, and excellent: 24,12,454 claims processed · 22,84,121 paid · 96,675 repudiated → repudiation ≈ 4.1%, CSR ≈ 95.9%.** **Roughly HALF the industry's ~8% repudiation rate** — and MAX is the **only plan in this study where the repudiation figure can actually be computed from disclosed data** |
+| **Complaint-denominator normalisation** *(Bajaj M3)* | ✅ **Pass** — complaints are quoted **per 10,000 claims** and sit **below the 27.06 industry average**. ⚠️ Exact figure should be taken from IRDAI directly |
+| **Metro-concentration ratio (city count ÷ national)** *(SBI M3)* | ⚠️ **Unverified** — ABHI's national network is ~16,500 (≈15.8/district, **2nd in the study**), but **no same-source metro count was obtained**. *Confirming source: PolicyBazaar's ABHI-Mumbai page, for a like-for-like comparison against HDFC 520 / SBI 434 / Care 299* |
+| **Network-count source dispersion** *(SBI M3)* | ⚠️ **Unverified spread** — ~16,500 is the working figure; the cross-source range was not tested |
+| **Cashless-network discretion clause** *(SBI M3)* | ⚠️ **Present** — the network is contractually revocable, as with **every** finalist. Not a differentiator |
+| **Intimation as a CONDITION PRECEDENT** *(Care M3)* | ⚠️ **Unverified** — *confirming source: the claims-notification clause read for whether late intimation is claim-defeating or merely procedural.* **Care makes it a condition precedent (claim-defeating); HDFC expressly condones delay "beyond the control of the Insured Person"; ACKO reserves a discretion to deny.** Worth checking which construction MAX uses |
+| **Book age-mix as an ICR confounder** *(ACKO M3)* | ✅ **Favourable** — 24.1 lakh claims processed is a **large, mature book**, so the ICR is **not** flattered by a young portfolio the way ACKO's may be |
+| **Re-pull IRDAI data at module time** *(SBI M3)* | ✅ **Done** — FY24-25 figures **confirm** rather than contradict the original scoring |
+
+**Result: 5 passes (3 best-in-study), 5 partial/unverified.** ⭐ **Two genuinely outstanding results: 100% of claims settled within three months — the best in the study — and a computed ~4.1% repudiation rate, about half the industry norm.** ⚠️ **The open item is network: MAX's national density is strong (2nd), but its metro count was never tested against the same source used for HDFC, SBI and Care.**
+
 ## Sources
 - [Ditto — Aditya Birla Health CSR & ICR (FY24-25)](https://joinditto.in/articles/health-insurance/aditya-birla-health-insurance-claim-settlement-ratio/) — CSR 95.88% (3-yr 95.81%), ICR 68.16%, complaints 18.67/10k, network 12,000+, GWP ₹3,290 cr
 - [Angel One — Aditya Birla claims analysis FY2024-25](https://www.angelone.in/news/market-updates/aditya-birla-health-insurance-claims-settlement-ratio-analysis-for-2024-25) — 24,12,454 claims processed, 22,84,121 paid, 96,675 repudiated; **100% settled within 3 months**

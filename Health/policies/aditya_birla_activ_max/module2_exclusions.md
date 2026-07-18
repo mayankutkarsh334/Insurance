@@ -118,6 +118,23 @@ No hard conflict; one "sells-wider-than-it-binds" gap = the **SI-gated waiting r
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+| Dimension (discovered in) | Activ One MAX result |
+|---|:---|
+| **Is the specific-disease list CLOSED or OPEN?** *(ACKO M2)* | ✅ **Pass — CLOSED.** Every condition is enumerated; **no "any other condition specified in the Schedule" catch-all.** ACKO's list ends with an open item 18 that lets it add *any* condition per policy — **with MAX you can read the wording and know your worst case** |
+| **Mental-illness ENABLING definitions** *(ACKO M2)* | ⚠️ **PARTIAL — but the best of the four plans tested on this.** ✅ **"Mental Illness Hospitalization" is an EXPRESSLY NAMED covered benefit** in Section C.1 and in the Product Benefit Table — where **HDFC and ACKO have zero mentions of mental illness anywhere in their wordings**. 🚩 **But there is still no "Mental Health Establishment" definition**, and the **Hospital definition requires "a fully equipped operation theatre"** — which most standalone psychiatric facilities lack. **Only SBI carries the full IRDAI construct.** *Confirming source: written confirmation that a claim at a non-surgical mental-health establishment is admissible* |
+| **Lifestyle-attributable illness exclusion** *(Care M2)* | ⭐ **Pass — zero mentions of tobacco.** No "illness attributable to smoking/alcohol" carve-out. **Care excludes any illness *"attributable to"* tobacco/alcohol; ACKO excludes oral, oropharyngeal and respiratory cancers outright *"in a tobacco user"*.** MAX has **no equivalent clause** |
+| **Third waiting tier** *(Bajaj M2)* | ✅ **Pass** — no separate longer tier. Bajaj quarantines joint replacement, spine surgery and Parkinson's in a **36-month** list *longer* than its 24-month one |
+| **SI-gated waiting reductions** *(MAX's own discovery)* | ⚠️ **Fail — MAX's own finding.** The paid PED/specific-disease waiting cuts **vanish at high SI**: the PED reduction is offered only **≤ ₹50L** and the specific-disease reduction only **≤ ₹25L**, so **a ₹1Cr buyer cannot shorten any wait** |
+| **Frozen rupee sub-limits** *(SBI M2)* | ⚠️ **Check applies** — any rupee-denominated sub-limit does **not** rise with the Super-Credit-inflated Sum Insured. Over a 40-year hold at 10–14% medical inflation these decay. ✅ Mitigated because MAX's core benefits are **%-of-SI or at-actuals**, not rupee-capped |
+| **One-way-door / irreversible option locks** *(SBI M2)* | ⚠️ **Unverified** — *confirming source: the optional-cover conditions read against the renewal-endorsement clause.* Given HDFC's PED modifier is expressly irreversible, **do not assume MAX's options can be undone** |
+| **Pre-policy medical-test cliff** *(SBI M4 / Care M2)* | ⚠️ **Unverified** — no age/SI test grid found in the wording. **This is the gate that triggers loadings and permanent carve-outs.** Care requires **no tests to age 65 at any SI**; SBI flips to full medicals at ₹30L. *Confirming source: the prospectus underwriting grid or a live quote at ₹10L and ₹1Cr* |
+
+**Result: 4 passes (2 best-in-study), 2 partial, 1 fail, 2 unverified.** ⭐ **MAX is the only plan besides SBI to name mental-illness hospitalisation as a covered benefit**, and — with HDFC — one of only two carrying **no tobacco/lifestyle exclusion at all**. **The real weakness remains its own discovery: the waiting-period reductions disappear exactly at the sum insured a serious buyer wants.**
+
 ## Sources
 - **Binding wording** — [`resources/Policy Document_MAX.pdf`](resources/Policy%20Document_MAX.pdf): Section B Definitions (B.1.35 Medical Expenses/R&C, B.1.37 Medically Necessary, B.1.51 PED, B.1.60/63 Waiting Period); **Section D** (D.1.1 PED, D.1.2 Specific-disease list, D.1.3 30-day, D.1.4–D.1.18 Standard Exclusions, D.2.1–D.2.8 Specific Exclusions); **C.13.1/C.13.2** waiting-reduction optionals; **C.13.8** Chronic Care Day-1; **E.2.4** risk-loading/counter-offer, **E.2.2** material change; **Annexure III** Product Benefit Table (SI-band gating of reductions). UIN **ADIHLIP27048V022627**.
 - [`resources/activ one max customer-information-sheet.pdf`](resources/activ%20one%20max%20customer-information-sheet.pdf) — Financial Limits table (co-payment = Nil), waiting-period summary, exclusions list.

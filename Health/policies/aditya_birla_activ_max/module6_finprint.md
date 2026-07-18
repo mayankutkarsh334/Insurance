@@ -77,6 +77,22 @@ The HealthReturns lock-in and instalment-no-refund are **frictions, not vetoes**
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+| Dimension (discovered in) | Activ One MAX result |
+|---|:---|
+| **ARBITRATION as a condition precedent to suit** *(ACKO M6)* | 🚩 **FAIL — a significant newly-found negative.** The wording sends **quantum disputes to a three-arbitrator panel**, and states that *"it **shall be a condition precedent to any right of action or suit** upon this Policy that the award by such arbitrator... be first obtained."* ⚠️ **Asymmetric:** *"no dispute shall be referable to arbitration... if the Company has disputed or not accepted liability"* — so **it binds you where the argument is about *how much*, but not where the insurer refuses outright.** Arbitration costs an individual real money; **the Ombudsman is free.** **Only ACKO and MAX carry this clause — HDFC, SBI, Care and Bajaj do not** |
+| **Undefined subjective non-renewal grounds** *(ACKO M6)* | ⭐ **Pass.** Renewal may be refused only on *"established fraud or non-disclosure or misrepresentation"* — **the three objective grounds. Zero occurrences of "moral hazard" or "non-cooperation"** in 56 pages. **ACKO permits both, and can terminate mid-term on "non-cooperation"** |
+| **Instalment-premium claim trap** *(HDFC M6)* | ⭐ **PASS — and this is a real win.** **No clause was found making all remaining instalments fall due, or deductible from a payout, on a claim.** **HDFC and Care both carry this trap in its harsher mandatory "shall" form; ACKO carries it as a discretionary "may". MAX appears to carry it not at all** |
+| **Grace-period COVERAGE gap** *(Bajaj M6)* | ⚠️ **Present, and universal.** *"Coverage need not [be available]..."* — with the same asymmetry as Care, HDFC and ACKO: *"Coverage **is** available during the Grace Period **if the premium is paid in instalments**."* **So the annual payer — who takes the long-term discount — is the one left uncovered.** **Renew on or before the due date; treat grace as credit protection, not cover** |
+| **Wellness reward STRUCTURE — wallet vs discount** *(SBI M6)* | 🚩 **Fail — confirmed by the wording.** *"All coverage, benefits, **earning on HealthReturns, shall automatically lapse**"* on termination. **HealthReturns is an ACCRUED WALLET, so the balance is FORFEITED if you port or cancel** — meaning **the more you value the earn-back, the more it locks you in.** **Care's and SBI's rewards are structured as renewal *discounts* with no balance to forfeit — same headline %, opposite effect on your freedom to leave.** ⚠️ **This is the hidden cost of M4's best-in-study 100% earn-back** |
+| **Ongoing "material change" disclosure duty** *(Care M6)* | ⚠️ **Unverified** — *confirming source: the general-conditions clause on changes of occupation/residence.* **Care's §5.18 makes notifying such a change a *condition precedent to liability*** — a live trap over 40 years |
+| **Renewability ≠ price guarantee** *(MAX's own discovery)* | ⚠️ **Applies** — lifelong renewal guarantees **continuity, not premium**. On withdrawal you migrate to a similar product keeping SI, waiting and bonus credit — **but not the rate.** **MAX's own contribution to the framework, and it still stands** |
+
+**Result: 2 best-in-study passes, 2 fails, 3 partial/unverified.** ⚠️ **Two genuine negatives surfaced that the original module never recorded: an ARBITRATION clause drafted as a condition precedent to suing (shared only with ACKO), and confirmation from the wording that HealthReturns is a forfeitable WALLET — so the study's richest earn-back is also its strongest lock-in.** ✅ **Offsetting these: no subjective escape hatch in the renewal clause, and — unusually — no instalment claim trap, a check both HDFC and Care fail.**
+
 ## Sources
 - **Binding wording** [`resources/Policy Document_MAX.pdf`](resources/Policy%20Document_MAX.pdf) — **E.1.2** (cancellation/refund, no-refund-for-instalments), **E.1.3** (lifelong renewal, no claim loading, grace), **E.1.4** (revision, 30-day notice), **E.1.6** (fraud), **E.1.7** (withdrawal, 90-day notice + migration), **E.1.10** (60-mo moratorium), **E.1.17** (instalment-claim trap), Free-Look, HealthReturns-on-cancellation
 - [IRDAI Master Circular on Health Insurance 2024](https://www.actuariesindia.org/sites/default/files/inline-files/5.%20Master%20Circular%20on%20Health%20Insurance%20Business%202024.pdf) — lifelong renewal, moratorium, portability continuity

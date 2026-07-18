@@ -33,9 +33,9 @@ Rank 1 (29/30) — benchmark all-rounder. ICR 84.9%, solvency 2.00, below-averag
 | M1 Coverage | 5 | 25% | 1.25 |
 | M2 Exclusions | 4 | 20% | 0.80 |
 | M4 Cost | 4 | 15% | 0.60 |
-| M5 Insurer | 5 | 10% | 0.50 |
+| M5 Insurer | **4** ⬇️ | 10% | 0.40 |
 | M6 Fine print | 5 | 5% | 0.25 |
-| **TOTAL** | | **100%** | **4.65 / 5.00** |
+| **TOTAL** | | **100%** | **4.55 / 5.00** ⬇️ *(was 4.65)* |
 
 **Override veto (M6):** ✅ none
 
@@ -44,7 +44,8 @@ Rank 1 (29/30) — benchmark all-rounder. ICR 84.9%, solvency 2.00, below-averag
 - **Uncapped, claim-proof bonus** — Infinite Benefit adds 100% of base SI every year *irrespective of claims*, plus unlimited restore (M1)
 - **Inbuilt consumables** (Protect Benefit) closes the ₹15k–₹1L/admission gap; **zero co-pay, zero disease sub-limits**, modern treatments & mental illness up to SI (M1/M2)
 - **Best-in-class servicing** — in-house claims (no TPA), CSR 97.45%, lowest complaint ratio (9.28/10k), #1 network density (~17.4/district) (M3)
-- **Elite backing** — CRISIL AAA, owned by HDFC Bank + Munich Re; profitable, 24 yrs (M5)
+- **Elite backing** — CRISIL AAA/Stable, owned by HDFC Bank + **Munich Re (retained)**; profitable and dividend-paying, 24 yrs (M5)
+- ⚠️ **But M5 was reduced 5→4 on re-test** — solvency fell to **1.56× (Jun-2024)**, within 0.06 of the floor, and the recovery to 2.00× is **partly sub-debt**; combined ratio **~123% and worsening**
 - **Clean fine print** — lifelong renewal, no claim-based loading, no max entry age, full portability/migration (M6)
 
 ## Watch-outs
@@ -66,7 +67,7 @@ Each fed back into `study_plan.md` + the module templates for all plans:
 | M6 | Instalment-premium claim trap |
 
 ## Verdict
-**Benchmark score: 4.65 / 5.00 — no override veto.** HDFC ERGO Optima Secure+ sets a very high bar: best-in-class coverage (no room cap at any SI, uncapped claims-proof bonus, inbuilt consumables), top-tier servicing (in-house claims, lowest complaints, #1 network density), elite AAA/Munich-Re backing, and clean, policyholder-friendly fine print. Its **one relative weakness is the 36-month PED waiting** (vs 24 at Care Supreme/SBI), which an individual cannot shorten. It is premium-priced but rich in cost levers. This is the reference the other four finalists are now measured against.
+**Benchmark score: 4.55 / 5.00 — no override veto.** ⚠️ **Reduced from 4.65 in the January 2026 re-test (M5: 5→4), which places it BELOW Aditya Birla Activ One MAX (4.60). The #1 ranking must be re-examined at the decision tree.** HDFC ERGO Optima Secure+ sets a very high bar: best-in-class coverage (no room cap at any SI, uncapped claims-proof bonus, inbuilt consumables), top-tier servicing (in-house claims, lowest complaints, #1 network density), elite AAA/Munich-Re backing, and clean, policyholder-friendly fine print. Its **one relative weakness is the 36-month PED waiting** (vs 24 at Care Supreme/SBI), which an individual cannot shorten. It is premium-priced but rich in cost levers. This is the reference the other finalists are measured against. 🔄 **All six modules were re-tested in January 2026 against the ~30 dimensions discovered after HDFC was studied first.** Coverage, claims and fine print held their scores — HDFC passes the newer checks that damaged Care and ACKO (no schedule-delegation, no tobacco exclusion, no arbitration clause, no subjective non-renewal grounds, express condonation of late claim intimation). **But M5 fell on newly-surfaced balance-sheet strain, and three factual corrections were made: GST is now 0% not 18% (M4), the mental-illness 'parity OK' claim is insurer-stated rather than wording-backed (M2), and a voluntary room-cap modifier (§2.13) does exist (M1).**
 
 ## Next step
 Study `bajaj_health_guard` (claims-reliability leader) against this benchmark, then `aditya_birla_activ_one`, `sbi_super_health`, and `care_supreme` — per the order in `../../study_plan.md`.

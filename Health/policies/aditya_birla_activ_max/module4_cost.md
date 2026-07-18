@@ -104,6 +104,24 @@ If you pay monthly/quarterly and then make a claim, **all remaining instalments 
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+| Dimension (discovered in) | Activ One MAX result |
+|---|:---|
+| **Pre-announced contractual escalator — record its ABSENCE** *(Bajaj M4 / SBI M4)* | ⭐ **Pass.** MAX's wording prints **no forward escalator** — revisions need internal Product-Management-Committee and IRDAI approval. **Bajaj Health Guard contractually prints +8% on base rates every year**, roughly doubling every 9 years *on top of* age-banding. **Over a 40-year hold this dominates any entry-price gap** |
+| **Age-banded vs annual re-pricing** *(MAX's own discovery)* | ⭐ **Pass** — **age-banded**, stepping only at band boundaries. The policyholder-friendlier model. **ACKO prices by exact age via an algorithm** |
+| **Rate-chart transparency** *(Care M4)* | ⚠️ **Fail** — no public individual rate chart; premiums come from a quote engine. **Same failing as Care, HDFC and ACKO** — you cannot verify the age curve before buying, or audit a renewal hike against a published baseline |
+| **Tabular vs ALGORITHMIC pricing** *(ACKO M4)* | ✅ **Pass** — pricing is **tabular and age-banded**, so a rate chart exists internally even if unpublished. **ACKO's is algorithmic, so no table exists even in principle** |
+| **How discounts COMBINE — additive, multiplicative, aggregate cap?** *(Care M4)* | ⚠️ **Unverified** — *confirming source: a quote run with all discounts applied.* **Care states its stack is multiplicative and capped at 50%** — three 15% discounts give 38.6%, not 45%. **MAX's combination rule is not disclosed** |
+| **Premium-per-lakh SI-efficiency curve** *(Bajaj M4)* | ⚠️ **Partially unverified** — the per-lakh curve across ₹10L/₹25L/₹50L/₹1Cr was not built. **For reference: ACKO ₹162/lakh at ₹1Cr · SBI ₹518/lakh at ₹50L · Care ₹887/lakh at ₹15L · HDFC ≈₹897/lakh at ₹15L** |
+| **SI-gated pre-policy medical-test cliff** *(SBI M4)* | ⚠️ **Unverified** — the grid is **invisible in the premium table**, so a per-lakh analysis systematically **understates** the cost of a higher tier if a cliff exists |
+| **Wellness earn-back — net premium** *(framework)* | ⭐ **Pass, best in study.** **HealthReturns pays back up to 100% of premium** for staying active — the richest earn-back of any plan. **HDFC and ACKO offer none at all**; Care and SBI cap at ~30%. ⚠️ **But see M6: it is an accrued WALLET, and wallets create lock-in** |
+| **GST re-based to 0%** *(MAX's own update)* | ✅ **Correct** — individual health insurance has been **GST-exempt since 22 Sept 2025**, so the quoted premium is the final price |
+
+**Result: 5 passes (2 best-in-study), 4 unverified/fail.** ⭐ **MAX's cost case is genuinely the strongest in the study — no escalator, age-banded, GST-free, and an earn-back that can return up to 100% of premium.** ⚠️ **But like every finalist bar SBI and Bajaj, it publishes no rate chart, so the 26→75 age curve remains unverifiable from public data.**
+
 ## Sources
 - [Ditto — Aditya Birla premium chart](https://joinditto.in/articles/health-insurance/aditya-birla-health-insurance-premium-chart/) — **MAX ₹10,149/yr @ age 25, ₹15L, Delhi (Zone 1)**; NXT ₹10,877; GST now 0%
 - [Ditto — Activ One MAX plan page](https://joinditto.in/health-insurance/aditya-birla/activ-one-max/) — long-term discounts (7.5% 2-yr, 10% 3-yr), zonal pricing, SI ₹5L–₹2Cr (this listing) / ₹6Cr (wording)

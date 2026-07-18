@@ -191,6 +191,28 @@ No hard conflict; two "sells-bigger-than-it-binds" gaps (Super Credit cap, chron
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+> MAX was studied **third**, so ~15 dimensions found later — in SBI, Care Supreme and ACKO — had never been applied to it. Applying them now.
+
+| Dimension (discovered in) | Activ One MAX result |
+|---|:---|
+| **Wording-FIXED vs Schedule-DELEGATED limits** *(ACKO M1)* | ⭐ **PASS — best in the entire study.** Only **3 "as specified in the Schedule" delegations** across 56 pages, versus **HDFC ~6** and **ACKO 37**. Room rent, ICU, Super Credit, Super Reload and Claim Protect are all **fixed in the contract**, not left to a per-policy schedule. **"No room cap" here is a contractual promise, not a setting you must verify** |
+| **SI-gated room eligibility** *(Bajaj M1)* | ✅ **Pass** — room and ICU at actuals at **every** SI tier from ₹2L to ₹6Cr. Bajaj caps you to a single A/C room below ₹10L; MAX has no such threshold |
+| **Voluntary room-cap modifier** *(SBI/Bajaj M1)* | ⭐ **Pass** — **no opt-in room cap is sold at all.** Contrast **HDFC's §2.13** (At Actuals → 1% of SI/day) and SBI's 2%/4% "Base Cover Modifiers" |
+| **Voluntary co-pay / network-gatekeeping modifier** *(Care M1)* | ⭐ **Pass** — none. Contrast **Care's Smart Select (20% co-pay off-list) and True Connect (10% gatekeeper co-pay)** |
+| **Notification-linked co-pay** *(ACKO M1)* | ⭐ **Pass** — none. ACKO's §3.3.4 penalises a missed 48-hour call with a co-pay |
+| **Condition-gated multiplier** *(SBI M1)* | ✅ **Pass** — **Super Credit is unconditional**, accruing irrespective of claims. SBI's 2–3× multiplier fires only for **37 named serious illnesses**, once a year |
+| **Bonus-ceiling inversion across the ladder** *(SBI M1)* | ✅ **Pass** — Super Credit's engine and 500% ceiling **do not weaken at higher SI**. SBI's ₹1Cr buyer is forced onto a rung with **half** the bonus ceiling |
+| **Multiplier hard-cap check** *(MAX's own discovery)* | ⚠️ **Fail — and this was MAX's own finding.** Super Credit's "6×" carries a **flat ₹3 Crore ceiling**, so the full 6× is only delivered up to ~₹60L base. **At a ₹1Cr base it is effectively ~4×** |
+| **Day-1 cover for listed chronic conditions** *(MAX's own discovery)* | ⭐ **Pass — unique in the study.** Named chronic conditions (diabetes, hypertension, asthma, high cholesterol) covered **from day 1**. **HDFC, SBI, Care and ACKO all offer nothing equivalent** |
+| **Zone-agnostic pricing** *(SBI M1/M4)* | ⚠️ **Partial** — MAX is **zone-priced across 3 zones**, so a metro buyer pays the top band. ✅ Simpler than Care's 7 zones and HDFC's 6; ✅ **no zone co-pay**. Less favourable than SBI's genuinely zone-agnostic pricing |
+| **Consumables inbuilt vs rider** | ⭐ **Pass** — **Claim Protect is INBUILT in MAX.** **Care and ACKO both sell consumables cover as a paid rider**; HDFC includes it |
+
+**Result: 8 passes (5 best-in-study), 1 partial, 1 fail.** ⭐ **The standout is the schedule-delegation test: MAX's wording fixes more of its own limits than any other plan studied — you can read the contract and know exactly what you bought.** The one real fail — the **₹3 Cr flat cap on Super Credit** — was MAX's own contribution to the framework, and it only bites above a ~₹60L base.
+
 ## Sources
 - **Binding wording** — [`resources/Policy Document_MAX.pdf`](resources/Policy%20Document_MAX.pdf): Section C (C.1 Hospitalisation, C.2/C.3 Pre/Post, C.4 Claim Protect, C.5–C.9, **C.10 Super Reload, C.11 Super Credit, C.12 Health Management/HealthReturns**) + **Annexure III Product Benefit Table** + Annexure I (non-medical lists). Product "Activ One", UIN **ADIHLIP27048V022627**.
 - [`resources/activ one max customer-information-sheet.pdf`](resources/activ%20one%20max%20customer-information-sheet.pdf) — cover/optional split (cites older UIN ADIHLIP24097V012324 — discrepancy noted).

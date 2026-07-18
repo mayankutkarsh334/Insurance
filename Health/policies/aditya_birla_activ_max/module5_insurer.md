@@ -82,6 +82,24 @@ A combined ratio **above 100% means the insurer loses money on the insurance its
 
 ---
 
+---
+
+## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
+
+| Dimension (discovered in) | Aditya Birla Health Insurance result |
+|---|:---|
+| **Monoline vs multi-line LOSS-ABSORPTION capacity** *(Care M5)* | 🚩 **Fail — and this is the most important addition to this module.** **ABHI is a pure-play standalone health insurer (SAHI)**, so — exactly like Care Supreme — **it has no other line to cross-subsidise a bad health year.** A multi-line insurer under pressure has three exits (cross-subsidise, reprice, tighten claims); **a monoline has only two, and both land on the policyholder.** **Weight a deteriorating combined ratio MORE heavily here than for HDFC, SBI or Bajaj** |
+| **Attribute the combined ratio BY SEGMENT** *(SBI M5)* | ⚠️ **Test collapses — MAX is monoline.** There is no motor book to absorb losses: **100% of any deterioration sits in the line you are buying.** Contrast **HDFC and SBI, whose losses are motor-driven and reach a health policyholder only indirectly** |
+| **Claims-driven vs EXPENSE-driven loss** *(ACKO M5)* | ⚠️ **Unverified split** — *confirming source: ABHI's audited annual report, Schedule "Analytical Ratios" (net incurred claims ratio vs expense of management).* **This matters: an expense-driven loss falls on shareholders and is fixable by scale; a claims-driven loss falls on you.** ACKO's is expense-driven (claims 69.95%, expenses 47.71%); Care's is claims-driven |
+| **Combined-ratio TRAJECTORY** *(MAX's own discovery)* | ✅ **Pass — this was MAX's own contribution.** A young SAHI at ~114% that has **cut its combined ratio from ~121% in a year**, backed by a deep-pocketed parent able to fund losses, is **de-risking** — materially less worrying than one flat or worsening at the same level. **Direction matters as much as level** |
+| **Core solvency ex-sub-debt vs the rating trigger** *(SBI M5)* | ⚠️ **Unverified.** Reported solvency **1.98× (Stage 1)**, 1.73× (2023). **Is any of it subordinated debt?** *Confirming source: ABHI's public disclosures.* **SBI's headline 2.13× was 1.84× core; HDFC's 2.00× includes ₹325 cr of sub-debt.** The check must be run here too |
+| **Retail-health share of the book** *(SBI M5)* | ✅ **~100% — you are unambiguously the core customer.** No risk of the product being deprioritised by a distracted multi-line parent. ⚠️ **But this is the cheap half of the trade** — the expensive half is the absent cushion (row 1) |
+| **Ownership / promoter-exit risk** *(Bajaj M5)* | ✅ **Pass** — backed by the **Aditya Birla Group with Abu Dhabi Investment Authority as a minority investor**; no JV-partner exit of the kind that removed Allianz from Bajaj in 2025. ⚠️ *Rating and any post-2025 shareholding change unverified* |
+| **Rating WITHDRAWN, and at whose request?** *(Care M5)* | ⚠️ **Unverified** — *confirming source: ICRA / CRISIL / India Ratings issuer search.* **Care's CRISIL A+ was withdrawn at its own request mid-takeover — a soft negative signal.** Confirm ABHI carries a live rating |
+| **Score the LICENSED ENTITY, not the group** *(ACKO M5)* | ⚠️ **Check applies** — figures must come from **Aditya Birla Health Insurance Co. Limited's** audited accounts, not Aditya Birla Capital group reporting. **ACKO's widely-quoted ₹424 cr loss was the holdco's; the insurer lost ₹193 cr** |
+
+**Result: 3 passes, 6 partial/unverified/fail.** 🚩 **The headline addition is structural: MAX is a MONOLINE SAHI, so it shares Care Supreme's core vulnerability — no cross-subsidy, and only two ways to fix a bad year, both of which land on the policyholder.** ✅ **What separates it from Care is direction and backing: its combined ratio is *improving*, and the Aditya Birla Group is a materially deeper parent than Care's.** ⚠️ **Four checks remain open and should be closed before a final decision — core solvency ex-sub-debt, the claims-vs-expense split, the current credit rating, and licensed-entity financials.**
+
 ## Sources
 - [Aditya Birla Capital — Q4 & FY25 results (health-insurance segment: GWP ₹4,940 cr +33%, combined ratio 114% vs 121%, SAHI share 12.6%)](https://www.adityabirla.com/media/press-releases/aditya-birla-capital-announces-q4fy25-and-fy25-results/)
 - [Statista — Indian health insurers by solvency ratio](https://www.statista.com/statistics/1440866/india-leading-health-insurers-by-solvency-ratio/) — AB 1.98 (Mar 2025); "highest by Apr 2026"

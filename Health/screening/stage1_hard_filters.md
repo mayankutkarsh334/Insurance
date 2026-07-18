@@ -48,6 +48,8 @@
 | Star Health | 70.30% | 2.21 | SAHI, largest book → highest complaint volume |
 | Care Health | 64.53% | >1.5 | SAHI, low-ish ICR |
 | Niva Bupa | 61.22% | 3.03 | SAHI, **lowest ICR** — watch |
+| **Acko General** *(added Jul 2026)* | **57.82%** (FY23-24: 56.91%, FY22-23: 83.88%; 3-yr 66.20%) | **2.75** (Mar-23; FY25 unverified) | Digital-first general insurer. **ICR below the 60% floor** — but complaints **15.58/10k claims, BELOW industry 27.06**, CSR 95.75%, and **99.98% of claims paid within 3 months (best among private general insurers)** |
+| **Royal Sundaram** *(added Jul 2026)* | **83.36%** (health, FY22-23; FY24-25 health-specific unverified) | **2.35** (Sep-24) · 2.42 (Mar-24) · 2.27 (Mar-23) | Sundaram Finance group. Healthy ICR band; **health-specific complaint ratio not published** |
 | New India Assurance | 100.98% | ~1.8 | PSU, ICR >100 |
 | National / Oriental / United | high | **< 1.5 (some)** | PSU, solvency & sub-limit issues |
 
@@ -66,6 +68,8 @@
 | Medicare Premier | Tata AIG | ✅ | ✅ | ✅ | ⚠️ verify | ✅ | ✅ | ✅ | ✅ | ⚠️ verify | ✅ | **PASS** (verify F4/F9) |
 | Comprehensive / Superstar | Star Health | ✅ | ✅ | ✅ | ✅ no-cap | ⚠️ some plans | ✅ | ✅ 3yr | ✅ | ✅ | ⚠️ high volume | **PASS** (flags) |
 | Health Gain / Infinity | Reliance | ✅ | ✅ | ✅ | ⚠️ verify | ⚠️ verify | ✅ | ✅ | ✅ | ⚠️ verify | ✅ | **BORDERLINE** |
+| **Lifeline (Supreme / Elite)** | **Royal Sundaram** | ✅ | ✅ 2.35 | ✅ 83.36% | ✅ no-cap | ✅ * | ✅ 5L–1.5Cr | ✅ 36mo Supreme / **24mo Elite** | ⚠️ unrelated only | ⚠️ verify | ⚠️ not published | **PASS** (flags) |
+| **Platinum Health** | **Acko** | ✅ | ✅ 2.75 | ❌ **57.82%** | ✅ no-cap | ✅ none | ✅ 10L–1Cr+unltd | ✅ **0–3 yr** | ✅ | ✅ none | ✅ **15.58** | **ELIMINATED (F3 only)** ⚠️ *see challenge below* |
 | Mediclaim / Floater | New India (PSU) | ✅ | ✅ | ❌ 100.98% | ❌ capped | ❌ co-pay | ✅ | ❌ 4yr+ | ⚠️ | ❌ sub-limits | ⚠️ | **ELIMINATED** (F3/F4/F5/F9) |
 | Mediclaim | National / Oriental / United (PSU) | ✅ | ❌ <1.5 | — | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | **ELIMINATED** (F2 solvency + F4/F5/F9) |
 
@@ -91,3 +95,59 @@
 - **National / Oriental / United India** — one or more below the 1.5 solvency minimum (F2), plus capped rooms, co-pay and disease sub-limits (F4/F5/F9).
 
 > The low-ICR SAHIs (Care 64.5%, Niva Bupa 61.2%) **pass** the ≥60% floor but are flagged — Module 3 must explain whether the low ICR reflects a young/growing book (premium inflow outpacing an ageing claim base) or a genuinely stingy claims culture.
+
+---
+
+# Addendum — Acko & Royal Sundaram screened (July 2026)
+
+**Why they were added:** both appear in the **per-district network-density table** in [methodology.md](methodology.md) (Acko ≈14.7/district, Royal Sundaram ≈12.8/district — 4th and 5th nationally), yet **neither was ever run through Stage 1**. They were not eliminated; they were **silently skipped**. That gap is now closed.
+
+## Royal Sundaram **Lifeline (Supreme / Elite)** — ✅ **PASS**
+
+| Filter | Finding |
+|--------|---------|
+| F1 Renewability | ✅ Lifelong renewal (*re-confirm in wording*) |
+| F2 Solvency | ✅ **2.35× (Sep-24)**, 2.42× (Mar-24), 2.27× (Mar-23) — strong and stable |
+| F3 ICR | ✅ **83.36%** health (FY22-23) — comfortably mid-band; healthier than every SAHI finalist. *FY24-25 health-specific figure unverified* |
+| F4 Room rent | ✅ **No room-rent restriction** on Supreme and Elite |
+| F5 Co-pay | ✅ **No general co-pay.** \* Elite carries a **20% co-pay only on International Treatment for 11 named critical illnesses** — not a compulsory co-pay for a domestic claim under 60, so F5 passes |
+| F6 Sum insured | ✅ Supreme **₹5L–₹1Cr**; Elite **₹25L–₹1.5Cr** |
+| F7 PED waiting | ✅ Classic 48mo / **Supreme 36mo** / **Elite 24mo** — Elite matches SBI's best-in-study |
+| F8 Restoration | ⚠️ **Present but weaker** — Supreme restores for **unrelated illnesses only**; *related*-illness restore requires a **paid add-on**. Passes the binary filter, but materially behind Care/HDFC unlimited recharge |
+| F9 Sub-limits | ⚠️ No room-rent sub-limit confirmed; **disease-wise sub-limits not verified** — *confirming source: Lifeline policy wording (UIN RSAHLIP21054V022021 or its current successor)* |
+| F10 Complaints | ⚠️ **Health-specific complaint ratio not published** — Royal Sundaram reports at insurer level only. CSR 97.26% (2025). *Confirming source: IRDAI Annual Report company-wise grievance table* |
+
+## Acko **Platinum Health** — ❌ **ELIMINATED on F3 alone** ⚠️ *and the filter is doing the wrong work*
+
+Acko **passes every other filter, several of them best-in-study**:
+
+| Filter | Finding |
+|--------|---------|
+| F1 Renewability | ✅ Lifetime renewability; entry 18–99 |
+| F2 Solvency | ✅ **2.75×** (Mar-23). *FY24-25 unverified* |
+| **F3 ICR** | ❌ **57.82% (FY24-25), 56.91% (FY23-24)** — **below the 60% floor two years running.** *(Was 83.88% in FY22-23 — a steep fall consistent with rapid premium growth ballooning the denominator)* |
+| F4 Room rent | ✅ **No caps, no sub-limits** — any room |
+| F5 Co-pay | ✅ **None** |
+| F6 Sum insured | ✅ **₹10L / 25L / 50L / ₹1Cr / unlimited** |
+| F7 PED waiting | ✅ **0–3 years**, set by health evaluation — **can be ZERO; best in the entire study** |
+| F8 Restoration | ✅ Present (related illnesses) |
+| F9 Sub-limits | ✅ **None** — no disease-wise caps |
+| F10 Complaints | ✅ **15.58 per 10k claims (FY24-25)** vs industry **27.06** — **better than every finalist except HDFC (4.99) and Bajaj (5.25)**, and **2.7× better than Care Supreme's 42.00** |
+
+> ### 🚩 **FRAMEWORK PROBLEM — the F3 floor produces a perverse result**
+> Compare the two low-ICR plans this study has now examined:
+>
+> | | **Care Supreme** (finalist, fully deep-studied) | **Acko Platinum** (eliminated) |
+> |---|---|---|
+> | ICR FY24-25 | **64.53%** → ✅ passes F3 | **57.82%** → ❌ fails F3 |
+> | Complaints /10k claims | **42.00** — 🚩 **worst in study** | **15.58** — ✅ **below industry** |
+> | CSR | 96.74% | 95.75% |
+> | Settlement speed | unverified | **99.98% paid within 3 months** |
+> | Room / co-pay / sub-limits | none | none |
+> | PED wait | **36 months** (24/12 only if you pay) | **0–3 years**, can be **zero** |
+>
+> **A 6.7-point ICR difference eliminated the plan with the better claims experience, while the plan with the study's worst complaint ratio became a finalist.** ICR measures *rupees paid per rupee of premium* — it is depressed by **cheap pricing and fast premium growth** as much as by stinginess, and Module 3 (Care) already established that it **must be read against the correct peer segment and its trend**. A **hard binary 60% floor cannot make that distinction.**
+>
+> **Recommendation: F3 should not be applied as a standalone binary.** Pair it with a **service-quality cross-check** (complaint ratio + CSR + settlement speed): a low ICR **with** poor service is a stinginess signal; a low ICR **with** good service is a pricing/growth signal. *(New study_plan dimension — see M3.)*
+>
+> **Decision required from the buyer:** Acko is recorded as **ELIMINATED per the filter as written**, but on every other axis it screens as a **plausible top-5 candidate**. See the conditional Stage-2 score in [stage2_shortlist.md](stage2_shortlist.md).
