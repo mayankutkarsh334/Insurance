@@ -1,6 +1,6 @@
 # 🥊 Head-to-Head: HDFC Optima Secure+ vs Aditya Birla Activ One MAX
 
-_Decision document · January 2026 · **Individual, age 26, BANGALORE · premium is not a constraint**_
+_Decision document · January 2026 · **Individual, age 26 · works in BENGALURU, home town GAYA (Bihar), near PATNA · premium is not a constraint**_
 _Both plans re-tested against the full ~30-dimension framework. Neither triggers the override veto._
 
 > **The short version.** The weighted scores are **4.55 vs 4.60** — a **0.05 gap**, which is **smaller than the uncertainty in the inputs**. The totals cannot decide this. **Your own stated priority order can, and it points the other way to the totals.**
@@ -31,6 +31,32 @@ Bengaluru cashless hospitals (PolicyBazaar - same source)
 > ✅ **HDFC leads Bangalore on both absolute count (+10.7%) and metro concentration.** This is the item flagged as *"most likely to flip the decision"* — it **did not flip it; it confirmed it.**
 >
 > ⚠️ **Two honest caveats.** **560 is entirely ample in absolute terms** — you are not short of hospitals with either plan, and the practical difference between 620 and 560 in one city is small. And **source dispersion is wide** (HDFC Bengaluru is quoted at 620 / 378 / 360; ABHI at 560 / 419 / 171 across sources). **The PolicyBazaar figures are used because they are the one source applied consistently to every plan in this study.** **Verify by pin code for your own neighbourhood before buying.**
+
+### (a2) 🏠 Your home region — Patna & Gaya — matters, and the metro-only view missed it
+
+You work in Bengaluru but will visit **Gaya** regularly and could be hospitalised there, in nearby **Patna**, or need cover if you ever relocate. **A "broad but thin" national network shows its weakness exactly in tier-2/3 towns** — so this is worth checking directly. Same source (PolicyBazaar), all three of your cities:
+
+| Your city | 🔵 **HDFC ERGO** | 🟠 **Aditya Birla** | Read |
+|---|---:|---:|---|
+| **Bengaluru** (work) | **620** | 560 | ✅ Both ample; HDFC leads |
+| **Patna** (nearest big city to home) | **192** | 187 | ✅ **Both strong and effectively tied** |
+| **Gaya** (home town) | **14** | **9** | ⚠️ **Both THIN; HDFC leads but neither is deep** |
+
+```
+  BENGALURU   HDFC ######################## 620   ABHI ##################### 560
+  PATNA       HDFC #######  192             ABHI #######  187          (tied)
+  GAYA        HDFC #  14                    ABHI #  9        (both thin)
+```
+
+> **Two practical conclusions for your geography:**
+>
+> **1. For anything serious, you'd travel to Patna or back to Bengaluru — and both plans cover those two cities well.** Patna is effectively a tie (192 vs 187); Bengaluru favours HDFC. **Your home region is genuinely covered by both** — Bihar was a real risk for a thin national network, and neither plan fails it at the Patna level.
+>
+> **2. Gaya itself is thin on BOTH plans (14 vs 9)** — this is a **town-level reality, not a plan defect**. For a genuine emergency in Gaya, your backstop is the same for either insurer: **the IRDAI "Cashless Everywhere" mandate (both participate)** lets you go cashless at a non-network hospital, and **reimbursement always applies**. ⭐ **This is where HDFC's M6 edge quietly matters more for you than for a metro-only buyer:** its **express condonation of late claim intimation "for reasons beyond the control of the Insured Person"** is exactly the protection you want if you're admitted to a small non-network Gaya hospital and can't complete formalities in time. **ABHI's equivalent clause is unverified, and ABHI additionally makes an arbitral award a condition precedent to suing on amount disputes** — the kind of dispute most likely at an out-of-network small-town hospital.
+
+> 💡 **Whichever you pick: keep your policy's 24×7 pre-auth helpline number saved, and in Gaya default to a Patna hospital for anything planned.** Both networks are built for that pattern.
+
+---
 
 ### (b) 💰 "Premium is no concern" — this removes Aditya Birla's largest advantage
 
@@ -63,7 +89,7 @@ If cost isn't binding you should buy a big SI (₹50L–₹1Cr+). **That is exac
 Bangalore is **not** the top pricing band for most of these insurers — Care puts Bengaluru (Urban) in **Zone 5 of 7**, ACKO in its cheaper **Zone B**, and HDFC/ABHI in their middle tiers rather than Tier 1 (Delhi/Mumbai). **Moot for you, but it means Bangalore quotes will come in below the Delhi/Mumbai anchors used earlier in this study.**
 
 > ### 🔵 **Net effect: the recommendation does not change — it strengthens. HDFC ERGO Optima Secure+.**
-> Aditya Birla's case rested on **cost (now irrelevant)** and **exclusions (inert for a healthy 26-year-old, and SI-gated away at the sum insured you should buy)**. HDFC's case rests on **claims reliability — now confirmed best in Bangalore too — and the cleanest contract exit terms.**
+> Aditya Birla's case rested on **cost (now irrelevant)** and **exclusions (inert for a healthy 26-year-old, and SI-gated away at the sum insured you should buy)**. HDFC's case rests on **claims reliability — now confirmed best in Bengaluru AND at least tied across your Bihar home region — and the cleanest contract exit terms, which matter more given you'll be treated across three cities.**
 
 ---
 

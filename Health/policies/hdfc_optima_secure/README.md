@@ -44,6 +44,7 @@ Rank 1 (29/30) — benchmark all-rounder. ICR 84.9%, solvency 2.00, below-averag
 - **Uncapped, claim-proof bonus** — Infinite Benefit adds 100% of base SI every year *irrespective of claims*, plus unlimited restore (M1)
 - **Inbuilt consumables** (Protect Benefit) closes the ₹15k–₹1L/admission gap; **zero co-pay, zero disease sub-limits**, modern treatments & mental illness up to SI (M1/M2)
 - **Best-in-class servicing** — in-house claims (no TPA), CSR 97.45%, lowest complaint ratio (9.28/10k), #1 network density (~17.4/district) (M3)
+- 🧭 **Verified for THIS buyer's geography (Bengaluru work · Gaya home · Patna):** HDFC leads Aditya Birla in **all three** cities — **Bengaluru 620 vs 560 · Patna 192 vs 187 (tied) · Gaya 14 vs 9**. The tier-2/3 risk of a Gaya home town does **not** bite — Patna is strong on both; Gaya is thin on both (town-level, backed by Cashless-Everywhere + reimbursement) (M3). ✅ Bengaluru sits **below Tier-1 pricing**, and HDFC imposes **no ongoing address-change disclosure duty** — an advantage if you relocate (M4/M6)
 - **Elite backing** — CRISIL AAA/Stable, owned by HDFC Bank + **Munich Re (retained)**; profitable and dividend-paying, 24 yrs (M5)
 - ⚠️ **But M5 was reduced 5→4 on re-test** — solvency fell to **1.56× (Jun-2024)**, within 0.06 of the floor, and the recovery to 2.00× is **partly sub-debt**; combined ratio **~123% and worsening**
 - **Clean fine print** — lifelong renewal, no claim-based loading, no max entry age, full portability/migration (M6)

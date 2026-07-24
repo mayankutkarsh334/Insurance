@@ -128,33 +128,101 @@ graph TD
 
 ---
 
-## Feature checklist
+## Feature checklist — what's IN, what's OUT, and what it saves you
 
-| Feature | Detail | Notes |
-|---------|--------|-------|
-| **Room rent** | ✅ **At Actuals (no cap) — every SI tier** | ICU also At Actuals. No SI threshold |
-| **Cumulative Bonus ceiling** | ✅ **UNCAPPED** — Infinite Benefit replaces the usual 10%→100% CB | ⭐ Best in study. SBI Platinum caps at 200%; Care and ACKO at 100% |
-| **Claim impact on bonus** | ✅ **NONE — accrues irrespective of claims** | ⭐ Matches Care's claim-proof CB; **beats SBI**, whose ECB is eroded by a claim |
-| **Pre / post-hospitalisation** | ✅ **60 days pre / 180 days post** | ⭐ The benchmark. Beats SBI (90-day post) and ACKO (120); matches Care |
-| **Day-care procedures** | ✅ **All day-care treatments** (no 24-hour rule) | Broad |
-| **Domiciliary / home healthcare** | ✅ **Both covered** | Home healthcare is **cashless-only** and needs pre-authorisation |
-| **AYUSH** | ⚠️ In-patient, **up to a sub-limit stated in your schedule** | ⚠️ **Weaker than Care and SBI**, which both give **full SI** with no sub-limit. Verify the figure at your chosen SI |
-| **Modern treatments** | ✅ Covered (IRDAI-mandated 12) — **no sub-limit found in the wording** | ⚠️ Verify against the current Annexure A at purchase |
-| **Day-1 cover for listed chronic conditions** | ❌ **None** — diabetes/hypertension follow the normal waiting rules | ⚠️ **Weaker than Aditya Birla**, which covers named chronic conditions from day 1. *(ABHI M1 dimension)* |
-| **Consumables / non-medical (Protect Benefit)** | ✅ **INBUILT** — pays the Non-Medical Expenses in Annexure B with zero deductions | ⭐ **A major real-world advantage.** **Care and ACKO both sell this as a paid rider**; HDFC includes it |
-| **Consumables economics** | Closes the **₹15,000–₹1,00,000 per-admission** silent gap | The most under-appreciated benefit in the plan |
-| **Wellness / earn-back** | ❌ **None** — HDFC gives premium *discounts* (M4), not activity-based earn-back | ⚠️ **Weaker than Care (up to 30% off renewal) and Aditya Birla (HealthReturns)**. ✅ But see M6: no wallet also means **no lock-in when porting** |
-| **Ambulance (road / air)** | Road: within base cover, to nearest hospital · Air: **up to ₹5,00,000** | ⚠️ Air cap is **flat** — it does not scale with SI |
-| **Organ-donor cover** | ✅ Covered (in-patient harvesting) | Excludes donor pre/post-hospitalisation and organ transport/preservation |
-| **Daily cash / shared room** | **₹800/day, max ₹4,800** | Only for a shared room in a network hospital, stay >48 hrs; not in ICU |
-| **Preventive health check-up** | After each policy year: **₹2,000** (₹10L) · ₹4,000 (₹15L) · ₹5,000 (₹20–50L) · **₹8,000** (₹1–2Cr) | ✅ One of the few benefits that **scales with SI** |
-| **E-opinion / global cover** | E-opinion once per insured (51 critical illnesses) · **Global Health Cover is OPTIONAL** (B-2.9/2.10), not inbuilt | ⚠️ ACKO includes second opinion as a **basic** benefit; SBI Platinum includes global cover |
-| **Maternity / OPD / add-ons** | Maternity via **Parenthood** add-on; OPD via **Optima Wellbeing** add-on | *(Down-weighted.)* Not material for a single 26-year-old today |
-| **Zone-based pricing / zone co-pay** *(NEW ROW — SBI M1/M4 dimension)* | ⚠️ **Zone-priced** — clause 1.24 "Premium Tier" sets **premium** by city (Tiers 1–6). ✅ **NO zone-based co-pay** — treatment in a costlier city triggers no penalty | ✅ Brochure's *"No Geography-Based Co-payment"* is **confirmed by the wording**. Less favourable than SBI's fully zone-agnostic pricing, but the **claim-time trap does not exist** |
-| **Voluntary room-cap modifier** *(NEW ROW — SBI/Bajaj M1 dimension)* | ⚠️ **PRESENT — §2.13 "Modification of Room Rent":** opt down from At Actuals to **1% of base SI/day** (+ ICU modification) for a cheaper premium | ⚠️ **Re-enables proportionate deduction.** At ₹10L that's a ₹10,000/day cap. ✅ **Reconfigurable at renewal** (company's discretion) — not a permanent lock. **Don't opt it; check your schedule** |
-| **Voluntary co-pay / network-gatekeeping modifiers** *(NEW ROW — Care + ACKO dimension)* | ✅ **NONE.** No network-gatekeeping co-pay, no notification-linked co-pay. Other cost-sharing is limited to the self-opted **Aggregate Deductible ("Value Buy")** | ✅ **Cleaner than Care (2 levers) and ACKO (4 levers)** — but **not** the "zero modifiers" position; see the room modifier above |
-| **Wording-fixed vs Schedule-delegated limits** *(NEW ROW — ACKO M1 dimension)* | ✅ **Only ~6 schedule delegations in 69 pages** — room rent, ICU, bonus, restore, pre/post days and consumables are all **fixed in the contract** | ⭐ **The strongest contractual guarantee in the study.** **ACKO delegates 37 limits** to a per-policy schedule, so its "no room cap" is a *setting*; **HDFC's is a promise.** You can verify what you bought from the wording alone |
-| **Multiplier hard-cap check** *(NEW ROW — ABHI M1 dimension)* | ✅ **Passes** — Secure and Infinite are both **%-of-base with no flat-rupee ceiling** | Contrast Bajaj (flat ₹5L Recharge cap) and ABHI (₹3Cr Super Credit cap) |
+> **How to read each block:** ✅ = what the feature covers · ❌ = what it specifically does **not** cover (the named traps) · 💰 = a worked rupee example of the saving. Examples use realistic Bengaluru-metro costs and are **illustrative** — your actual bill varies, but the *mechanism* is exact.
+
+### 🛏️ Room rent & ICU — **At Actuals (no cap), every SI tier**
+- ✅ **Included:** any room category you choose (private, deluxe, suite), at its actual daily cost. ICU/ICCU also at actuals. Applies at **every** SI from ₹10L to ₹2Cr — no threshold.
+- ❌ **Excluded:** nothing on room *cost* by default. ⚠️ Only if you **opt in to the §2.13 room-cap modifier** does a 1%-of-SI/day cap (and proportionate deduction) switch on — don't. "Suite/luxury" tiers above the highest single-private category can still be questioned as not R&C.
+- 💰 **Saving example:** ₹6L surgery, you take a ₹18,000/day room. On a plan capped at ₹5,000/day, the insurer scales the **whole bill by 5,000/18,000 = 28%** → pays ₹1.68L, **you lose ₹4.32L.** On HDFC at actuals → **insurer pays the full ₹6L, you lose ₹0. Saving: ₹4.32L.**
+
+### 📈 Cumulative Bonus — **UNCAPPED (Infinite Benefit), claim-proof**
+- ✅ **Included:** +100% of base SI added **every** completed year, **no ceiling**, carried forward, **unaffected by claims**.
+- ❌ **Excluded:** the bonus is calculated on **base SI only** (not the Secure-doubled figure); it attaches to hospitalisation + Protect Benefit, **not** to the fixed sub-limits (air ambulance, daily cash).
+- 💰 **Saving example:** ₹1Cr base, year 6, a ₹1.4Cr cancer treatment. Base ₹1Cr + Secure ₹1Cr + 5 yrs bonus ₹5Cr = far more than enough → **fully paid.** On an ordinary "+10%/yr capped at 100%" plan, a ₹1Cr policy caps at ₹2Cr total — still fine here, but on a **₹25L** base the ordinary plan tops out at ₹50L → **you'd lose ₹90L.** The uncapped bonus is what lets a modest base grow into catastrophe-proof cover.
+
+### 🩺 Pre / post-hospitalisation — **60 days before / 180 days after**
+- ✅ **Included:** doctor consults, diagnostics, scans, medicines **for the same illness** — 60 days before admission and **180 days after** discharge. Paid from your main SI.
+- ❌ **Excluded:** costs for an **unrelated** illness; anything beyond the 60/180 windows; routine/OPD care not linked to the admission.
+- 💰 **Saving example:** knee surgery. Pre: ₹18,000 (MRI, consults). Post: ₹55,000 over 5 months (physiotherapy, follow-ups, medicines). **HDFC pays all ₹73,000.** A plan with 90-day post-cover (SBI) would cut off physiotherapy in month 4 → **~₹20,000 lost.**
+
+### 🏥 Day-care procedures — **all of them, no 24-hour rule**
+- ✅ **Included:** any procedure needing <24 hrs in a hospital/day-care centre — **cataract, dialysis, chemotherapy, radiotherapy, angiography, lithotripsy, endoscopy**, etc. No "approved list" restriction.
+- ❌ **Excluded:** **OPD consultations** (just seeing a doctor, no procedure) — needs the separate Optima Wellbeing rider.
+- 💰 **Saving example:** a year of dialysis (~₹4L) or a cataract surgery (~₹60,000) done as same-day procedures → **fully covered.** A plan that only covers a *named list* and omits your specific procedure would pay **₹0** for it.
+
+### 🏠 Domiciliary & home healthcare — **both covered**
+- ✅ **Included:** hospital-level treatment at home when you can't be moved / no bed available (domiciliary); insurer-arranged nursing/IV care at home (home healthcare).
+- ❌ **Excluded:** **home healthcare is cashless-only + needs pre-authorisation** — arrange it *before* starting or it may not be paid. Domiciliary needs a doctor to certify it genuinely required hospital-level care.
+- 💰 **Saving example:** 10 days of at-home treatment for an immobile patient (nurse, drips, monitoring) ~₹90,000 → **covered**, where Bajaj (covers neither) pays **₹0.** *(Low relevance for you at 26; matters if you add a parent later.)*
+
+### 🌿 AYUSH — **in-patient, but sub-limited** ⚠️
+- ✅ **Included:** in-patient treatment at a **registered** Ayurveda/Yoga-Naturopathy/Unani/Siddha/Homeopathy hospital, for a covered illness — up to a **schedule sub-limit.**
+- ❌ **Excluded:** **spas, wellness retreats, yoga/detox holidays, OPD/outpatient AYUSH.** And crucially, cost **above the sub-limit** (unlike Care/SBI, which give full SI).
+- 💰 **Saving example:** a ₹1.5L Ayurvedic in-patient course. If your schedule sub-limit is, say, ₹50,000 → HDFC pays **₹50,000, you lose ₹1L.** Care/SBI (full SI) would pay all ₹1.5L. **This is HDFC's one real coverage gap — but only bites if you specifically choose AYUSH hospitalisation.** *Verify your sub-limit.*
+
+### 🤖 Modern treatments — **all 12, up to full SI (no sub-limit)**
+- ✅ **Included, named:** robotic surgery · oral chemotherapy · immunotherapy (monoclonal antibodies) · deep-brain stimulation · stereotactic radiosurgery · stem-cell (bone-marrow) therapy · bronchial thermoplasty · uterine-artery embolisation/HIFU · balloon sinuplasty · intra-vitreal injections · IONM · green/holmium-laser prostate. **Covered up to your full SI.**
+- ❌ **Excluded:** experimental/unproven procedures **outside** these 12; treatments not yet IRDAI-recognised. ⚠️ *Verify no cap crept into the current Annexure A.*
+- 💰 **Saving example:** ₹12L robotic cancer surgery. On the industry-norm **₹5L (or 50%-of-SI) cap**, insurer pays ₹5L → **you lose ₹7L.** On HDFC (no cap) → **full ₹12L paid. Saving: ₹7L.**
+
+### 🩹 Day-1 cover for chronic conditions — **NONE** ❌
+- ✅ **Included:** nothing special — diabetes/hypertension/asthma follow the normal PED/waiting rules.
+- ❌ **Excluded from day 1:** any chronic condition you already have waits out the PED period.
+- 💰 **Saving example:** irrelevant unless you *already* have such a condition. If you did, Aditya Birla's day-1 cover would pay a ₹2L diabetes-complication claim in year 1 where HDFC pays **₹0** until the PED wait clears. **For a healthy 26-yo → non-issue.**
+
+### 🧤 Consumables / non-medical — **INBUILT (Protect Benefit)** ⭐
+- ✅ **Included:** the ~non-payable items on **Annexure B** — gloves, syringes, masks, **PPE kits, gowns, cotton, catheters, admission kits** — paid with **zero deduction**, from your main SI.
+- ❌ **Excluded:** genuinely personal items (TV, food for visitors); items already excluded as non-medical *outside* the Annexure-B list.
+- 💰 **Saving example:** ₹5L surgery, ₹55,000 of it consumables. HDFC pays the ₹55,000 → **out-of-pocket ₹0.** On Care/ACKO (consumables = **paid rider you didn't buy**) → **you lose ₹55,000. Hits EVERY claim you ever make** (typically 10–20% of each bill).
+
+### 🎁 Wellness / earn-back — **NONE** ⚠️
+- ✅ **Included:** ordinary premium discounts only (lifetime, long-term, family — see M4).
+- ❌ **Excluded:** no activity/step-based cash-back.
+- 💰 **Saving example:** Aditya Birla's HealthReturns can return up to 100% of premium for staying active — on a ₹30,000 premium that's up to ₹30,000/yr back. **HDFC returns ₹0 this way.** ⚠️ But since **cost is no concern for you**, this saving is worth little — and HDFC's no-wallet means **no lock-in** (M6).
+
+### 🚑 Ambulance — road (to SI) + air (**flat ₹5L**)
+- ✅ **Included:** road ambulance to the nearest hospital (tied to an admitted claim); **air ambulance inbuilt up to ₹5,00,000.**
+- ❌ **Excluded:** air-ambulance cost **above ₹5L**; the ₹5L cap is **flat — never grows** with your SI. Non-emergency transport.
+- 💰 **Saving example:** an air lift from near Gaya to a Patna/Bengaluru specialist ~₹4L → **covered.** A ₹7L long-distance lift → HDFC pays ₹5L, **you lose ₹2L.** Most domestic lifts fit under ₹5L. *(Relevant to your Bihar geography; rare.)*
+
+### 🫀 Organ-donor cover — **in-patient harvesting covered**
+- ✅ **Included:** the **donor's in-patient hospitalisation** costs for harvesting the organ, when you're the recipient of a covered transplant.
+- ❌ **Excluded (named):** donor's **pre- and post-hospitalisation**, donor **screening** costs, **organ acquisition** cost, and **transport/preservation** of the organ.
+- 💰 **Saving example:** kidney transplant — donor's surgical hospitalisation ~₹3L → **covered.** But the ~₹50,000 of donor work-up/screening and organ transport → **your cost** (excluded). Net saving ~₹3L, with a ~₹50k residual gap.
+
+### 🛌 Daily cash (shared room) — **₹800/day, max ₹4,800**
+- ✅ **Included:** ₹800 cash **per day** if you stay in a **shared room** at a **network** hospital for **more than 48 hours.**
+- ❌ **Excluded:** **ICU days**; **private-room** stays (you forfeit it by taking a private room); non-network hospitals. Flat cap ₹4,800 (~6 days).
+- 💰 **Saving example:** 5-day shared-ward stay → ₹4,000 cash. ⚠️ **But you'd only get this by *not* using the plan's no-room-cap strength** — so in practice near-zero for you. **A rounding error, not a factor.**
+
+### 🩻 Preventive health check-up — **scales with SI (₹8,000 at ₹1Cr)**
+- ✅ **Included:** a free annual check-up after each policy year — **₹2,000 (₹10L) · ₹5,000 (₹20–50L) · ₹8,000 (₹1Cr+)**. Does **not** reduce your SI.
+- ❌ **Excluded:** available typically **from the first renewal** (not week 1); tests beyond the covered panel.
+- 💰 **Saving example:** ~₹8,000/year of free screening at ₹1Cr SI = **~₹8,000 saved annually** — and the real value is catching rising sugar/cholesterol early, while insured and past waiting periods. **Use it every year.**
+
+### 🌍 E-opinion (inbuilt) / Global cover (**optional**)
+- ✅ **Included:** one **e-opinion per insured/year** for **51 critical illnesses** (inbuilt).
+- ❌ **Excluded:** **overseas treatment is NOT inbuilt** — base policy settles claims **in India only**; global cover needs the **optional B-2.9/2.10 add-on.**
+- 💰 **Saving example:** e-opinion on a cancer diagnosis = free expert review (avoids a possibly unnecessary ₹8L surgery). Global cover: a ₹40L overseas cancer treatment is **₹0 covered unless you bought the add-on.** *(Only matters if you want the overseas option.)*
+
+### 👶 Maternity / OPD — **add-ons only**
+- ✅ **Included:** nothing inbuilt.
+- ❌ **Excluded:** **maternity** (needs the **Parenthood** add-on); **OPD** consultations/pharmacy (needs **Optima Wellbeing** add-on).
+- 💰 **Saving example:** a ₹1.2L delivery is **₹0 covered** without the Parenthood add-on. *(Down-weighted for a single 26-yo now; note it if you plan a family in ~4 years — maternity add-ons carry their own 2–4 yr waits, so add early.)*
+
+---
+
+### 📋 Analytical dimensions *(not benefits — structural checks from the re-test)*
+
+| Dimension | HDFC result |
+|-----------|-------------|
+| **Zone-based pricing / zone co-pay** *(SBI M1/M4)* | ⚠️ Zone-**priced** (6 tiers; Bengaluru mid-band) · ✅ **NO zone co-pay** — no claim-time penalty for being treated in a costlier city (matters for your Bengaluru/Patna/Gaya travel) |
+| **Voluntary room-cap modifier** *(SBI/Bajaj M1)* | ⚠️ **Exists (§2.13)** — opt-down to 1%-of-SI/day for cheaper premium; re-enables proportionate deduction. **Don't opt it; reconfigurable at renewal** |
+| **Voluntary co-pay / network-gatekeeping** *(Care + ACKO)* | ✅ **None** of the network/notification co-pay type (Care has 2, ACKO 4). Only a self-opted deductible |
+| **Wording-fixed vs Schedule-delegated limits** *(ACKO M1)* | ⭐ **~6 delegations in 69 pp** — limits are **fixed in the contract** (ACKO delegates 37). "No room cap" is a promise, not a setting |
+| **Multiplier hard-cap check** *(ABHI M1)* | ✅ **Passes** — Secure & Infinite are %-of-base, **no flat-rupee ceiling** (Bajaj caps Recharge at ₹5L; ABHI caps Super Credit at ₹3Cr) |
 
 ---
 

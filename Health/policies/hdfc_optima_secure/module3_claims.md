@@ -44,12 +44,29 @@ _🔄 **Re-tested January 2026** — ten dimensions discovered after HDFC was st
 
 ## Network
 
+> 🧭 **Studied for THIS buyer's actual geography:** works in **Bengaluru**, home town **Gaya (Bihar)**, nearest big city **Patna**. Network is scored on the cities you will actually be hospitalised in — not a national average.
+
 | Metric | Value |
 |--------|-------|
 | **Network hospital count (raw)** | **~14,431–14,476** (PolicyBazaar, the study's reference source). ⚠️ **Dispersion ~2.5× across sources**: 14,476 · "more than 13,000" · **5,780** (RenewBuy). Narrower and better-corroborated than SBI's 2.8× spread, but **not audited** *(SBI M3 data-quality dimension applies to the benchmark too)* |
 | **Per-district density (÷~780)** | ⭐ **≈17.4 per district — the highest in the study.** HDFC **13,600 ≈17.4** > Aditya Birla ≈15.8 > Bajaj ≈15.6 > ACKO ≈14.7 > Care ≈14.6–15.3 > Royal Sundaram ≈12.8 |
-| **Your city's top hospitals in-network?** | ⭐ **Best metro concentration in the study: 520 cashless hospitals in Mumbai = 3.60% of its national network** (PolicyBazaar, same-source comparison) — vs **SBI 434 = 2.26%** and **Care 299 = 2.51%**. ⚠️ **Source variance:** another source reports **306 in Mumbai + 32 in Navi Mumbai**. *Confirming source: [HDFC ERGO's own cashless-hospital locator](https://www.hdfcergo.com/blogs/health-insurance/list-of-cashless-hospital-network-in-mumbai), searched by your pin code* |
+| **Your cities' cashless hospitals** *(PolicyBazaar, same-source)* | **Bengaluru 620** (4.30% of national) · **Patna 192** (1.33%) · **Gaya 14**. ⭐ **HDFC leads Aditya Birla in all three of the buyer's cities** — see the table below |
 
+### 🗺️ The buyer's three cities — HDFC vs the rank-1 rival (Aditya Birla MAX)
+
+| Your city | Role | 🔵 **HDFC ERGO** | 🟠 Aditya Birla | Read |
+|-----------|------|---------------:|---------------:|------|
+| **Bengaluru** | where you work | **620** | 560 | ✅ Both ample; **HDFC leads +10.7%** |
+| **Patna** | nearest big city to home | **192** | 187 | ✅ **Both strong, effectively tied** |
+| **Gaya** | home town | **14** | 9 | ⚠️ **Both THIN; HDFC leads but neither is deep** |
+
+```
+  BENGALURU   HDFC ######################## 620    ABHI ##################### 560
+  PATNA       HDFC #######  192              ABHI #######  187          (tied)
+  GAYA        HDFC #  14                     ABHI #  9        (both thin)
+```
+
+### For study-wide comparison — the metro test that sank SBI (Mumbai)
 ```
 Mumbai cashless hospitals (PolicyBazaar — same source, same date)
   HDFC ERGO   ########################  520   (3.60% of its 14,431 national)  <- densest
@@ -57,9 +74,11 @@ Mumbai cashless hospitals (PolicyBazaar — same source, same date)
   CARE HEALTH #############             299   (2.51% of its 11,909 national)
 ```
 
-> ⭐ **Finding — HDFC wins the network test on both metrics the framework prefers.** It **leads per-district density** *and* has the **highest metro concentration**, so its network is dense both nationally and where this buyer actually lives. **This is the exact inverse of SBI**, whose larger national number thins out in the metro — the finding that cut SBI's Stage-2 network score from 5 to 3.
+> ⭐ **Finding — HDFC wins the network test on every metric the framework prefers, and in every city THIS buyer will use.** It **leads per-district density nationally** and has the **highest metro concentration** (the Mumbai benchmark), and — decisively for this buyer — it **leads or ties Aditya Birla in Bengaluru, Patna AND Gaya**. **This is the exact inverse of SBI**, whose larger national number thinned out in the metro (the finding that cut SBI's Stage-2 network score from 5 to 3).
 >
-> ⚠️ **Two honest caveats.** The **raw count still varies ~2.5× across sources**, so it is corroborated rather than audited; and **HDFC's own Mumbai figure varies (306 vs 520)**. Neither disturbs the *relative* ranking, which uses one source consistently — but **verify the absolute number by pin-code search before buying.**
+> 🏠 **The tier-2/3 reality — the check that actually matters for a Gaya home town.** A "broad-but-thin" national network fails precisely in small towns, so this was the real risk of the buyer's geography. **It does not materialise at the Patna level: HDFC 192 ≈ ABHI 187, both strong.** For serious or planned treatment the buyer would travel to **Patna (both fine) or back to Bengaluru (HDFC leads)** — so the home region is genuinely covered. **Gaya town itself is thin on both plans (14 vs 9)** — this is a *town-level* fact, not a plan defect. For a genuine emergency in Gaya the backstop is identical for either insurer: **the IRDAI "Cashless Everywhere" mandate (HDFC participates)** allows cashless at a non-network hospital, and **reimbursement always applies** — where **HDFC's express late-intimation condonation (claim mechanics below) is exactly the protection a small-town, out-of-network admission calls for.**
+>
+> ⚠️ **Honest caveats.** Raw counts vary ~2.5× across sources (HDFC Bengaluru is quoted 620 / 378 / 360; Patna 192 / 134), so these are corroborated, not audited — the relative ranking uses one source (PolicyBazaar) consistently. **Verify by your actual pin code — Bengaluru residence and Gaya home — before buying.** *Confirming source: [HDFC ERGO's cashless-hospital locator](https://www.hdfcergo.com/health-insurance/optima-secure), searched by pin code.*
 
 ---
 
@@ -86,7 +105,7 @@ Mumbai cashless hospitals (PolicyBazaar — same source, same date)
 |---|:---|
 | Payout by count vs by amount *(HDFC's own)* | ✅ **Pass** — count and rupee measures agree; no settle-but-trim divergence |
 | Settlement-speed TAT buckets *(ABHI M3)* | ✅ **Pass** — 98.85% within 3 months, 2nd best |
-| Metro-concentration ratio *(SBI M3)* | ⭐ **Pass, best in study** — 520 Mumbai = 3.60% of network |
+| Metro-concentration ratio *(SBI M3)* | ⭐ **Pass, best in study** — 520 Mumbai = 3.60% of network; **and leads in all 3 of the buyer's cities (Bengaluru 620 / Patna 192 / Gaya 14)** |
 | Network-count source dispersion *(SBI M3)* | ⚠️ **Partial** — ~2.5× spread; corroborated, not audited |
 | Cashless-network discretion clause *(SBI M3)* | ⚠️ **Present** — revocable (universal across finalists) |
 | Complaint-denominator normalisation *(Bajaj M3)* | ✅ **Pass** — per-10k-claims used; ⚠️ two sources disagree (4.99 vs 9.28) |
@@ -129,4 +148,4 @@ Mumbai cashless hospitals (PolicyBazaar — same source, same date)
 
 **Rationale.** Re-tested against ten dimensions that post-date the original study, **HDFC passes seven — three of them best-in-study — and none damages it.** It is the **only plan whose ICR sits clearly ABOVE its own peer benchmark** (81.62–89.47% against 77.50% for private general insurers), where **Care runs 3.5 points below its SAHI peers and ACKO nearly twenty below its own**. Crucially **its count and rupee measures agree**: a **97.45% CSR (3-yr 96.71%, industry 91.22%) across 32.7 lakh claims** sits beside a healthy ICR, so **the "settle-but-trim" divergence that undermines both Care and ACKO does not appear here** — and the **inbuilt Protect Benefit closes the non-payables deduction channel by contract**, removing the commonest cause of bill-trimming disputes. Complaints run **4.99–9.28 per 10,000 claims against an industry 27.06** — best or second-best in the study and **4–8× better than Care's 42.00** — while **98.85% of claims settle within three months**, second only to ACKO.
 
-On network it **wins both metrics the framework prefers**: the **highest per-district density (~17.4)** *and* the **highest metro concentration** (520 Mumbai hospitals = **3.60%** of its national network, against SBI's 2.26% and Care's 2.51%) — the exact inverse of SBI's broad-but-thin problem. The wording backs this with **contractual** obligations: a **15-day settlement TAT with 2%-above-bank-rate penal interest**, the study's **most forgiving intimation windows (48 hrs planned / 24 hrs emergency)**, an **in-house claims team**, **no arbitration clause**, and — decisively — **an express condonation of late notification "for reasons beyond the control of the Insured Person"**, where **Care makes the identical deadline a claim-defeating condition precedent** and ACKO reserves a discretion to deny. Residual gaps are shared by every rival and do not discriminate: **payout-by-amount is unpublished**, the **network is contractually revocable**, and **raw counts vary ~2.5× across sources**. **On the study's heaviest-weighted question — will they pay, fast, in full, and near me — this remains the plan to beat.**
+On network it **wins both metrics the framework prefers** (highest per-district density ~17.4 and the highest Mumbai metro concentration, 3.60%) **and — scored for this buyer's actual geography — it leads Aditya Birla in all three cities that matter: Bengaluru 620 vs 560, Patna 192 vs 187, Gaya 14 vs 9.** The tier-2/3 risk of a Gaya home town does not bite: **Patna is strong on both plans**, so serious treatment near home is genuinely covered, and Gaya's thinness (14) is a town-level fact backed by Cashless Everywhere plus reimbursement. The wording backs all of this with **contractual** obligations: a **15-day settlement TAT with 2%-above-bank-rate penal interest**, the study's **most forgiving intimation windows (48 hrs planned / 24 hrs emergency)**, an **in-house claims team**, **no arbitration clause**, and — decisively for someone who may be admitted at a small out-of-network hospital in Gaya — **an express condonation of late notification "for reasons beyond the control of the Insured Person"**, where **Care makes the identical deadline a claim-defeating condition precedent** and ACKO reserves a discretion to deny. Residual gaps are shared by every rival: **payout-by-amount is unpublished**, the **network is contractually revocable**, and **raw counts vary ~2.5× across sources**. **On the study's heaviest-weighted question — will they pay, fast, in full, and near where THIS buyer lives and travels — this remains the plan to beat.**
