@@ -1,0 +1,492 @@
+<title>Premium Anatomy — Health Insurance, Age × SI × Features</title>
+<style>
+  :root{
+    --ground:#FBFBF9; --panel:#ffffff; --ink:#181c20; --muted:#5c6672;
+    --line:#e4e3dd; --line2:#efeee9; --accent:#0e7c86; --accent-soft:#0e7c8618;
+    --good:#1f9d63; --warn:#c9821a; --bad:#d24b52; --shadow:0 1px 2px rgba(20,25,30,.05),0 8px 24px rgba(20,25,30,.05);
+    --c-hdfc:#2f6fd0; --c-abhi:#e08a1e; --c-bajaj:#8b5cf6; --c-sbi:#12a08f; --c-care:#e05264; --c-acko:#0aa3c2;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:ui-monospace,'SF Mono',Menlo,'Cascadia Mono',monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ground:#0d1114; --panel:#161b1f; --ink:#e7ebee; --muted:#94a0ab;
+      --line:#262d33; --line2:#1d2328; --accent:#3bc3cf; --accent-soft:#3bc3cf1f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+      --c-hdfc:#5b93e6; --c-abhi:#f0a54a; --c-bajaj:#a884f7; --c-sbi:#2fc2b0; --c-care:#f0707f; --c-acko:#35c2dd;}
+  }
+  :root[data-theme="light"]{ --ground:#FBFBF9; --panel:#ffffff; --ink:#181c20; --muted:#5c6672; --line:#e4e3dd; --line2:#efeee9; --accent:#0e7c86; --accent-soft:#0e7c8618; --shadow:0 1px 2px rgba(20,25,30,.05),0 8px 24px rgba(20,25,30,.05); --c-hdfc:#2f6fd0; --c-abhi:#e08a1e; --c-bajaj:#8b5cf6; --c-sbi:#12a08f; --c-care:#e05264; --c-acko:#0aa3c2;}
+  :root[data-theme="dark"]{ --ground:#0d1114; --panel:#161b1f; --ink:#e7ebee; --muted:#94a0ab; --line:#262d33; --line2:#1d2328; --accent:#3bc3cf; --accent-soft:#3bc3cf1f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35); --c-hdfc:#5b93e6; --c-abhi:#f0a54a; --c-bajaj:#a884f7; --c-sbi:#2fc2b0; --c-care:#f0707f; --c-acko:#35c2dd;}
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .num{font-variant-numeric:tabular-nums;font-family:var(--mono)}
+
+  /* header */
+  header{padding:64px 0 30px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5vw,50px);line-height:1.05;letter-spacing:-.01em;margin:0;text-wrap:balance}
+  .lede{font-size:clamp(16px,2vw,18.5px);color:var(--muted);max-width:64ch;margin:20px 0 0}
+  .profile{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+  .profile span{font-family:var(--mono);font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:100px;color:var(--muted);background:var(--panel)}
+
+  section{padding:48px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin:0 0 6px}
+  .sec-n{font-family:var(--mono);font-size:12.5px;color:var(--accent);letter-spacing:.1em}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,31px);letter-spacing:-.01em;margin:0;text-wrap:balance}
+  .sub{color:var(--muted);max-width:70ch;margin:12px 0 0;font-size:15.5px}
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+  .chart-card{padding:22px 20px 16px;margin-top:26px}
+  .chart-title{font-family:var(--serif);font-size:19px;font-weight:600;margin:0}
+  .chart-note{font-size:13px;color:var(--muted);margin:5px 0 0}
+
+  .controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+  .seg{display:inline-flex;background:var(--line2);border-radius:9px;padding:3px;gap:2px}
+  .seg button{font-family:var(--mono);font-size:12.5px;border:0;background:transparent;color:var(--muted);padding:7px 13px;border-radius:7px;cursor:pointer;transition:.15s}
+  .seg button[aria-pressed="true"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12);font-weight:600}
+  .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 2px 4px;font-size:13px}
+  .legend .it{display:inline-flex;align-items:center;gap:7px;color:var(--muted)}
+  .legend .sw{width:22px;height:0;border-top-width:3px;border-top-style:solid;border-radius:2px}
+  .legend .dash{border-top-style:dashed}
+
+  .svgbox{width:100%;overflow-x:auto}
+  svg{display:block;width:100%;height:auto;font-family:var(--mono)}
+  .gl{stroke:var(--line);stroke-width:1}
+  .axl{fill:var(--muted);font-size:11px}
+  .dot{transition:r .12s}
+  .flagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .flag{font-size:12px;font-family:var(--mono);padding:4px 9px;border-radius:6px;border:1px solid var(--line)}
+  .flag.v{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,var(--line))}
+  .flag.e{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,var(--line))}
+
+  /* laws / takeaways */
+  .laws{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  .law{padding:22px 20px}
+  .law .k{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.08em}
+  .law h3{font-family:var(--serif);font-size:20px;margin:10px 0 8px;font-weight:600;line-height:1.2}
+  .law p{margin:0;font-size:14px;color:var(--muted)}
+  .law .big{font-family:var(--serif);font-size:32px;color:var(--ink);font-weight:600}
+
+  /* tables */
+  .tbl-scroll{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+  th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line2)}
+  thead th{background:var(--line2);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:600;position:sticky;top:0}
+  tbody tr:last-child td{border-bottom:0}
+  td .num,th .num{font-family:var(--mono)}
+  .plan-cell{font-weight:600;white-space:nowrap}
+  .pdot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;vertical-align:middle}
+  .tag{font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:5px;background:var(--accent-soft);color:var(--accent)}
+  .yes{color:var(--good);font-weight:600}.no{color:var(--bad)}.mid{color:var(--warn)}
+  .rank{font-family:var(--mono);color:var(--muted)}
+
+  /* loading bars */
+  .loadgrid{display:grid;grid-template-columns:1fr;gap:11px;margin-top:22px}
+  .loadrow{display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center}
+  .loadrow .nm{font-size:13.5px;font-weight:600}
+  .loadrow .nm small{display:block;font-weight:400;color:var(--muted);font-family:var(--mono);font-size:11px}
+  .bar{position:relative;height:30px;background:var(--line2);border-radius:7px;overflow:hidden}
+  .bar .fill{position:absolute;inset:0 auto 0 0;border-radius:7px;display:flex;align-items:center;padding-left:10px;font-family:var(--mono);font-size:12px;color:#fff;font-weight:600}
+  .bar .open{position:absolute;inset:0;display:flex;align-items:center;padding-left:10px;font-family:var(--mono);font-size:12px;color:var(--muted);background:repeating-linear-gradient(45deg,transparent,transparent 6px,var(--line) 6px,var(--line) 7px)}
+
+  /* age roadmap */
+  .road{display:flex;flex-direction:column;gap:0;margin-top:26px}
+  .stage{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:22px 0;border-top:1px solid var(--line)}
+  .stage:first-child{border-top:0}
+  .stage .age{font-family:var(--serif)}
+  .stage .age .a{font-size:30px;font-weight:600;line-height:1}
+  .stage .age .b{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:6px;display:block}
+  .stage h3{margin:0 0 8px;font-size:17px;font-family:var(--serif);font-weight:600}
+  .stage p{margin:0 0 10px;font-size:14.5px;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{font-size:12px;font-family:var(--mono);padding:4px 10px;border-radius:100px;border:1px solid var(--line);background:var(--panel)}
+  .chip.si{border-color:var(--accent);color:var(--accent)}
+
+  .callout{margin-top:22px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;font-size:14.5px}
+  .callout b{color:var(--ink)}
+  footer{padding:34px 0 60px;color:var(--muted);font-size:12.5px}
+  footer a{color:var(--accent)}
+  .disc{font-size:12px;color:var(--muted);margin-top:14px;font-style:italic}
+  @media(max-width:720px){
+    .laws{grid-template-columns:1fr}
+    .loadrow{grid-template-columns:1fr;gap:6px}
+    .stage{grid-template-columns:1fr;gap:8px}
+    .stage .age{display:flex;align-items:baseline;gap:12px}
+    .stage .age .b{margin-top:0}
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Health Insurance · Premium Anatomy</p>
+    <h1>What moves the price — age, cover size, features & health</h1>
+    <p class="lede">A visual read across the seven deep-studied plans of how the yearly premium is actually built: it climbs with <b>age</b>, scales <em>sub-linearly</em> with <b>sum insured</b>, shifts with the <b>features</b> you switch on, and can be <b>loaded</b> for a health condition. Then: what cover to buy at each age.</p>
+    <div class="profile">
+      <span>Individual · single adult</span><span>Entry age 26</span><span>7 plans studied</span><span>GST 0% (post 22 Sep 2025)</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">01</span><h2>Three laws of the premium</h2></div>
+    <p class="sub">Everything on this page follows from these. They hold for <em>every</em> plan in the study, not just one.</p>
+    <div class="laws">
+      <div class="law panel">
+        <div class="k">LAW 1 — AGE</div>
+        <h3>Cheap decade, then a J-curve</h3>
+        <p class="big">1 → ~10×</p>
+        <p>What ₹1 costs at 26 costs roughly <b>3× at 55</b> and <b>10× at 75</b>. Bands are near-flat in your 20s–30s; the cliff lands after 60 (+40%/band).</p>
+      </div>
+      <div class="law panel">
+        <div class="k">LAW 2 — SUM INSURED</div>
+        <h3>Bigger cover, cheaper per rupee</h3>
+        <p class="big">₹1,763 → ₹355</p>
+        <p>Per lakh of cover at 26 (Bajaj): ₹10L costs <b>₹1,763/lakh</b>, ₹1Cr just <b>₹355/lakh</b>. Doubling cover adds ~25–35%, not 100%.</p>
+      </div>
+      <div class="law panel">
+        <div class="k">LAW 3 — YOU</div>
+        <h3>Features add, health can multiply</h3>
+        <p class="big">up to ×2.5</p>
+        <p>Riders/SI move the base a little; a declared health condition can <b>load the premium up to +100–150%</b> — for life. Buying young & healthy avoids it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">02</span><h2>How premium rises with age</h2></div>
+    <p class="sub">Annual premium (₹) across the age bands. Toggle the sum insured. <b>Solid lines are from published rate charts</b> (Bajaj, SBI — the only two finalists that publish one); <b>dashed is estimated</b> from an anchor quote + the age-banded shape. Values are metro/Zone-A, single adult, GST-free.</p>
+
+    <div class="panel chart-card">
+      <p class="chart-title">Annual premium vs age</p>
+      <p class="chart-note" id="ageNote"></p>
+      <div class="controls">
+        <div class="seg" id="siSeg" role="group" aria-label="Sum insured">
+          <button data-si="10" aria-pressed="false">₹10L</button>
+          <button data-si="25" aria-pressed="true">₹25L</button>
+          <button data-si="50" aria-pressed="false">₹50L</button>
+          <button data-si="100" aria-pressed="false">₹1Cr</button>
+        </div>
+      </div>
+      <div class="legend" id="ageLegend"></div>
+      <div class="svgbox"><svg id="ageChart" viewBox="0 0 720 380" role="img" aria-label="Line chart of premium versus age"></svg></div>
+      <div class="flagrow">
+        <span class="flag v">● solid = published rate chart (verified)</span>
+        <span class="flag e">╌ dashed = estimated from anchor</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <b>The 9-year flat window.</b> A 26-year-old sits in the same age band until ~35 on most plans — SBI's premium literally does <b>not rise for nine years</b> (₹22,727 → ₹22,727 at ₹25L). Buying young banks a cheap band <em>and</em> nine years of no-claim bonus before the curve ever moves.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">03</span><h2>The shape of the climb</h2></div>
+    <p class="sub">Same curves, normalised to <b>100 at age 26</b>, so steepness is comparable across plans regardless of entry price. This exposes the real long-term cost driver: <b>age-banded</b> plans (SBI, Bajaj) rise in gentle steps; an <b>algorithmic/annual</b> pricer (ACKO, ~5%/yr) compounds to nearly <b>11×</b> by 75.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Premium index (age 26 = 100)</p>
+      <p class="chart-note">Higher = steeper ageing. Bigger sum insured flattens the curve — a ₹1Cr buyer ages more gently than a ₹10L one.</p>
+      <div class="legend" id="shapeLegend"></div>
+      <div class="svgbox"><svg id="shapeChart" viewBox="0 0 720 380" role="img" aria-label="Normalised premium index versus age"></svg></div>
+      <div class="flagrow">
+        <span class="flag v">SBI & Bajaj computed from ₹25L rate charts</span>
+        <span class="flag e">HDFC · ABHI · Care · ACKO = indicative shape</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">04</span><h2>Why a bigger cover is cheaper per rupee</h2></div>
+    <p class="sub">The single most decision-relevant fact for a young buyer. Premium is <b>sub-linear in sum insured</b> — a fixed policy cost is spread over more cover. Bars show <b>₹ of premium per ₹1 lakh of cover at age 26</b>. Lower is more efficient.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Premium per ₹1 lakh of cover · age 26</p>
+      <p class="chart-note">Bajaj & SBI verified across all SI tiers; ABHI estimated; HDFC/Care shown at ₹15L, ACKO at ₹1Cr (their published anchors).</p>
+      <div class="svgbox"><svg id="lakhChart" viewBox="0 0 720 430" role="img" aria-label="Bar chart of premium per lakh"></svg></div>
+    </div>
+    <div class="callout">
+      <b>ACKO sells ₹1 crore for about what HDFC/Care charge for ₹15 lakh</b> (₹162 vs ~₹890 per lakh) — it is direct-to-consumer with zero agent commission. But that same ₹162/lakh is the arithmetic behind its weak claims payout (57.8% ICR): cheap cover and low rupee-payout are two views of one number.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">05</span><h2>How premium moves with your health</h2></div>
+    <p class="sub">Base premium is for a <em>standard, healthy</em> life. Declare a condition (high BP, high BMI, diabetes, a past surgery) and the insurer can apply an <b>underwriting loading</b> — a percentage surcharge on top of the chart, usually <b>permanent, applied at entry and every renewal</b>. This is separate from, and stacks on, age and SI.</p>
+
+    <div class="loadgrid">
+      <div class="loadrow"><div class="nm">HDFC Optima Secure+ <small>stated cap ✓</small></div>
+        <div class="bar"><div class="fill" style="width:60%;background:var(--c-hdfc)">up to +100% / condition · +150% / person</div></div></div>
+      <div class="loadrow"><div class="nm">SBI Super Health <small>stated cap ✓ · lifelong</small></div>
+        <div class="bar"><div class="fill" style="width:60%;background:var(--c-sbi)">up to +150% / person (×2.5)</div></div></div>
+      <div class="loadrow"><div class="nm">Aditya Birla MAX <small>no published cap</small></div>
+        <div class="bar"><div class="open">loading / extra waiting / exclusion via counter-offer — ceiling not published</div></div></div>
+      <div class="loadrow"><div class="nm">Bajaj Health Guard <small>no published cap</small></div>
+        <div class="bar"><div class="open">loading possible at entry — ceiling not published · no medicals to 45</div></div></div>
+      <div class="loadrow"><div class="nm">Care Supreme <small>no cap, rarely triggered</small></div>
+        <div class="bar"><div class="open">no medical tests to age 65 → usually no test result to load on</div></div></div>
+      <div class="loadrow"><div class="nm">ACKO Platinum <small>prices risk differently</small></div>
+        <div class="bar"><div class="open">loads via 0–3 yr PED waiting & exclusions rather than a stated % surcharge</div></div></div>
+    </div>
+
+    <div class="callout">
+      <b>Two honest reads.</b> <b>(1)</b> A stated ceiling (HDFC, SBI) is <em>better</em> than silence — Bajaj, ABHI, Care & ACKO leave the maximum open-ended. <b>(2)</b> For a <b>healthy 26-year-old the expected loading is zero</b> on every plan — which is exactly why the loading table is an argument for buying <em>now</em>: a condition diagnosed at 40 can attach a +50–150% surcharge that then rides your premium for the rest of your life. None of these plans can raise your price simply <em>because you claimed</em> (claim-based renewal loading is banned) — the lever is health disclosed at entry.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">06</span><h2>What each fund offers, at what price</h2></div>
+    <p class="sub">The finalists ranked by the study's weighted score, with their price position (₹ per lakh, age 26) and the signature feature you are actually paying for — or missing.</p>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr>
+          <th>Plan</th><th>Score</th><th>Price / lakh</th><th>Escalator</th><th>Wellness earn-back</th><th>Signature strength</th><th>The catch</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-abhi)"></span>Aditya Birla Activ One MAX</td>
+            <td class="rank">4.60 <span class="tag">#1</span></td>
+            <td class="num">~₹500 <small>@25L est</small></td>
+            <td class="yes">None</td>
+            <td class="yes">Up to 100% back</td>
+            <td>HealthReturns + day-1 chronic cover; best exclusions & cost</td>
+            <td class="mid">Bonus capped ₹3Cr; PED cut only ≤₹50L; wallet lock-in</td>
+          </tr>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-hdfc)"></span>HDFC Optima Secure+</td>
+            <td class="rank">4.55 <span class="tag">#2</span></td>
+            <td class="num">~₹897 <small>@15L</small></td>
+            <td class="yes">None</td>
+            <td class="no">None</td>
+            <td>Best claims reliability; uncapped Infinite bonus; deepest deductible discount; stated loading cap</td>
+            <td class="mid">Claims-experience discount you lose by claiming; priciest per lakh</td>
+          </tr>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-bajaj)"></span>Bajaj Health Guard Platinum</td>
+            <td class="rank">4.05 <span class="tag">#3</span></td>
+            <td class="num">₹355–1,763</td>
+            <td class="no">+8% / yr contractual</td>
+            <td class="no">None</td>
+            <td>Certainty-of-payout reputation (ICR now stale)</td>
+            <td class="bad">Printed +8%/yr escalator doubles base every ~9 yrs</td>
+          </tr>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-sbi)"></span>SBI Super Health Platinum</td>
+            <td class="rank">3.98 <span class="tag">#4</span></td>
+            <td class="num">₹518 <small>@50L</small></td>
+            <td class="yes">None</td>
+            <td class="yes">Up to 30%</td>
+            <td>Zone-agnostic (one price nationwide); Infinite ₹1Cr flattest age curve; 200% bonus</td>
+            <td class="mid">Loading up to +150% persists lifelong; network is national-average</td>
+          </tr>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-care)"></span>Care Supreme</td>
+            <td class="rank">3.50 <span class="tag">#5</span></td>
+            <td class="num">~₹887 <small>@15L</small></td>
+            <td class="yes">None</td>
+            <td class="yes">Up to 30%</td>
+            <td>Uncapped rooms; no medical tests to 65; unlimited recharge</td>
+            <td class="bad">Weakest insurer — solvency slide, monoline, IRDAI penalty</td>
+          </tr>
+          <tr>
+            <td class="plan-cell"><span class="pdot" style="background:var(--c-acko)"></span>ACKO Platinum</td>
+            <td class="rank">3.33 <span class="tag">#6</span></td>
+            <td class="num">₹162 <small>@1Cr ⭐</small></td>
+            <td class="yes">None</td>
+            <td class="no">None</td>
+            <td>Cheapest per lakh in the study; strong config; no zone co-pay</td>
+            <td class="bad">Weakest contract — 37 limits in a per-policy schedule, self-contradicting wording</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disc">Score = study's 6-module weighted average (Claims 25% · Coverage 25% · Exclusions 20% · Cost 15% · Insurer 10% · Fine print 5%). Price/lakh at the SI each plan publishes an anchor for — not like-for-like SI. HDFC & ABHI top the study; ACKO leads on price alone.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">07</span><h2>What to buy at each age</h2></div>
+    <p class="sub">Cover need, and which features earn their keep, shift across a lifetime. The through-line: <b>buy a large SI young</b> — it is cheaper per lakh <em>and</em> ages more gently, and it front-loads waiting-period credit before any health condition can attach a loading.</p>
+
+    <div class="road">
+      <div class="stage">
+        <div class="age"><span class="a">20s</span><span class="b">Age 25–30 · buy now</span></div>
+        <div>
+          <h3>Lock the cheap band and go big on cover</h3>
+          <p>You are in the flattest, cheapest decade and fully insurable with no loading. This is the one time a large SI is nearly free per rupee. Prioritise an <b>uncapped bonus / restore</b> so the cover compounds while it's cheap; skip wellness gimmicks and PED features you don't need.</p>
+          <div class="chips"><span class="chip si">SI ₹25L–₹1Cr</span><span class="chip">Uncapped bonus (Infinite)</span><span class="chip">Unlimited restore</span><span class="chip">No room-rent cap</span><span class="chip">No-cost EMI</span></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="age"><span class="a">30s</span><span class="b">Age 30–40 · consolidate</span></div>
+        <div>
+          <h3>Top up the sum insured before health drifts</h3>
+          <p>Still a cheap band, but marriage/dependants and early lifestyle risks (BP, BMI) appear. Raise SI to <b>₹50L–₹1Cr</b> now while an SI increase won't trigger a loading. Confirm the bonus engine is compounding and consumables/day-care are covered.</p>
+          <div class="chips"><span class="chip si">SI ₹50L–₹1Cr</span><span class="chip">Consumables buy-back</span><span class="chip">Maternity (if planned)</span><span class="chip">Wellness earn-back</span></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="age"><span class="a">40s</span><span class="b">Age 40–50 · the last easy window</span></div>
+        <div>
+          <h3>Fix cover high — the curve starts to bite</h3>
+          <p>Bands now step +12–23%. Any new condition here attaches a <b>permanent loading</b>, so finalise your maximum SI <em>before</em> that happens. PED-waiting reductions become genuinely relevant. Prefer a plan with <b>no contractual escalator</b> — an 8%/yr printed rise compounds brutally over the decades ahead.</p>
+          <div class="chips"><span class="chip si">SI ₹1Cr (locked)</span><span class="chip">PED waiting reduction</span><span class="chip">No escalator</span><span class="chip">Room-rent freedom</span></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="age"><span class="a">50s</span><span class="b">Age 50–60 · manage the cliff ahead</span></div>
+        <div>
+          <h3>Protect affordability into retirement</h3>
+          <p>Every band from 61 adds ~40–44%. Max out accrued <b>no-claim bonus</b> now (it's free cover), and consider a <b>base + super top-up</b> structure so a smaller base carries the age-loading while a top-up supplies the crore. A <b>flatter-curve / zone-agnostic</b> plan (SBI Infinite) ages most gently.</p>
+          <div class="chips"><span class="chip">Base + super top-up</span><span class="chip">Zone-agnostic pricing</span><span class="chip">Max bonus banked</span><span class="chip">Deductible discount</span></div>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="age"><span class="a">60+</span><span class="b">Age 60+ · the expensive years</span></div>
+        <div>
+          <h3>Optimise for what old age actually uses</h3>
+          <p>Premium may triple between 60 and 75. Value shifts to <b>OPD, domiciliary, day-care and consumables</b>, and to <b>low/zero co-pay</b>. Never let an old policy lapse — its waiting periods and no-loading history are irreplaceable at this age. Lifelong renewability (all seven have it) is now the whole point.</p>
+          <div class="chips"><span class="chip">Zero co-pay</span><span class="chip">OPD & domiciliary</span><span class="chip">Day-care cover</span><span class="chip">Guaranteed renewal</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Sources & reliability.</b> Built from the repo's Module-4 (Cost) deep studies. <b>Verified rate charts:</b> Bajaj Health Guard Platinum (UIN BAJHLIP26073V082526) and SBI Super Health (UIN SBIHLIP24141V022324) publish full age × SI tables — plotted as solid lines. <b>Anchored estimates:</b> HDFC (₹15L@25 ≈ ₹13,459), Aditya Birla MAX (₹15L@25 = ₹10,149), Care (₹15L@25 ≈ ₹13,312), ACKO (₹1Cr@25 = ₹16,178) publish quote anchors but not full grids; their curves are the typical age-banded shape scaled to the anchor and are marked estimated.</p>
+    <p class="disc">This is an educational comparison of a completed research file, not financial advice or a quotation. Premiums are metro/Zone-A, single adult, GST-free (individual health, post 22 Sep 2025). Confirm every figure on the insurer's own calculator before buying — especially the estimated grids.</p>
+  </div>
+</footer>
+
+<script>
+const AGES=[26,35,45,55,65,75];
+const PLAN={hdfc:'HDFC',abhi:'Aditya Birla MAX',bajaj:'Bajaj',sbi:'SBI',care:'Care',acko:'ACKO'};
+const COL=n=>getComputedStyle(document.documentElement).getPropertyValue('--c-'+n).trim();
+
+// verified + estimated premium grids
+const PREM={
+ 10:{bajaj:[17633,18112,25999,42571,66550,115538],sbi:[19446,19446,21031,27705,46883,94007],abhi:[8500,10500,16000,27000,47000,80000]},
+ 25:{bajaj:[21110,21684,31143,51018,83074,142003],sbi:[22727,22727,25431,36167,62726,128617],abhi:[12500,15500,24000,40000,70000,119000]},
+ 50:{bajaj:[26267,26982,38774,63550,96617,167638],sbi:[25895,25895,29333,42683,73462,151702],abhi:[15500,19500,30000,50000,88000,148000]},
+ 100:{bajaj:[35531,37966,50862,86573,113335,196798],sbi:[48152,48152,49853,56107,89322,183237]}
+};
+const VERIFIED={bajaj:1,sbi:1};
+const SERIES_ORDER=['bajaj','sbi','abhi'];
+
+function fmt(v){return v>=100000?'₹'+(v/100000).toFixed(2)+'L':'₹'+Math.round(v/1000)+'k';}
+
+function niceMax(m){const p=Math.pow(10,Math.floor(Math.log10(m)));const n=m/p;const s=n<=2?2:n<=5?5:10;return s*p;}
+
+function drawLine(svgId, series, opts){
+  const svg=document.getElementById(svgId); const W=720,H=380, m={l:52,r:16,t:16,b:38};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  let ymax=opts.ymax||niceMax(Math.max(...series.flatMap(s=>s.data)));
+  const x=i=>m.l+iw*i/(AGES.length-1);
+  const y=v=>m.t+ih*(1-v/ymax);
+  let g='';
+  // gridlines + y labels
+  const steps=5;
+  for(let i=0;i<=steps;i++){const val=ymax*i/steps;const yy=y(val);
+    g+=`<line class="gl" x1="${m.l}" y1="${yy.toFixed(1)}" x2="${W-m.r}" y2="${yy.toFixed(1)}"/>`;
+    g+=`<text class="axl" x="${m.l-8}" y="${yy+3.5}" text-anchor="end">${opts.yfmt?opts.yfmt(val):fmt(val)}</text>`;}
+  // x labels
+  AGES.forEach((a,i)=>{g+=`<text class="axl" x="${x(i)}" y="${H-14}" text-anchor="middle">${a}</text>`;});
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-1}" text-anchor="middle" style="letter-spacing:.1em">AGE</text>`;
+  // lines
+  series.forEach(s=>{
+    const pts=s.data.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    g+=`<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2.4" ${s.dashed?'stroke-dasharray="7 5"':''} stroke-linejoin="round" stroke-linecap="round" opacity="${s.dashed?.85:1}"/>`;
+    s.data.forEach((v,i)=>{g+=`<circle class="dot" cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.4" fill="${s.color}"><title>${s.name} · age ${AGES[i]} · ${opts.tip?opts.tip(v):fmt(v)}</title></circle>`;});
+  });
+  svg.innerHTML=g;
+}
+
+function legend(elId, series){
+  document.getElementById(elId).innerHTML=series.map(s=>
+    `<span class="it"><span class="sw ${s.dashed?'dash':''}" style="border-top-color:${s.color}"></span>${s.name}${s.dashed?' <span style="opacity:.7">(est)</span>':''}</span>`).join('');
+}
+
+function renderAge(si){
+  const grid=PREM[si];
+  const series=SERIES_ORDER.filter(k=>grid[k]).map(k=>({name:PLAN[k],color:COL(k),data:grid[k],dashed:!VERIFIED[k]}));
+  drawLine('ageChart',series,{});
+  legend('ageLegend',series);
+  const label=si==100?'₹1 Crore':'₹'+si+' Lakh';
+  document.getElementById('ageNote').textContent=`Sum insured: ${label}. ${si==100?'SBI shown is the Infinite ₹1Cr rung.':''}`.trim()+' HDFC · Care · ACKO don\'t publish full grids — see the shape chart below.';
+}
+
+// shape index (26=100)
+function idx(arr){return arr.map(v=>+(v/arr[0]*100).toFixed(0));}
+const SHAPE=[
+ {name:PLAN.sbi,color:()=>COL('sbi'),data:idx(PREM[25].sbi),dashed:false},
+ {name:PLAN.bajaj,color:()=>COL('bajaj'),data:idx(PREM[25].bajaj),dashed:false},
+ {name:PLAN.abhi,color:()=>COL('abhi'),data:[100,124,192,320,560,952],dashed:true},
+ {name:PLAN.hdfc,color:()=>COL('hdfc'),data:[100,125,190,320,560,1000],dashed:true},
+ {name:PLAN.care,color:()=>COL('care'),data:[100,126,190,320,560,1000],dashed:true},
+ {name:PLAN.acko,color:()=>COL('acko'),data:[100,155,253,412,670,1092],dashed:true}
+];
+function renderShape(){
+  const s=SHAPE.map(o=>({...o,color:o.color()}));
+  drawLine('shapeChart',s,{ymax:1200,yfmt:v=>v.toFixed(0),tip:v=>v.toFixed(0)+' (×'+(v/100).toFixed(1)+')'});
+  legend('shapeLegend',s);
+}
+
+// per-lakh bar chart
+const LAKH=[
+ {n:'ACKO ₹1Cr',v:162,c:'acko',tag:'⭐'},
+ {n:'ABHI ₹50L',v:310,c:'abhi',est:1},
+ {n:'Bajaj ₹1Cr',v:355,c:'bajaj'},
+ {n:'ABHI ₹25L',v:500,c:'abhi',est:1},
+ {n:'SBI ₹1Cr',v:482,c:'sbi'},
+ {n:'SBI ₹50L',v:518,c:'sbi'},
+ {n:'Bajaj ₹50L',v:525,c:'bajaj'},
+ {n:'Bajaj ₹25L',v:844,c:'bajaj'},
+ {n:'Care ₹15L',v:887,c:'care'},
+ {n:'HDFC ₹15L',v:897,c:'hdfc'},
+ {n:'SBI ₹25L',v:909,c:'sbi'},
+ {n:'Bajaj ₹10L',v:1763,c:'bajaj'}
+].sort((a,b)=>a.v-b.v);
+
+function renderLakh(){
+  const svg=document.getElementById('lakhChart'); const W=720,H=430,m={l:92,r:44,t:8,b:26};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b; const max=1800;
+  const bh=ih/LAKH.length; let g='';
+  for(let v=0;v<=1800;v+=300){const xx=m.l+iw*v/max;
+    g+=`<line class="gl" x1="${xx}" y1="${m.t}" x2="${xx}" y2="${m.t+ih}"/>`;
+    g+=`<text class="axl" x="${xx}" y="${H-10}" text-anchor="middle">₹${v}</text>`;}
+  LAKH.forEach((d,i)=>{const yy=m.t+bh*i+bh*0.16;const w=iw*d.v/max;const col=COL(d.c);
+    g+=`<rect x="${m.l}" y="${yy}" width="${w.toFixed(1)}" height="${(bh*0.68).toFixed(1)}" rx="4" fill="${col}" opacity="${d.est?.6:.95}" ${d.est?'stroke="'+col+'" stroke-dasharray="4 3"':''}><title>${d.n}: ₹${d.v}/lakh${d.est?' (est)':''}</title></rect>`;
+    g+=`<text class="axl" x="${m.l-8}" y="${yy+bh*0.44}" text-anchor="end" style="fill:var(--ink);font-size:11.5px">${d.n}</text>`;
+    g+=`<text x="${m.l+w+7}" y="${yy+bh*0.46}" style="fill:var(--muted);font-size:11px;font-family:var(--mono)">₹${d.v}${d.tag||''}</text>`;});
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-1}" text-anchor="middle" style="letter-spacing:.1em">PREMIUM PER ₹1 LAKH OF COVER</text>`;
+  svg.innerHTML=g;
+}
+
+// wire up SI toggle
+const seg=document.getElementById('siSeg');
+seg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  [...seg.children].forEach(x=>x.setAttribute('aria-pressed', x===b?'true':'false'));
+  renderAge(+b.dataset.si);});
+
+function renderAll(){renderAge(25);renderShape();renderLakh();
+  const p=[...seg.children].find(x=>x.getAttribute('aria-pressed')==='true');if(p)renderAge(+p.dataset.si);}
+renderAll();
+// re-render on theme change (colors are token-based)
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',renderAll);
+new MutationObserver(renderAll).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>

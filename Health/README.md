@@ -78,5 +78,6 @@ Deep study runs one module at a time; final score is the weighted sum across 6 m
 - `screening/stage1_hard_filters.md` — deal-breaker filters (universe → shortlist)
 - `screening/stage2_shortlist.md` — comparative scoring (shortlist → 5 finalists)
 - **`decision_hdfc_vs_abhi.md` — the head-to-head decision document for the top two plans**
+- **`premium_anatomy.md` + `premium_anatomy.html` — cross-plan visualization of how premium moves with age, SI, features & health, and what cover to buy at each age**
 - `study_plan.md` — the 6-module deep-study framework
 - `policies/` — one folder per finalist (each with its own README + module1–6 + resources)
