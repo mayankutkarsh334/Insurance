@@ -90,47 +90,103 @@ Super Credit promises "6× your Base SI," but there's a **hard ₹3 Cr ceiling o
 
 ---
 
-## Feature checklist (Activ One MAX — from the Product Benefit Table + Section C)
+## Feature checklist — what's IN, what's OUT, and what it saves you
 
-Legend: 🟢 **Inbuilt** (free, included) · 🔵 **Optional** (costs extra) · ⚪ not offered
+> **How to read each block:** ✅ = what the feature covers · ❌ = what it specifically does **not** cover (the named traps) · 💰 = a worked rupee example of the saving. Examples use realistic Bengaluru-metro costs and are **illustrative** — the *mechanism* is exact. **Written to line up feature-for-feature with the HDFC M1 file** for direct comparison.
+> Legend for status: 🟢 **Inbuilt** (free) · 🔵 **Optional** (costs extra) · ⚪ not offered in MAX.
 
-| Feature | MAX status | Detail | Notes vs benchmark |
-|---------|:----------:|--------|--------------------|
-| **Room rent** | 🟢 | **At actuals, no cap** up to B (default) | matches HDFC; no proportionate-deduction trap |
-| **ICU charges** | 🟢 | At actuals, no cap up to B | same |
-| **Cumulative bonus (Super Credit)** | 🟢 | +100%/yr → 500%/6×, **cap ₹3Cr**, **claim-proof** | HDFC uncapped; else strong |
-| Claim impact on bonus | 🟢 | **None** — grows "irrespective of claim" | good |
-| **Pre / post-hospitalisation** | 🟢 | **90 / 180 days** | pre-hosp **beats HDFC's 60 days** |
-| **Day-care treatments** | 🟢 | **All** day-care treatments, at actuals | broad |
-| **Modern treatments** | 🟢 | **Inbuilt, up to SI** — 13 listed (robotic surgery, oral chemo, deep-brain stimulation, HIFU, immunotherapy, stereotactic, IONM, stem-cell for BMT, etc.) | **no sub-limit** (M2 confirms) — better than most |
-| **Mental illness hospitalisation** | 🟢 | Inbuilt, up to SI | meets IRDAI mandate, not neutered |
-| **HIV/AIDS & STD** | 🟢 | Inbuilt, up to SI | broad clinical inclusion |
-| **Obesity / bariatric** | 🟢 | Inbuilt (subject to BMI criteria in D.1.6) | |
-| **Consumables / non-medical (Claim Protect)** | 🟢 | **INBUILT in MAX** — covers **all 4 non-payable lists** (Annexure I): gloves, masks, gowns, syringes, admin items, etc. | **the key MAX upgrade over NXT (paid)**; matches HDFC (inbuilt) |
-| Consumables economics | — | Typically **₹15k–₹1L per admission** (higher for ICU/surgery) — now paid, not a silent gap | closes NXT's biggest hole |
-| **Super Reload (restoration)** | 🟢 | Refill full B, **unlimited times/yr**, from **2nd claim of policy life** | HDFC restores from 1st claim |
-| **Domiciliary hospitalisation** | 🟢 | Covered (needs ≥ 3 consecutive days) | |
-| **Home health care** | 🟢 | Covered — **pre-authorised / cashless only, not on reimbursement**; select cities/treatments | note the cashless-only restriction |
-| **AYUSH** | 🟢 | In-patient, **up to SI, no sub-limit** | better than HDFC's AYUSH sub-limit |
-| **Road ambulance** | 🟢 | At actuals, up to SI (domestic, to nearest hospital) | uncapped — strong |
-| Air ambulance | 🔵/⚪ | Not a listed MAX inbuilt benefit — via VIP+ / verify schedule | |
-| **Organ-donor cover** | 🟢 | Donor hospitalisation up to SI (excl. donor pre/post + organ transport) | matches HDFC |
-| **Annual Health Check-up** | 🟢 | Inbuilt, **cashless**, once/yr; test list **scales with SI band** (richer panel at ₹50L+) | good |
-| **Day-1 chronic cover (Chronic Care)** | 🔵 | **Optional** — waives PED + initial waiting **from day 1** for **7 conditions**: Diabetes, Hypertension, Asthma, Hyperlipidemia (high cholesterol), COPD, Obesity, Coronary Artery Disease (PTCA >1 yr). **Cashless basis** | powerful for lifestyle-disease buyers; still an add-on (as in NXT) |
-| Chronic Management Program (OPD) | 🔵 | Optional — teleconsults + tests for the 7 conditions | |
-| **HealthReturns (wellness earn-back)** | 🟢 | Inbuilt — **earn up to 100% of premium back** (see below) | **unique vs HDFC (none)**; feeds M4 net cost |
-| Health Assessment | 🟢 | Inbuilt — face-scan / physical, generates "Healthy Heart Score" that drives HealthReturns | |
-| Cancer Booster | 🔵 | Optional extra cancer pot, up to 100% of B; covers day-care + pre/post-hosp | |
-| Durable Medical Equipment (DME) | 🔵 | Optional — ventilator, wheelchair, oxygen concentrator, etc.; **combined sub-limit ₹5L or up to SI, whichever lower** | flat ₹5L cap (matters more at low SI) |
-| Compassionate visit | 🔵 | Optional — up to **₹50,000** family two-way travel if hospitalisation > 10 days | flat cap |
-| Second medical opinion | 🔵 | Optional — for listed major illnesses | |
-| Annual cancer-screening package | 🔵 | Optional — **₹10,000 / member / yr** for diagnosed patients | flat cap |
-| Critical Illness cover | 🔵 | Optional fixed-benefit rider (SI 10/15/20/25L; 60-day wait, 15-day survival) | |
-| Personal Accident cover | 🔵 | Optional (AD + PTD + PPD; SI to ₹50L) | |
-| Daily cash / shared room | ⚪ | Not a headline MAX benefit — verify schedule | |
-| E-opinion / **global cover** | 🔵 | Global + international maternity are **VIP+** variant, not MAX | if you want worldwide cover, step up to VIP+ |
-| **Maternity / OPD** | ⚪/🔵 | Maternity **excluded** in MAX (D.1.18) — available only via VIP+ (₹1–2L). OPD only via HealthReturns spend | down-weighted; note the gap if planning a family |
-| Inclusivity | 🟢 | Covers **legally married spouse or live-in partner (same or opposite sex)**; no max entry age | modern, unusually inclusive |
+### 🛏️ Room rent & ICU — 🟢 **At Actuals (no cap), every SI tier**
+- ✅ **Included:** any room category at actual cost; ICU/ICCU at actuals. No SI threshold. **No voluntary room-cap modifier is even sold** (cleaner than HDFC's §2.13).
+- ❌ **Excluded:** "suite/luxury" tiers above the most-basic-single-private category can be trimmed as not Reasonable & Customary. No proportionate-deduction trap by default.
+- 💰 **Saving example:** ₹6L surgery, ₹18,000/day room. A capped plan (₹5,000/day) scales the **whole bill to 28%** → pays ₹1.68L, you lose ₹4.32L. **MAX at actuals → full ₹6L paid. Saving: ₹4.32L.** *(Identical mechanism to HDFC — a tie.)*
+
+### 📈 Cumulative bonus (Super Credit) — 🟢 **+100%/yr → 500% (6×), CAP ₹3 Cr, claim-proof**
+- ✅ **Included:** +100% of base SI each year, up to **500% (a 6× total)**, **unaffected by claims** ("grows irrespective of claim").
+- ❌ **Excluded — the key trap:** a **flat ₹3 Crore ceiling** on the accumulated Super Credit. So the full "6×" is only delivered up to a **~₹60L base**; at a **₹1Cr base the multiplier effectively caps at ~4×.** *(HDFC's Infinite Benefit is **uncapped** — this is the one place HDFC's cover-growth beats MAX.)*
+- 💰 **Saving example:** at a ₹1Cr base after several years, MAX's bonus is capped at +₹3Cr (total ₹4Cr). HDFC keeps compounding past that with no ceiling. For a ₹1.4Cr claim **both pay in full** — the ₹3Cr cap only bites in extreme multi-crore, multi-claim scenarios. **Practically a non-issue at your SI; a real difference only at very high cover.**
+
+### 🩺 Pre / post-hospitalisation — 🟢 **90 days before / 180 days after**
+- ✅ **Included:** related-illness consults, diagnostics, medicines — **90 days pre** (⭐ beats HDFC's 60) and 180 days post.
+- ❌ **Excluded:** unrelated-illness costs; anything beyond the 90/180 windows; routine/OPD care not tied to the admission.
+- 💰 **Saving example:** a condition needing extensive **pre-admission work-up** — say ₹35,000 of scans and consults over 10–11 weeks before surgery. MAX's **90-day window captures it all**; HDFC's 60-day window could **cut off ~₹10,000** of the earliest tests. **MAX saves ~₹10,000 here** — the mirror image of HDFC's 180-day post edge (they match on post).
+
+### 🏥 Day-care treatments — 🟢 **all, at actuals**
+- ✅ **Included:** every <24-hour procedure — cataract, dialysis, chemotherapy, angiography, lithotripsy, endoscopy — no "approved list".
+- ❌ **Excluded:** OPD consultations (no procedure).
+- 💰 **Saving example:** a year of dialysis (~₹4L) or cataract (~₹60,000) as same-day care → **fully covered**, vs ₹0 on a plan that omits your specific procedure from a named list.
+
+### 🤖 Modern treatments — 🟢 **13 listed, up to full SI (no sub-limit)**
+- ✅ **Included, named:** robotic surgery · oral chemotherapy · immunotherapy · deep-brain stimulation · stereotactic radiosurgery · HIFU/uterine-artery embolisation · IONM · stem-cell (bone-marrow) · balloon sinuplasty · bronchial thermoplasty · intra-vitreal injections · laser prostate · (13-item list). **Up to full SI.**
+- ❌ **Excluded:** experimental/unproven procedures outside the list.
+- 💰 **Saving example:** ₹12L robotic cancer surgery → **full ₹12L paid** vs a ₹5L-capped plan losing you ₹7L. **Saving: ₹7L.** *(Ties HDFC — both uncapped.)*
+
+### 🧠 Mental illness / HIV-AIDS / obesity — 🟢 **inbuilt, up to SI**
+- ✅ **Included:** **mental-illness hospitalisation is an EXPRESSLY NAMED covered benefit** up to SI; HIV/AIDS & STD covered up to SI; bariatric/obesity surgery covered subject to BMI criteria (D.1.6).
+- ❌ **Excluded:** obesity surgery not meeting the BMI/comorbidity thresholds; OPD mental-health consults (hospitalisation only).
+- 💰 **Saving example:** a ₹3L psychiatric hospitalisation → **covered.** ⭐ **This is a genuine edge over HDFC**, whose wording never names mental illness and whose Hospital definition (operation-theatre requirement) can defeat a claim at a psychiatric facility. **MAX potentially saves the entire ₹3L where HDFC's claim is contestable.**
+
+### 🧤 Consumables / non-medical (Claim Protect) — 🟢 **INBUILT in MAX**
+- ✅ **Included:** **all four non-payable lists** in Annexure I — gloves, masks, gowns, syringes, PPE, admin/admission items — paid, not deducted.
+- ❌ **Excluded:** genuinely personal items (TV, visitor food) outside the Annexure lists.
+- 💰 **Saving example:** ₹55,000 of consumables on a ₹5L bill → **paid in full.** On Care/ACKO (consumables = paid rider) you'd lose ₹55,000, **on every claim.** ⚠️ **This is inbuilt in MAX but was a *paid option* in the cheaper NXT rung** — confirm your schedule says MAX. *(Ties HDFC — both inbuilt.)*
+
+### ♻️ Super Reload (restoration) — 🟢 **unlimited, but from the 2nd claim**
+- ✅ **Included:** refills the full base SI, **unlimited times a year**, for same or unrelated illness.
+- ❌ **Excluded — the trap:** triggers only **from the 2nd claim of the policy's life** — i.e. it does **not** kick in on your very first claim. *(HDFC's Automatic Restore triggers from the 1st claim — a small HDFC edge.)*
+- 💰 **Saving example:** two separate ₹1Cr events in one year → the second is covered by the reload. But if your **very first-ever claim** exhausts the pot and a second event follows immediately, MAX's reload may not yet be active where HDFC's would be. **Edge case; matters only in a rare first-year double-catastrophe.**
+
+### 🏠 Domiciliary & home healthcare — 🟢 **both covered**
+- ✅ **Included:** domiciliary (needs ≥3 consecutive days); home healthcare in select cities.
+- ❌ **Excluded:** **home healthcare is pre-authorised / cashless-only — NOT on reimbursement**; domiciliary under 3 days.
+- 💰 **Saving example:** 10 days at-home treatment ~₹90,000 → **covered** (Bajaj pays ₹0). Low relevance at 26; matters if you add a parent.
+
+### 🌿 AYUSH — 🟢 **up to full SI, NO sub-limit** ⭐
+- ✅ **Included:** in-patient Ayurveda/Yoga-Naturopathy/Unani/Siddha/Homeopathy at a registered hospital, **up to full SI**.
+- ❌ **Excluded:** spas, wellness retreats, OPD/outpatient AYUSH.
+- 💰 **Saving example:** a ₹1.5L Ayurvedic in-patient course → **full ₹1.5L paid.** ⭐ **This beats HDFC**, which sub-limits AYUSH — on a ₹50,000 HDFC sub-limit you'd lose ₹1L there. **MAX saves ₹1L in this scenario.**
+
+### 🚑 Road ambulance 🟢 (uncapped) · Air ambulance 🔵/⚪ (not inbuilt in MAX)
+- ✅ **Included:** **road ambulance at actuals, up to SI** (⭐ uncapped — beats HDFC's structure), to nearest hospital, tied to an admitted claim.
+- ❌ **Excluded:** **air ambulance is NOT a listed MAX inbuilt benefit** — it sits in the **VIP+** variant. *(HDFC includes ₹5L air ambulance inbuilt — an HDFC edge, and relevant to your Gaya/Patna geography.)*
+- 💰 **Saving example:** road ambulance ₹8,000 → fully paid (a flat-capped plan might limit it). But an **air lift from near Gaya ~₹4L → ₹0 on MAX** (not inbuilt) vs **₹4L covered on HDFC.** **For your Bihar geography, HDFC wins this one.**
+
+### 🫀 Organ-donor cover — 🟢 **donor hospitalisation up to SI**
+- ✅ **Included:** the donor's in-patient hospitalisation for harvesting, up to SI.
+- ❌ **Excluded (named):** donor's **pre/post-hospitalisation** and **organ transport/preservation**.
+- 💰 **Saving example:** kidney transplant — donor's ₹3L surgery **covered**; ~₹50,000 work-up/transport is your cost. *(Ties HDFC.)*
+
+### 🩻 Annual health check-up — 🟢 **inbuilt, cashless, scales with SI**
+- ✅ **Included:** a cashless check-up once a year; the **test panel gets richer at higher SI bands** (fuller panel at ₹50L+). Does not reduce SI.
+- ❌ **Excluded:** tests beyond the covered panel for your band.
+- 💰 **Saving example:** ~₹5,000–₹10,000 of free screening a year, and the real value is catching a condition early while insured. **Use it annually.** *(Comparable to HDFC.)*
+
+### 🩹 Day-1 chronic cover (Chronic Care) — 🔵 **OPTIONAL, 7 conditions** ⭐
+- ✅ **Included (if you buy it):** waives PED **and** initial waiting **from day 1** for **7 named conditions — Diabetes, Hypertension, Asthma, Hyperlipidemia (high cholesterol), COPD, Obesity, Coronary Artery Disease (PTCA >1 yr)** — on a cashless basis.
+- ❌ **Excluded:** it's a **paid add-on**, not inbuilt; conditions outside the 7; and it only helps if you **already have** the condition when buying.
+- 💰 **Saving example:** if you buy with diabetes, a ₹2L diabetes-complication claim in **year 1** is **paid** — where every other finalist (HDFC included) makes you **wait ~3 years** (₹0 in year 1). ⭐ **This is MAX's unique feature and the single thing that would flip your decision — but ONLY if you currently have one of the 7 conditions.** Healthy → worth ₹0 to you.
+
+### 🎁 HealthReturns (wellness earn-back) — 🟢 **inbuilt, up to 100% of premium back**
+- ✅ **Included:** earn back **up to 100% of premium** via activity/step targets and a "Healthy Heart Score" health assessment; spendable on renewals or medical bills.
+- ❌ **Excluded — the catch:** it's an **accrued WALLET that is FORFEITED if you port or cancel** (M6) → **lock-in.** Only pays if you consistently engage with the app.
+- 💰 **Saving example:** on a ₹30,000 premium, up to ₹30,000/yr back if you're active. ⭐ **Unique vs HDFC (zero earn-back).** ⚠️ But **worth little to you since cost is no concern**, and the wallet locks you in — see M6.
+
+### Optional riders (🔵 — costs extra, named for completeness)
+- **Cancer Booster** — extra cancer pot up to 100% of base, incl. day-care + pre/post-hosp.
+- **Durable Medical Equipment** — ventilator, wheelchair, oxygen concentrator; ⚠️ **combined cap ₹5L or SI, whichever lower** (flat, bites at low SI).
+- **Compassionate visit** — up to **₹50,000** family travel if hospitalised >10 days.
+- **Second medical opinion** — for listed major illnesses *(HDFC includes e-opinion inbuilt — small HDFC edge).*
+- **Annual cancer-screening** — ₹10,000/member/yr for diagnosed patients.
+- **Critical Illness / Personal Accident** — optional fixed-benefit riders.
+
+### ⚪ Not offered in MAX (named gaps)
+- **Air ambulance** — VIP+ only *(HDFC has it inbuilt — HDFC edge for your geography).*
+- **Global / worldwide cover** — VIP+ only *(so is HDFC's — both need a step-up/add-on; SBI includes it).*
+- **Maternity** — 🚩 **expressly EXCLUDED in MAX (D.1.18)** — available only by moving to the **VIP+** variant (₹1–2L). OPD only via HealthReturns spend.
+- **Daily cash / shared room** — not a headline MAX benefit.
+- 💰 **Saving example (maternity):** a ₹1.2L delivery is **₹0 covered on MAX** — you'd need VIP+. *(HDFC covers maternity via its Parenthood add-on; both make you pay/step-up, so roughly a wash — plan early if a family is ~4 years out, given maternity waits.)*
+
+### ✅ Inclusivity — 🟢 covers **live-in partner (same or opposite sex)**, no max entry age
+- A modern, unusually inclusive definition of who can be covered — worth noting though not a rupee-value item.
 
 ---
 

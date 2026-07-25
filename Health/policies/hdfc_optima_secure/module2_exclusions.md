@@ -111,6 +111,40 @@ gantt
 
 ---
 
+## 💰 What each waiting period & exclusion actually costs you — with examples
+
+> **How to read each block:** ⏳ = the wait/exclusion · ✅ what IS covered around it · ❌ what is NOT · 💰 the concrete rupee consequence. Examples use realistic Bengaluru costs and are illustrative; the *rule* is exact.
+
+### ⏳ The 30-day initial wait
+- ✅ **Covered from day 1 despite the wait:** **accidents/injuries** (a road accident, a fracture, a fall) — no waiting at all.
+- ❌ **Not covered in the first 30 days:** any **illness** (fever, infection, appendicitis) — unless it's an accident.
+- 💰 **Example:** dengue hospitalisation on day 20 → **not payable, you pay the full ~₹80,000.** The same dengue on day 40 → **fully covered.** *(A one-time, first-month gap only; it never applies again once you're past it.)*
+
+### ⏳ The 24-month specific-disease wait
+- ✅ **Covered:** these conditions **if caused by an accident**, and fully covered after 24 months.
+- ❌ **Not covered for the first 2 years (named):** cataract · hernia · **joint replacement** · piles/fissure/fistula · gallbladder & kidney/bladder stones · **all cirrhosis** · GERD · BPH (prostate) · fibroids/PCOD/hysterectomy · benign tumours & breast lumps · varicose veins · ligament/meniscus tears.
+- 💰 **Example:** you develop a **hernia in month 14** → surgery ~₹1,20,000 is **not payable; you pay it.** The same hernia in year 3 → **fully covered.** ⚠️ **This bites even if you were healthy at purchase and developed it later** — the timer is on the *condition*, not on pre-existing status.
+
+### ⏳ The 36-month PED (pre-existing disease) wait
+- ✅ **Covered:** anything **not** pre-existing; and your declared PED **after 36 months**.
+- ❌ **Not covered:** conditions you **already had when you bought** (diagnosed/treated in the 3 years before) — for the first 3 years. ⚠️ The reduction to 24/12 months **exists but is channel-only — you cannot buy it as an individual.**
+- 💰 **Example:** irrelevant if you're **healthy with nothing to declare** (your case) → this timer never touches you. If you *did* have, say, diabetes at purchase, a ₹2L diabetes-complication claim in year 1–3 → **₹0 paid.** *(This is exactly the gap Aditya Birla's optional day-1 chronic cover closes — see the head-to-head.)*
+
+### ❌ Permanent exclusions — the "never covered" items, and what each would cost you
+| Excluded (named) | What you'd pay out of pocket |
+|---|---|
+| **Cosmetic / plastic surgery** (unless after accident, burns, cancer) | A ₹1.5L cosmetic procedure → **₹0 covered** |
+| **Obesity / weight-loss surgery** (unless BMI ≥40, or ≥35 with named comorbidities) | Bariatric surgery ~₹3.5L → **₹0** unless you meet the strict BMI/comorbidity test |
+| **Infertility / IVF / sterilisation** | An IVF cycle ~₹2L → **₹0 covered** |
+| **Maternity** (needs the **Parenthood** add-on) | A ₹1.2L delivery → **₹0** without the add-on |
+| **Refractive error correction < 7.5 dioptres** | LASIK for mild spectacles ~₹60,000 → **₹0** |
+| **Dental / spectacles / hearing aids** (unless accident) | A ₹40,000 dental procedure → **₹0** |
+| **Self-inflicted injury, addiction treatment, war, external congenital defects** | Standard exclusions — ₹0 |
+
+> ✅ **Notably clean:** HDFC has **no tobacco/alcohol "attributable illness" exclusion** — so a smoker's or drinker's illness is **not** carved out (Care and ACKO both do carve these out). And there is **no co-pay of any kind**, so **on a ₹6L covered claim you pay ₹0**, where a 20%-co-pay plan would take ₹1.2L from you.
+
+---
+
 ## 🔬 HDFC re-tested against the dimensions discovered *after* it was studied
 
 | Dimension (discovered in) | HDFC result |

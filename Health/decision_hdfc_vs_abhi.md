@@ -2,6 +2,7 @@
 
 _Decision document · January 2026 · **Individual, age 26 · works in BENGALURU, home town GAYA (Bihar), near PATNA · premium is not a constraint**_
 _Both plans re-tested against the full ~30-dimension framework. Neither triggers the override veto._
+_🔄 **Updated with the feature-by-feature rupee comparison** now that both M1 files carry per-benefit ✅ included / ❌ excluded / 💰 examples — see §3 Coverage._
 
 > **The short version.** The weighted scores are **4.55 vs 4.60** — a **0.05 gap**, which is **smaller than the uncertainty in the inputs**. The totals cannot decide this. **Your own stated priority order can, and it points the other way to the totals.**
 
@@ -170,19 +171,35 @@ You set the priority order at the top of this study as **Claims reliability › 
 - ⚠️ **But:** it's a **forfeitable wallet** (lock-in), and **worth ₹0 if you don't engage with the fitness tracking.**
 - 🚩 **HDFC has the opposite problem:** it is the **only finalist with claim-linked pricing** — a **21%/18% discount you lose by claiming**. Economically, HDFC charges you for claiming; ABHI doesn't.
 
-### ⚖️ Coverage (M1) — a genuine tie, in different shapes
+### ⚖️ Coverage (M1) — feature-by-feature, with the rupee deltas
 
-| | HDFC | ABHI |
-|---|---|---|
-| Room / ICU at actuals, every tier | ✅ | ✅ |
-| Bonus engine | ⭐ **Infinite: +100%/yr, UNCAPPED forever, claim-proof** | Super Credit +100%/yr to 500%, **hard cap ₹3 Cr** |
-| Restore | ✅ unlimited, same *or* unrelated illness | ✅ unlimited |
-| Consumables | ✅ inbuilt (Protect) | ✅ inbuilt (Claim Protect) |
-| **Limits FIXED in wording** | ~6 delegations | ⭐ **only 3 — best in study** |
-| Voluntary room-cap modifier | ⚠️ **exists (§2.13)** | ⭐ **none** |
-| Max SI | ₹2 Cr | ⭐ **₹6 Cr** |
+> *Now built from the detailed, per-feature M1 files (each benefit carries a ✅ included / ❌ excluded / 💰 example). The verdict below is a wash — but a wash made of **specific, offsetting wins**, not a vague "both are good."*
 
-> **HDFC's uncapped Infinite Benefit is the single best cover-growth engine in the study** — a ₹25L base becomes ₹1Cr+ over a decade with **no ceiling and no claim reset**. **ABHI's is capped at ₹3 Cr**, which clips the "6×" to roughly 4× at a ₹1Cr base. **ABHI's counter is a tighter contract** — 3 delegated limits vs 6, and no opt-in room cap that could silently attach.
+| Feature | HDFC | ABHI | Winner · rupee impact |
+|---|---|---|:--|
+| Room / ICU at actuals | ✅ every tier | ✅ every tier | ⚖️ **Tie** — both save ~₹4.3L vs a capped plan on the example bill |
+| **Cover-growth bonus** | ⭐ Infinite: **UNCAPPED**, claim-proof | Super Credit 6×, **hard cap ₹3 Cr** | 🔵 **HDFC** — but the cap only bites in multi-crore claims; **~₹0 difference at your realistic SI** |
+| **Restore** | ✅ from **1st** claim | ✅ from **2nd** claim | 🔵 **HDFC** — edge only in a rare first-year double-catastrophe |
+| Consumables | ✅ inbuilt (Protect) | ✅ inbuilt (Claim Protect) | ⚖️ **Tie** — both save the ₹15k–₹1L/admission gap Care & ACKO charge for |
+| Modern treatments | ✅ up to SI | ✅ up to SI | ⚖️ **Tie** — both save ~₹7L vs a ₹5L-capped plan |
+| **Pre-hospitalisation** | 60 days | ⭐ **90 days** | 🟠 **ABHI** — ~**₹10k** more early work-up captured |
+| Post-hospitalisation | 180 days | 180 days | ⚖️ **Tie** |
+| **AYUSH** | ⚠️ **sub-limited** | ⭐ **full SI** | 🟠 **ABHI** — ~**₹1L** saved on a ₹1.5L Ayurvedic course *(only if you use AYUSH)* |
+| **Mental illness** | 🚩 not named; Hospital-def gap | ⭐ **named covered benefit** | 🟠 **ABHI** — up to **the full claim** (e.g. ₹3L) where HDFC's is contestable |
+| **Air ambulance** | ⭐ **₹5L inbuilt** | ⚠️ **VIP+ only (not in MAX)** | 🔵 **HDFC** — ~**₹4L** on a Gaya/Patna air lift · **live for your geography** |
+| **Day-1 chronic cover** | ❌ none | 🔵 optional, 7 conditions | 🟠 **ABHI** — a year-1 ₹2L claim vs ₹0 · **only if you already have the condition** |
+| E-opinion | ✅ inbuilt | 🔵 optional | 🔵 **HDFC** — free expert review |
+| Limits FIXED in wording | ~6 delegations | ⭐ **only 3** | 🟠 **ABHI** — tighter contract, less schedule risk |
+| Voluntary room-cap modifier | ⚠️ **exists (§2.13)** | ⭐ **none sold** | 🟠 **ABHI** — one less trap to check on the schedule |
+| Max SI | ₹2 Cr | ⭐ ₹6 Cr | 🟠 **ABHI** — moot; ₹2 Cr is ample for you |
+
+> **The honest read: both score 5/5, and the feature-level detail confirms why — their wins cancel out.** But cancelling out *for the average buyer* is not the same as *for you*:
+>
+> - **ABHI's coverage wins are mostly inert for your profile:** AYUSH (only if you choose it), day-1 chronic (only if already diabetic/hypertensive), pre-hosp (~₹10k, marginal), HealthReturns/max-SI (cost no concern). Its one **unconditional** win is **mental-illness cover** — that stands regardless.
+> - **HDFC's one coverage win that is *live* for you is air ambulance** — ₹5L inbuilt vs not-in-MAX — and it matters precisely because you split time between Bengaluru and a **Gaya/Patna** home region where an air lift is the realistic emergency-transport scenario.
+> - **The uncapped bonus (HDFC) and the ₹3 Cr cap (ABHI)** are a real structural difference but **~₹0 in practice** until cover runs into multiple crores.
+>
+> **Net: Coverage is a genuine tie on the scorecard; for THIS buyer HDFC's air-ambulance edge is the only feature-level difference likely to ever pay out — unless mental-health cover is a specific concern, in which case ABHI edges it.**
 
 ### ⚖️ Insurer (M5) — both flawed, differently
 

@@ -120,6 +120,44 @@ No hard conflict; one "sells-wider-than-it-binds" gap = the **SI-gated waiting r
 
 ---
 
+## 💰 What each waiting period & exclusion actually costs you — with examples
+
+> **How to read each block:** ⏳ = the wait/exclusion · ✅ what IS covered around it · ❌ what is NOT · 💰 the concrete rupee consequence. Examples use realistic Bengaluru costs and are illustrative; the *rule* is exact. **Written to line up with the HDFC M2 file** for direct comparison.
+
+### ⏳ The 30-day initial wait
+- ✅ **Covered from day 1:** accidents/injuries.
+- ❌ **Not covered in the first 30 days:** any illness (unless accident).
+- 💰 **Example:** dengue on day 20 → **you pay ~₹80,000**; same on day 40 → **covered.** *(Identical to HDFC — a tie.)*
+
+### ⏳ The 24-month specific-disease wait
+- ✅ **Covered:** these if accident-caused, and fully after 24 months.
+- ❌ **Not covered for 2 years (named):** cataract · glaucoma · sinusitis/rhinitis/tonsillitis & other ENT · **joint replacement** · gout/rheumatoid & osteoarthritis · osteoporosis · **prolapsed disc & spondylosis** · hernia/hydrocele · piles/fissure/fistula · PCOD/fibroids/uterine prolapse/endometriosis · benign breast lumps.
+- 💰 **Example:** a **hernia in month 14** → ~₹1,20,000 **not payable**; year 3 → **covered.** *(Same 24-month structure as HDFC — a tie.)*
+
+### ⏳ The 36-month PED wait — with a paid, **SI-gated** reduction
+- ✅ **Covered:** non-pre-existing conditions; declared PED after 36 months.
+- ❌ **Not covered:** conditions you already had at purchase, for 36 months. ⚠️ **Reduction to 24/12 months exists as a PAID modifier — but it VANISHES above ₹50L SI** (and the specific-disease reduction above ₹25L). So at the **₹1Cr you'd buy, you cannot shorten it** — same effective position as HDFC (whose reduction is channel-only).
+- 💰 **Example:** if healthy at purchase → irrelevant, never bites (your case). If you had diabetes at purchase → a ₹2L year-1 claim is **₹0** *unless* you buy **Chronic Care** (below).
+
+### ⭐ The one place ABHI beats HDFC — optional Day-1 Chronic Care
+- ✅ **If you buy the add-on:** PED **and** initial waiting **waived from day 1** for **7 conditions** — Diabetes, Hypertension, Asthma, Hyperlipidemia, COPD, Obesity, Coronary Artery Disease.
+- ❌ **Catch:** it's a **paid add-on**, and only helps a condition you **already have at purchase** (a future-developed condition is covered by both plans anyway).
+- 💰 **Example:** buy with diabetes → a ₹2L complication claim in **year 1 is paid** (HDFC: ₹0 for ~3 years). **This is the decisive ABHI win — but only if you already have one of the 7 conditions.**
+
+### ❌ Permanent exclusions — and what each would cost you
+| Excluded (named) | Out of pocket |
+|---|---|
+| **Cosmetic / plastic surgery** (unless accident/burns/cancer) | ₹1.5L procedure → **₹0** |
+| **Obesity surgery** below the BMI/comorbidity thresholds (D.1.6) | ~₹3.5L → **₹0** unless criteria met |
+| **Infertility / IVF / sterilisation** | ~₹2L IVF → **₹0** |
+| **Maternity** — 🚩 **excluded in MAX (D.1.18)**, VIP+ only | ₹1.2L delivery → **₹0** (HDFC covers via Parenthood add-on — roughly a wash) |
+| **Refractive error < 7.5 dioptres** (LASIK) | ~₹60,000 → **₹0** |
+| **Dental / spectacles / hearing aids** (unless accident) | ~₹40,000 → **₹0** |
+
+> ✅ **Clean like HDFC:** ABHI also has **no tobacco/alcohol "attributable illness" exclusion** and **no co-pay** (day-1 chronic and other adds aside) — so a ₹6L covered claim pays ₹0 out of pocket. ⭐ **ABHI additionally NAMES mental-illness hospitalisation as covered** (up to SI), where HDFC's wording is silent and its Hospital definition can defeat a psychiatric claim — so a ₹3L psychiatric admission is safer on ABHI.
+
+---
+
 ## 🔬 Re-tested (Jan 2026) against the dimensions discovered *after* MAX was studied
 
 | Dimension (discovered in) | Activ One MAX result |
