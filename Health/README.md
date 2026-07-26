@@ -78,6 +78,7 @@ Deep study runs one module at a time; final score is the weighted sum across 6 m
 - `screening/stage1_hard_filters.md` — deal-breaker filters (universe → shortlist)
 - `screening/stage2_shortlist.md` — comparative scoring (shortlist → 5 finalists)
 - **`decision_hdfc_vs_abhi.md` — the head-to-head decision document for the top two plans**
-- **`premium_anatomy.md` + `premium_anatomy.html` — cross-plan visualization of how premium moves with age, SI, features & health, and what cover to buy at each age**
+- **`premium_anatomy.md` + `premium_anatomy.html` — cross-plan analysis of how premium moves with age, SI, features, health & inflation; how a hike reaches you and how it's decided; mid-policy disclosure & re-rating; keeping cover ahead of inflation; and how to grow your SI**
+- **`policies/hdfc_optima_secure/si_decision.md` + `si_decision.html` — HDFC ₹10L vs 25L vs 50L vs 1Cr sum-insured decision: verified age curve (26/40/50/60), full pros & cons per tier, and the lifelong-affordability verdict (₹25L efficiency / ₹50L safety margin)**
 - `study_plan.md` — the 6-module deep-study framework
 - `policies/` — one folder per finalist (each with its own README + module1–6 + resources)

@@ -17,18 +17,25 @@ All four assume ABHI Activ One MAX + Chronic Care, so **day-1 chronic coverage i
 
 ---
 
-## Why base + top-up (B) is cheaper
+## 🔄 Real quotes overturn "base + top-up" — go single large base
 
-Senior premiums scale **steeply** with sum insured. A **super top-up only pays after a deductible (₹10L) is crossed**, so the insurer carries only the rare catastrophic year — making that ₹40L layer far cheaper per lakh. Most claims (a diabetes admission, a stent, gallbladder surgery) land **under ₹10L and are fully paid by the base anyway**; the top-up exists to catch the ₹15–40L events (major cardiac, cancer, transplant). Super top-ups are **aggregate-deductible** — the ₹10L is met across all claims in the year, then the top-up pays multiple times.
+The base+top-up case rested on the assumption that *senior premiums scale steeply with SI*. **The actual Activ One Max quotes for Father (60) show the opposite above ₹25L** (full ladder in [premium_and_next_steps.md](premium_and_next_steps.md)):
 
-**Cautions for B, sharpened by the PEDs:**
-1. **The top-up has its own waiting periods** — buy **both layers same insurer, same day** so the clocks run in parallel.
-2. **Day-1 chronic lives on the base, not automatically on the top-up** — a large diabetes-complication claim spilling past ₹10L may face the top-up's PED wait. Confirm in writing.
-3. **The ₹10L base must be renewed every year** — it fills the first ₹10L the top-up never touches.
+| SI | Base premium/yr | Per lakh |
+|---|---:|---:|
+| ₹10L | ₹25,270 | ₹2,527/L |
+| ₹25L | ₹36,021 | ₹1,441/L |
+| **₹50L** | **₹36,733** | **₹735/L** |
+| **₹1Cr** | **₹38,155** | **₹382/L** |
 
-## Why single base (A) can be worth the extra
+**₹50L costs only ₹712 more than ₹25L; ₹1Cr only ₹1,422 more than ₹50L.** So:
 
-For two lives with **four declared conditions**, A buys **simplicity**: one waiting clock, day-1 chronic across the full ₹50L, zero coordination risk. That reduced ambiguity is worth real money when claim probability is high.
+- Structure B (₹10L base ₹25,270 + a ₹40L top-up ~₹2,990) ≈ **₹28,300** — but the top-up offered was a *cross-insurer* Niva layer with no day-1 chronic on the top-up portion and its own waiting clock.
+- Structure A (₹50L single base) = **₹36,733** — ~₹8.5k more, for **one insurer, one waiting clock, day-1 chronic across the whole ₹50L, zero coordination risk**.
+
+For two lives with **four declared conditions**, that ~₹8.5k premium buys away all of B's coordination and top-up-waiting risk — and the SI cliff means you can even step to **₹1Cr for ~₹1,400 more**. **The top-up structure loses its rationale here.**
+
+> ⚠️ These are healthy-life quotes; a PED loading (~25–100%) will scale them up, but the SI-efficiency *shape* holds — high SI stays disproportionately cheap.
 
 ---
 
@@ -51,7 +58,9 @@ A fair challenge — ABHI's **Super Reload** is unlimited. It helps **one** vers
 
 ## Recommendation
 
-> **Structure B (₹10L base + ₹40L top-up per parent) if cost-conscious; Structure A (₹50L base each) if premium isn't the deciding factor.** Either delivers ~₹50L per parent — the amount a serious cardiac or cancer episode actually costs. **Not** a shared floater; **not** ₹10L-only.
+> **Structure A — a single large base per parent, ₹50L or (given the SI cliff) ₹1Cr — is now the clear pick.** Real quotes show cover is nearly free above ₹25L, which removes base+top-up's only advantage while A keeps one insurer, one waiting clock, and day-1 chronic across the whole SI. **Not** a shared floater; **not** ₹10L-only; **not** a cross-insurer top-up.
+
+**Add the PED-wait-reduction rider (~₹4.4–6.2k/yr)** for the fatty liver, which is the one condition off the day-1 chronic list.
 
 **Buy now.** With four declared PEDs, the waiting periods and the 5-year moratorium *are* the whole game, and the father (60) is near the fresh-entry age ceiling. Lock in the youngest ages and start every clock today.
 </content>

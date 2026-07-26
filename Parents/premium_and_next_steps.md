@@ -14,20 +14,28 @@ ABHI prices by **where the insured resides**, not where they're treated:
 
 ---
 
-## Indicative premium ranges — planning figures, NOT quotes
+## Real quotes — Activ One Max, Father (60), from PolicyBazaar (Jul 2026)
 
-⚠️ **ABHI publishes no senior rate chart, and four declared PEDs mean the real price comes only from underwriting.** These are **order-of-magnitude bands** from market norms + ABHI's one public anchor (age 25 / ₹15L / Zone 1 = ₹10,149). PED loading (**~25–100%**) is folded into the range. **Do not treat as a quote.**
+Source: quote PDFs in [`../Health/policies/aditya_birla_activ_max/resources/`](../Health/policies/aditya_birla_activ_max/resources/) (`10Lac…`, `25lac…`, `50Lac…`, `1cr…For 60ActivaMax.pdf`). Premiums are **1-year base, 0% GST** (confirmed on the quote), member **Father (60)**.
 
-| Structure (per parent) | Mother (54), Zone 3 | Father (60), Zone 3 |
-|---|---|---|
-| **B · ₹10L base + ₹40L top-up** + Chronic Care | ~₹28,000–42,000/yr | ~₹38,000–58,000/yr |
-| **A · ₹50L single base** + Chronic Care | ~₹42,000–62,000/yr | ~₹58,000–85,000/yr |
+| Sum insured | Annual base premium | Per lakh | Step-up over previous |
+|---|---:|---:|---:|
+| ₹10L | ₹25,270 | ₹2,527/L | — |
+| ₹25L | ₹36,021 | ₹1,441/L | +₹10,751 |
+| **₹50L** | **₹36,733** | **₹735/L** | **+₹712** |
+| **₹1Cr** | **₹38,155** | **₹382/L** | **+₹1,422** |
 
-**Both parents, all-in (indicative):**
-- Structure **B ≈ ₹66,000 – ₹1,00,000 / yr**
-- Structure **A ≈ ₹1,00,000 – ₹1,50,000 / yr**
+> ⭐ **The SI-efficiency cliff: above ₹25L, cover is almost free.** ₹50L costs only ₹712 more than ₹25L; ₹1Cr only ₹1,422 more than ₹50L. **This overturns the base+top-up logic** — a single large base is now the obvious buy (see [decision_structure.md](decision_structure.md)).
 
-**Offsets:** up to **₹50,000** deductible under **Section 80D** (senior-parent limit, **old tax regime** only — nil/limited under the new regime). Individual health premiums are **GST-exempt** since 22 Sep 2025.
+**PED-wait-reduction rider** (the fatty-liver lever), from the same quotes: **~₹4,400–₹6,200/yr** depending on SI and target (1 or 2 years). Super top-up offered alongside was a **Niva Bupa** ₹40L-over-₹10L for ₹2,990 — a *cross-insurer* layer, so it adds coordination risk and has no day-1 chronic on the top-up portion.
+
+⚠️ **Three caveats before treating these as final:**
+1. **These are healthy-life quotes — no PED declared.** With BP/diabetes/cholesterol/fatty liver declared, expect a **loading (~25–100%)** on top. The SI-efficiency *shape* should hold, but absolute numbers will rise.
+2. **The quote's pincode/zone is unconfirmed** — verify it was run for **Gaya 823001 (Zone 3)**, not a metro. A Zone-3 quote may come in slightly lower.
+3. **Chronic Care add-on cost is not shown** in these — it wasn't in the visible rider list. Must be added to get the true all-in.
+4. **Mother (54) quotes not yet pulled** — she'll be somewhat cheaper than the father.
+
+**Offsets:** up to **₹50,000** deductible under **Section 80D** (senior-parent limit, **old tax regime** only). Individual health premiums are **GST-exempt** since 22 Sep 2025 (0% confirmed on the quote).
 
 ---
 

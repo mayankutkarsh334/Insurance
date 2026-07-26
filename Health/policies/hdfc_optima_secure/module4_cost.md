@@ -43,18 +43,49 @@ The previous version of this module applied **18% GST** and stated *"₹20,000 b
 | 2-adult floater, Delhi, ages 35 & 30 | ₹10L base | ₹22,616/yr (incl. some discounts) | Brochure illustration |
 | 2-adult floater, Delhi, 30M + 29F | ₹1Cr | "from" ₹762/mo (~₹9,144/yr) | HDFC ERGO site — *a "starting from" figure, not a quote* |
 
-### B. ⚠️ UNVERIFIED — the grid this profile needs
+### B. ✅ VERIFIED — the SI grid at entry (age 26, Bengaluru, base plan, 0% GST)
 
-| Age | ₹10L | ₹25L | ₹50L | ₹1Cr |
-|-----|-----:|-----:|-----:|-----:|
-| **26 (entry)** | unverified | unverified | unverified | unverified |
-| **35** | unverified | unverified | unverified | unverified |
-| **45** | unverified | unverified | unverified | unverified |
-| **55** | unverified | unverified | unverified | unverified |
-| **65** | unverified | unverified | unverified | unverified |
-| **75** | unverified | unverified | unverified | unverified |
+_Source: **PolicyBazaar quotes** for this exact buyer (Yourself, 26, Bengaluru/Karnataka), Optima Secure + base "Customize Protection" plan (all inbuilt features, no riders/add-ons), 1-year, 25 Jul 2026. PDFs in `resources/` (`10L/15L/20L/25L/50L/1cr @Rs.10_Day.pdf`)._
 
-> **Confirming source for every cell:** the [HDFC ERGO premium calculator](https://www.hdfcergo.com/health-insurance/optima-secure), run at each age/SI for a Tier-1 pin code. ⚠️ **I did not run it** — it requires submitting personal contact details. **Say the word and I'll walk you through the six quotes.**
+| SI (base) | Annual premium | ₹ per lakh | Day-one usable (2× via Secure) |
+|-----------|---------------:|-----------:|-------------------------------:|
+| **₹10L** | **₹9,569** | ₹957 | ₹20L |
+| ₹15L | ₹10,070 | ₹671 | ₹30L |
+| ₹20L | ₹10,471 | ₹524 | ₹40L |
+| **₹25L** | **₹11,073** | ₹443 | ₹50L |
+| **₹50L** | **₹12,343** | ₹247 | ₹1Cr |
+| **₹1Cr** | **₹13,535** | **₹135** ⭐ | ₹2Cr |
+
+> ### ✅ **Finding — the flattest SI-scaling in the study.** **10× the cover (₹10L → ₹1Cr) costs only +41% premium** (₹9,569 → ₹13,535). The marginal cost of the *last* ₹50L of cover (₹50L→₹1Cr) is **just ₹1,192/yr ≈ ₹24 per added lakh.**
+> - **This overturns the old "HDFC is NOT the value leader" read (§D below), which rested on a single ₹15L Delhi Tier-1 anchor.** On the buyer's actual Bengaluru pin at ₹1Cr, HDFC prices at **₹135/lakh — cheaper than ACKO's ₹162/lakh**, i.e. the most SI-efficient cover in the whole study.
+> - Every tier's premium (₹9,569–₹13,535) is **under the ₹25,000 Section 80D cap**, so all are fully deductible (old regime) — tax is not a reason to buy smaller.
+> - ✅ **Full age-60 grid now verified** — see §B2 below (`resources/*For60.pdf`).
+> - **Decision impact:** with the marginal cost of going bigger this small and price no constraint, the SI choice tilts decisively to **₹1Cr** (see `si_decision.html`). ₹50L is the barely-cheaper value pick.
+
+### B2. ✅ VERIFIED — the full age curve (healthy life, Bengaluru, base plan, 0% GST)
+
+_Source: **PolicyBazaar quotes**, Optima Secure + base "Customize Protection", 1-year, 25–26 Jul 2026 (`resources/*For40.pdf`, `*For50.pdf`, `*For60.pdf`, `* @Rs.10_Day.pdf`). **Healthy life — no PED loading.**_
+
+| SI | Age 26 | Age 40 | Age 50 | Age 60 | Factor 26→60 | ₹/lakh @60 |
+|----|-------:|-------:|-------:|-------:|:------------:|-----------:|
+| ₹10L | ₹9,569 | ₹12,341 | ₹20,031 | ₹40,685 | ×4.25 | ₹4,069 |
+| ₹25L | ₹11,073 | ₹14,140 | ₹24,221 | ₹58,472 | ×5.28 | ₹2,339 |
+| ₹50L | ₹12,343 | ₹15,033 | ₹28,302 | ₹74,933 | ×6.07 | ₹1,499 |
+| ₹1Cr | ₹13,535 | ₹16,268 | ₹31,134 | ₹83,205 | ×6.15 | ₹832 |
+
+_(also verified: ₹15L — 26=₹10,070, 60=₹48,191; ₹20L @26=₹10,471.)_
+
+> ### ✅ **The J-curve, now proven with 4 real ages** (₹1Cr shown; all SIs behave the same):
+> | Decade | Premium change | Annualized |
+> |--------|---------------|-----------|
+> | **26 → 40** (14 yrs) | +20% | **~1.3%/yr** — the long cheap plateau |
+> | **40 → 50** | +91% | **~6.7%/yr** — begins to climb |
+> | **50 → 60** | +167% | **~10%/yr** — the steep part |
+>
+> - **The affordability pressure is *after 50*, not before.** 26→40 barely moves; the cost only bites past 50 — exactly why buying young locks the cheap plateau, and why the affordability concern is about the *base you commit to*, not the timing.
+> - **Bigger SI stays cheaper per lakh at every age** — ₹1Cr@60 = ₹832/lakh vs ₹10L@60 = ₹4,069/lakh. Marginal cost of the last ₹50L (₹50L→₹1Cr) at 60 = **+₹8,272 ≈ ₹165/added lakh.**
+> - **Independent corroboration:** Ditto states HDFC reprices *"~14–18% every 2–3 years"* (≈6%/yr) on medical inflation — this **stacks on top** of the age-loading above (which is in today's rupees).
+> - ⚠️ **These are HEALTHY-life quotes.** A real 60-yo with PEDs faces **+25–100% loading + waiting periods**. **Not applicable to the father** (4 PEDs) — for whom the Parents study picks **ABHI + Chronic Care** over HDFC's 36-month PED wait (see `../../../Parents/`).
 
 ### C. The *shape* of the curve (indicative, clearly flagged)
 
@@ -73,12 +104,13 @@ Age   Premium index (26 = 100)                (INDICATIVE SHAPE — not quotes)
 
 | Plan | SI | Premium (age ~25-26, metro) | **₹ per lakh** |
 |------|---:|---------------------------:|---------------:|
-| **HDFC Optima Secure+** | ₹15L | ≈₹13,459 | **≈₹897** |
+| **HDFC Optima Secure+** *(₹15L Delhi anchor)* | ₹15L | ≈₹13,459 | **≈₹897** |
+| **HDFC Optima Secure+** *(₹1Cr Bengaluru, VERIFIED)* | ₹1Cr | **₹13,535** | **₹135** ⭐ |
 | Care Supreme | ₹15L | ≈₹13,312 | ≈₹887 |
 | SBI Super Health Platinum | ₹50L | ₹25,895 | ₹518 |
-| **ACKO Platinum** | ₹1Cr | ₹16,178 | **₹162** ⭐ |
+| **ACKO Platinum** | ₹1Cr | ₹16,178 | **₹162** |
 
-> ⚠️ **HDFC is NOT the value leader.** At ₹15L it prices almost identically to Care (₹897 vs ₹887/lakh), and **ACKO sells ₹1 crore for roughly what HDFC charges for ₹15 lakh**. **HDFC's case rests on claims reliability and contract quality (M1/M3), not price.** ⚠️ The per-lakh curve at ₹25L/₹50L/₹1Cr is **unverified** — *the quote engine would settle whether HDFC's efficiency improves at higher SI, as it does for rivals.*
+> 🔄 **CORRECTED (verified quotes, §B).** The old read — *"HDFC is NOT the value leader"* — was an **artefact of comparing HDFC at ₹15L against rivals at higher SI, and of a Delhi Tier-1 pin.** On a like-for-like basis (₹1Cr, the buyer's Bengaluru pin), **HDFC prices at ₹135/lakh — the cheapest cover-per-rupee in the study, ahead of ACKO's ₹162.** HDFC's per-lakh efficiency **improves sharply with SI**, exactly as it does for rivals (₹957 → ₹135 across ₹10L → ₹1Cr). Its case now rests on claims reliability, contract quality **and** price at high SI.
 
 ---
 

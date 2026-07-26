@@ -48,8 +48,10 @@ Fatty liver is **not** on the day-1 chronic list, so it waits out the PED period
 
 ## 📁 Files
 
+- **[`hdfc_vs_abhi_father.md`](hdfc_vs_abhi_father.md)** — the detailed HDFC vs ABHI head-to-head for the father (60), with real quotes; why the son's HDFC pick inverts to ABHI for a parent with chronic conditions.
 - **[`decision_structure.md`](decision_structure.md)** — the four ways to structure the cover (single base / base + top-up / value / floater), the restore-benefit analysis, and the recommendation.
-- **[`premium_and_next_steps.md`](premium_and_next_steps.md)** — Zone-3 indicative premium ranges, the underwriting reality, the buy checklist, and open items to close before purchase.
+- **[`premium_and_next_steps.md`](premium_and_next_steps.md)** — Zone-3 real quotes, the SI-efficiency cliff, the underwriting reality, the buy checklist, and open items to close before purchase.
+- **`resources/abhi/` · `resources/hdfc/`** — the father's PolicyBazaar quote PDFs (₹10L–₹1Cr at age 60).
 
 ---
 
@@ -57,8 +59,9 @@ Fatty liver is **not** on the day-1 chronic list, so it waits out the PED period
 
 - ✅ Plan selected — **ABHI Activ One MAX + Chronic Care**, individual policy per parent
 - ✅ Zone resolved — **Gaya 823001 = Zone 3** (cheapest)
-- ✅ Structure options mapped — see [decision_structure.md](decision_structure.md)
-- ⏳ **Open:** live underwritten quote (needs pincode + 4 conditions declared → triggers pre-policy medical tests + final loading)
-- ⏳ **Open:** confirm in wording — Super Reload same-illness rule + 2nd-claim trigger; top-up layer's chronic/PED terms; exact PED-reduction add-on cost
+- ✅ **Real quotes obtained** (Father 60, PolicyBazaar): ₹10L ₹25,270 · ₹25L ₹36,021 · ₹50L ₹36,733 · ₹1Cr ₹38,155 — **cover is nearly free above ₹25L**
+- ✅ **Structure decided → single large base (₹50L or ₹1Cr), Structure A** — the SI cliff killed the base+top-up case. See [decision_structure.md](decision_structure.md)
+- ⏳ **Open:** re-quote with **4 conditions declared** (adds loading) + **confirm pincode = 823001/Zone 3** + **Chronic Care add-on cost** + **Mother (54) quotes**
+- ⏳ **Open:** confirm in wording — Super Reload same-illness rule + 2nd-claim trigger; exact PED-reduction add-on terms
 </content>
 </invoke>

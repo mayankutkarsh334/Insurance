@@ -160,7 +160,7 @@
 <section>
   <div class="wrap">
     <div class="sec-head"><span class="sec-n">02</span><h2>How premium rises with age</h2></div>
-    <p class="sub">Annual premium (₹) across the age bands. Toggle the sum insured. <b>Solid lines are from published rate charts</b> (Bajaj, SBI — the only two finalists that publish one); <b>dashed is estimated</b> from an anchor quote + the age-banded shape. Values are metro/Zone-A, single adult, GST-free.</p>
+    <p class="sub">Annual premium (₹) across the age bands. Toggle the sum insured. <b>Solid lines are from published rate charts</b> (Bajaj, SBI); <b>HDFC squares are verified quotes</b> at ages 26/40/50/60 (Bengaluru, healthy life); <b>dashed is estimated</b> from an anchor + the age-banded shape. Values are metro/Zone-A, single adult, GST-free.</p>
 
     <div class="panel chart-card">
       <p class="chart-title">Annual premium vs age</p>
@@ -177,6 +177,7 @@
       <div class="svgbox"><svg id="ageChart" viewBox="0 0 720 380" role="img" aria-label="Line chart of premium versus age"></svg></div>
       <div class="flagrow">
         <span class="flag v">● solid = published rate chart (verified)</span>
+        <span class="flag v">▪ HDFC = verified quotes (26·40·50·60)</span>
         <span class="flag e">╌ dashed = estimated from anchor</span>
       </div>
     </div>
@@ -206,22 +207,56 @@
 
 <section>
   <div class="wrap">
-    <div class="sec-head"><span class="sec-n">04</span><h2>Why a bigger cover is cheaper per rupee</h2></div>
-    <p class="sub">The single most decision-relevant fact for a young buyer. Premium is <b>sub-linear in sum insured</b> — a fixed policy cost is spread over more cover. Bars show <b>₹ of premium per ₹1 lakh of cover at age 26</b>. Lower is more efficient.</p>
+    <div class="sec-head"><span class="sec-n">04</span><h2>Add inflation: your premium over the next 30 years</h2></div>
+    <p class="sub">The age charts above are in <b>today's rupees</b> — they understate the future, because the insurer also <b>re-prices the whole product</b> every few years to chase <b>medical inflation</b> (India's runs ~12–14%/yr, the highest in Asia). Your real bill = <b>age-band steps × cumulative re-pricing</b>. Below: a ₹25L SBI Platinum bought at 26 (verified base ₹22,727), projected to age 56.</p>
+
     <div class="panel chart-card">
-      <p class="chart-title">Premium per ₹1 lakh of cover · age 26</p>
-      <p class="chart-note">Bajaj & SBI verified across all SI tiers; ABHI estimated; HDFC/Care shown at ₹15L, ACKO at ₹1Cr (their published anchors).</p>
-      <div class="svgbox"><svg id="lakhChart" viewBox="0 0 720 430" role="img" aria-label="Bar chart of premium per lakh"></svg></div>
+      <p class="chart-title">Projected annual premium · age 26 → 56 (30 years)</p>
+      <p class="chart-note">Age-banding is verified from the rate chart; the re-pricing rate is an <b>assumption</b> — bracketed at 6% / 8% / 10%. <b>8% is not hypothetical for everyone: Bajaj contractually prints +8%/yr.</b></p>
+      <div class="legend" id="projLegend"></div>
+      <div class="svgbox"><svg id="projChart" viewBox="0 0 720 380" role="img" aria-label="Projected premium over 30 years under inflation scenarios"></svg></div>
+      <div class="flagrow">
+        <span class="flag v">● age-only = verified rate chart (today's ₹)</span>
+        <span class="flag e">╌ +re-pricing = assumption, nominal ₹</span>
+      </div>
     </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>At age (years held)</th><th>Age-only<br>today's ₹</th><th>+6% / yr<br>nominal</th><th>+8% / yr<br>nominal</th><th>+10% / yr<br>nominal</th></tr></thead>
+        <tbody>
+          <tr><td class="plan-cell">26 <span class="rank">(entry)</span></td><td class="num">₹22,727</td><td class="num">₹22,727</td><td class="num">₹22,727</td><td class="num">₹22,727</td></tr>
+          <tr><td class="plan-cell">36 <span class="rank">(+10 yr)</span></td><td class="num">₹25,431</td><td class="num">₹45,550</td><td class="num">₹54,910</td><td class="num">₹65,970</td></tr>
+          <tr><td class="plan-cell">46 <span class="rank">(+20 yr)</span></td><td class="num">₹31,331</td><td class="num">₹1,00,500</td><td class="num">₹1,46,000</td><td class="num">₹2,10,800</td></tr>
+          <tr><td class="plan-cell">56 <span class="rank">(+30 yr)</span></td><td class="num">₹44,558</td><td class="num">₹2,55,900</td><td class="num">₹4,48,200</td><td class="num">₹7,77,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <div class="callout">
-      <b>ACKO sells ₹1 crore for about what HDFC/Care charge for ₹15 lakh</b> (₹162 vs ~₹890 per lakh) — it is direct-to-consumer with zero agent commission. But that same ₹162/lakh is the arithmetic behind its weak claims payout (57.8% ICR): cheap cover and low rupee-payout are two views of one number.
+      <b>Nominal looks terrifying; real terms is the honest read.</b> Much of that ₹2.5–7.8 lakh is just money being worth less. Discount back at ~5% general inflation and the age-56 premium is really <b>≈₹59k (6%)</b>, <b>≈₹1.04L (8%)</b> or <b>≈₹1.80L (10%)</b> <em>in today's money</em> — a <b>1.3× to 4× real rise</b> over what a 56-year-old pays today. The part above general inflation <em>is</em> medical inflation, and it's the real squeeze. <b>Three defences, all set at 26:</b> ① a plan with <b>no contractual escalator</b> (rules out Bajaj's +8%); ② a <b>large SI</b> — its flatter curve and no-claim bonus absorb inflation; ③ never lapse, so re-pricing is the <em>only</em> lever that can touch you, never your health.
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="sec-head"><span class="sec-n">05</span><h2>How premium moves with your health</h2></div>
+    <div class="sec-head"><span class="sec-n">05</span><h2>Why a bigger cover is cheaper per rupee</h2></div>
+    <p class="sub">The single most decision-relevant fact for a young buyer. Premium is <b>sub-linear in sum insured</b> — a fixed policy cost is spread over more cover. Bars show <b>₹ of premium per ₹1 lakh of cover at age 26</b>. Lower is more efficient.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Premium per ₹1 lakh of cover · age 26</p>
+      <p class="chart-note">Bajaj, SBI & now HDFC verified across SI tiers (HDFC = PolicyBazaar Bengaluru quotes); ABHI estimated; Care at ₹15L, ACKO at ₹1Cr.</p>
+      <div class="svgbox"><svg id="lakhChart" viewBox="0 0 720 430" role="img" aria-label="Bar chart of premium per lakh"></svg></div>
+    </div>
+    <div class="callout">
+      <b>Verified quotes flip the value story: HDFC ₹1Cr is ₹135/lakh — the cheapest cover-per-rupee in the study, ahead of ACKO's ₹162.</b> HDFC's per-lakh falls from ₹957 (₹10L) to ₹135 (₹1Cr) — 10× the cover for +41% premium. ACKO is direct-to-consumer with zero agent commission, but its ₹162/lakh is also the arithmetic behind a 57.8% ICR; HDFC reaches the same price with a top claims record.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">06</span><h2>How premium moves with your health</h2></div>
     <p class="sub">Base premium is for a <em>standard, healthy</em> life. Declare a condition (high BP, high BMI, diabetes, a past surgery) and the insurer can apply an <b>underwriting loading</b> — a percentage surcharge on top of the chart, usually <b>permanent, applied at entry and every renewal</b>. This is separate from, and stacks on, age and SI.</p>
 
     <div class="loadgrid">
@@ -247,7 +282,57 @@
 
 <section>
   <div class="wrap">
-    <div class="sec-head"><span class="sec-n">06</span><h2>What each fund offers, at what price</h2></div>
+    <div class="sec-head"><span class="sec-n">07</span><h2>If you fall ill mid-policy — disclosure &amp; re-rating</h2></div>
+    <p class="sub">The question that decides a 40-year hold. Short answer: on a <b>continuously renewed</b> policy you do <b>not</b> re-fill a proposal form each year, and a disease you develop <em>while covered</em> <b>cannot</b> re-rate you — it's a claim, not a new disclosure. Disclosure only bites when you <b>re-underwrite</b>: buy fresh, raise the SI, port, or let it lapse.</p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Situation</th><th>Re-underwritten?</th><th>Must you disclose the new illness?</th><th>Can premium rise <em>for your health</em>?</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="plan-cell">Normal on-time renewal, same policy</td>
+            <td class="no">No — no fresh proposal</td>
+            <td class="yes">No</td>
+            <td class="yes">No — only the standard age-band + cohort re-pricing everyone gets</td>
+          </tr>
+          <tr>
+            <td class="plan-cell">A disease you develop <em>while covered</em></td>
+            <td class="no">No</td>
+            <td class="yes">No — it's a claim</td>
+            <td class="yes">No — fully covered on the existing policy; renewal can't be denied for claiming or ageing</td>
+          </tr>
+          <tr>
+            <td class="plan-cell">You <b>increase</b> the Sum Insured</td>
+            <td class="mid">Yes — on the increment</td>
+            <td class="mid">Yes, for the top-up slice</td>
+            <td class="mid">Yes on the <em>increase</em> — waiting clocks &amp; moratorium restart on the added SI; the condition can be loaded/excluded on that slice</td>
+          </tr>
+          <tr>
+            <td class="plan-cell">You <b>port</b> to a new insurer</td>
+            <td class="bad">Yes — fully</td>
+            <td class="bad">Yes — full fresh proposal</td>
+            <td class="bad">Yes — the new insurer underwrites you fresh and can load/exclude the disease you now have</td>
+          </tr>
+          <tr>
+            <td class="plan-cell">You renew <b>after a lapse / break</b></td>
+            <td class="bad">May be treated as fresh</td>
+            <td class="bad">Possibly</td>
+            <td class="bad">Possibly — avoid lapses; use the 30-day grace period</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <b>The 60-month moratorium — your permanent shield.</b> Every plan in this study carries it: after <b>5 continuous years</b>, the insurer can no longer contest your policy or any claim on grounds of non-disclosure or a pre-existing condition — <b>only proven fraud</b> survives (plus any exclusion already named in your schedule). So the disclosure risk you carry from day one <em>expires</em> at year 5 and never returns, as long as you keep renewing. <b>This is the single biggest reason to buy young and never lapse:</b> a diabetes or heart diagnosis at 40 is fully covered and cannot re-rate your existing policy — but if you were shopping <em>fresh</em> at 40 with that same diagnosis, you'd face a +50–150% loading, a fresh PED waiting period, or a permanent exclusion at entry. Continuous cover converts "insurable at 26" into "insured for life."
+    </div>
+    <p class="disc">Verified against the binding wordings: all seven plans state <em>"no loading shall apply on renewals based on individual claims experience"</em> and grant lifelong renewability (renewal cannot be denied for claiming or ageing). The re-underwriting triggers — SI-enhancement clock resets and porting — are drawn from the SBI, Care and Aditya Birla Module-2 findings. Always disclose fully and in writing at the moments marked "Yes".</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">08</span><h2>What each fund offers, at what price</h2></div>
     <p class="sub">The finalists ranked by the study's weighted score, with their price position (₹ per lakh, age 26) and the signature feature you are actually paying for — or missing.</p>
     <div class="tbl-scroll">
       <table>
@@ -267,11 +352,11 @@
           <tr>
             <td class="plan-cell"><span class="pdot" style="background:var(--c-hdfc)"></span>HDFC Optima Secure+</td>
             <td class="rank">4.55 <span class="tag">#2</span></td>
-            <td class="num">~₹897 <small>@15L</small></td>
+            <td class="num">₹135 <small>@1Cr ✓</small></td>
             <td class="yes">None</td>
             <td class="no">None</td>
-            <td>Best claims reliability; uncapped Infinite bonus; deepest deductible discount; stated loading cap</td>
-            <td class="mid">Claims-experience discount you lose by claiming; priciest per lakh</td>
+            <td>Best claims reliability; uncapped Infinite bonus; most SI-efficient at ₹1Cr; deepest deductible discount</td>
+            <td class="mid">Claims-experience discount you lose by claiming</td>
           </tr>
           <tr>
             <td class="plan-cell"><span class="pdot" style="background:var(--c-bajaj)"></span>Bajaj Health Guard Platinum</td>
@@ -312,13 +397,13 @@
         </tbody>
       </table>
     </div>
-    <p class="disc">Score = study's 6-module weighted average (Claims 25% · Coverage 25% · Exclusions 20% · Cost 15% · Insurer 10% · Fine print 5%). Price/lakh at the SI each plan publishes an anchor for — not like-for-like SI. HDFC & ABHI top the study; ACKO leads on price alone.</p>
+    <p class="disc">Score = study's 6-module weighted average (Claims 25% · Coverage 25% · Exclusions 20% · Cost 15% · Insurer 10% · Fine print 5%). Price/lakh shown at each plan's most-efficient verified tier (HDFC & Bajaj & SBI at ₹1Cr) or published anchor. HDFC & ABHI top the study — and verified quotes now make HDFC the price leader at ₹1Cr too.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="sec-head"><span class="sec-n">07</span><h2>What to buy at each age</h2></div>
+    <div class="sec-head"><span class="sec-n">09</span><h2>What to buy at each age</h2></div>
     <p class="sub">Cover need, and which features earn their keep, shift across a lifetime. The through-line: <b>buy a large SI young</b> — it is cheaper per lakh <em>and</em> ages more gently, and it front-loads waiting-period credit before any health condition can attach a loading.</p>
 
     <div class="road">
@@ -368,7 +453,7 @@
 
 <footer>
   <div class="wrap">
-    <p><b>Sources & reliability.</b> Built from the repo's Module-4 (Cost) deep studies. <b>Verified rate charts:</b> Bajaj Health Guard Platinum (UIN BAJHLIP26073V082526) and SBI Super Health (UIN SBIHLIP24141V022324) publish full age × SI tables — plotted as solid lines. <b>Anchored estimates:</b> HDFC (₹15L@25 ≈ ₹13,459), Aditya Birla MAX (₹15L@25 = ₹10,149), Care (₹15L@25 ≈ ₹13,312), ACKO (₹1Cr@25 = ₹16,178) publish quote anchors but not full grids; their curves are the typical age-banded shape scaled to the anchor and are marked estimated.</p>
+    <p><b>Sources & reliability.</b> Built from the repo's Module-4 (Cost) deep studies. <b>Verified rate charts:</b> Bajaj Health Guard Platinum (UIN BAJHLIP26073V082526) and SBI Super Health (UIN SBIHLIP24141V022324) publish full age × SI tables — plotted as solid lines. <b>HDFC — verified PolicyBazaar quotes</b> across ₹10L–₹1Cr (Bengaluru, age 26, 0% GST, 25 Jul 2026; PDFs in the repo). <b>Anchored estimates:</b> Aditya Birla MAX (₹15L@25 = ₹10,149), Care (₹15L@25 ≈ ₹13,312), ACKO (₹1Cr@25 = ₹16,178) publish quote anchors but not full grids; their curves are the typical age-banded shape scaled to the anchor and are marked estimated.</p>
     <p class="disc">This is an educational comparison of a completed research file, not financial advice or a quotation. Premiums are metro/Zone-A, single adult, GST-free (individual health, post 22 Sep 2025). Confirm every figure on the insurer's own calculator before buying — especially the estimated grids.</p>
   </div>
 </footer>
@@ -387,6 +472,13 @@ const PREM={
 };
 const VERIFIED={bajaj:1,sbi:1};
 const SERIES_ORDER=['bajaj','sbi','abhi'];
+// HDFC — verified PolicyBazaar quotes at ages 26/40/50/60 (Bengaluru, healthy, 0% GST)
+const HDFC_AGES={
+ 10:[[26,9569],[40,12341],[50,20031],[60,40685]],
+ 25:[[26,11073],[40,14140],[50,24221],[60,58472]],
+ 50:[[26,12343],[40,15033],[50,28302],[60,74933]],
+ 100:[[26,13535],[40,16268],[50,31134],[60,83205]]
+};
 
 function fmt(v){return v>=100000?'₹'+(v/100000).toFixed(2)+'L':'₹'+Math.round(v/1000)+'k';}
 
@@ -395,9 +487,11 @@ function niceMax(m){const p=Math.pow(10,Math.floor(Math.log10(m)));const n=m/p;c
 function drawLine(svgId, series, opts){
   const svg=document.getElementById(svgId); const W=720,H=380, m={l:52,r:16,t:16,b:38};
   const iw=W-m.l-m.r, ih=H-m.t-m.b;
-  let ymax=opts.ymax||niceMax(Math.max(...series.flatMap(s=>s.data)));
+  const anchorVals=(opts.anchors||[]).flatMap(a=>a.pts.map(p=>p.val));
+  let ymax=opts.ymax||niceMax(Math.max(...series.flatMap(s=>s.data),...anchorVals));
   const x=i=>m.l+iw*i/(AGES.length-1);
   const y=v=>m.t+ih*(1-v/ymax);
+  const ageToX=a=>{for(let i=0;i<AGES.length-1;i++){if(a>=AGES[i]&&a<=AGES[i+1])return x(i)+(a-AGES[i])/(AGES[i+1]-AGES[i])*(x(i+1)-x(i));}return a<AGES[0]?x(0):x(AGES.length-1);};
   let g='';
   // gridlines + y labels
   const steps=5;
@@ -413,6 +507,12 @@ function drawLine(svgId, series, opts){
     g+=`<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2.4" ${s.dashed?'stroke-dasharray="7 5"':''} stroke-linejoin="round" stroke-linecap="round" opacity="${s.dashed?.85:1}"/>`;
     s.data.forEach((v,i)=>{g+=`<circle class="dot" cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.4" fill="${s.color}"><title>${s.name} · age ${AGES[i]} · ${opts.tip?opts.tip(v):fmt(v)}</title></circle>`;});
   });
+  // verified anchor series (e.g. HDFC at 26 & 60) — solid line + square markers
+  (opts.anchors||[]).forEach(a=>{
+    const pts=a.pts.map(p=>`${ageToX(p.age).toFixed(1)},${y(p.val).toFixed(1)}`).join(' ');
+    g+=`<polyline points="${pts}" fill="none" stroke="${a.color}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+    a.pts.forEach(p=>{g+=`<rect x="${(ageToX(p.age)-3.6).toFixed(1)}" y="${(y(p.val)-3.6).toFixed(1)}" width="7.2" height="7.2" fill="${a.color}"><title>${a.name} · age ${p.age} · ${fmt(p.val)}</title></rect>`;});
+  });
   svg.innerHTML=g;
 }
 
@@ -424,10 +524,13 @@ function legend(elId, series){
 function renderAge(si){
   const grid=PREM[si];
   const series=SERIES_ORDER.filter(k=>grid[k]).map(k=>({name:PLAN[k],color:COL(k),data:grid[k],dashed:!VERIFIED[k]}));
-  drawLine('ageChart',series,{});
+  const hdfcAnchor={name:'HDFC',color:COL('hdfc'),pts:HDFC_AGES[si].map(([age,val])=>({age,val}))};
+  drawLine('ageChart',series,{anchors:[hdfcAnchor]});
   legend('ageLegend',series);
+  document.getElementById('ageLegend').insertAdjacentHTML('beforeend',
+    `<span class="it"><span class="sw" style="border-top-color:${COL('hdfc')}"></span>HDFC <span style="opacity:.7">(verified ▪ 26·40·50·60)</span></span>`);
   const label=si==100?'₹1 Crore':'₹'+si+' Lakh';
-  document.getElementById('ageNote').textContent=`Sum insured: ${label}. ${si==100?'SBI shown is the Infinite ₹1Cr rung.':''}`.trim()+' HDFC · Care · ACKO don\'t publish full grids — see the shape chart below.';
+  document.getElementById('ageNote').textContent=`Sum insured: ${label}. ${si==100?'SBI shown is the Infinite ₹1Cr rung.':''} HDFC squares are verified quotes at ages 26/40/50/60 (Bengaluru, healthy life); Care & ACKO don't publish full grids — see the shape chart below.`.trim();
 }
 
 // shape index (26=100)
@@ -448,17 +551,20 @@ function renderShape(){
 
 // per-lakh bar chart
 const LAKH=[
- {n:'ACKO ₹1Cr',v:162,c:'acko',tag:'⭐'},
+ {n:'HDFC ₹1Cr',v:135,c:'hdfc',tag:'⭐'},
+ {n:'ACKO ₹1Cr',v:162,c:'acko'},
+ {n:'HDFC ₹50L',v:247,c:'hdfc'},
  {n:'ABHI ₹50L',v:310,c:'abhi',est:1},
  {n:'Bajaj ₹1Cr',v:355,c:'bajaj'},
- {n:'ABHI ₹25L',v:500,c:'abhi',est:1},
+ {n:'HDFC ₹25L',v:443,c:'hdfc'},
  {n:'SBI ₹1Cr',v:482,c:'sbi'},
+ {n:'ABHI ₹25L',v:500,c:'abhi',est:1},
  {n:'SBI ₹50L',v:518,c:'sbi'},
  {n:'Bajaj ₹50L',v:525,c:'bajaj'},
  {n:'Bajaj ₹25L',v:844,c:'bajaj'},
  {n:'Care ₹15L',v:887,c:'care'},
- {n:'HDFC ₹15L',v:897,c:'hdfc'},
  {n:'SBI ₹25L',v:909,c:'sbi'},
+ {n:'HDFC ₹10L',v:957,c:'hdfc'},
  {n:'Bajaj ₹10L',v:1763,c:'bajaj'}
 ].sort((a,b)=>a.v-b.v);
 
@@ -477,13 +583,48 @@ function renderLakh(){
   svg.innerHTML=g;
 }
 
+// 30-year inflation projection (SBI Platinum ₹25L worked example)
+function ageBand(a){
+  if(a<=35)return 22727; if(a<=45)return 25431; if(a<=50)return 31331;
+  if(a<=55)return 36167; if(a<=60)return 44558; if(a<=65)return 62726;
+  if(a<=70)return 89616; return 128617;
+}
+function renderProj(){
+  const svg=document.getElementById('projChart'); const W=720,H=380,m={l:60,r:16,t:16,b:38};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b; const A0=26,A1=56;
+  const scen=[
+    {name:'Age-only (today’s ₹)',r:0,color:COL('sbi'),dashed:false},
+    {name:'+6% / yr',r:.06,color:COL('acko'),dashed:true},
+    {name:'+8% / yr (Bajaj prints this)',r:.08,color:COL('abhi'),dashed:true},
+    {name:'+10% / yr',r:.10,color:COL('care'),dashed:true}
+  ];
+  const ymax=800000;
+  const x=a=>m.l+iw*(a-A0)/(A1-A0);
+  const y=v=>m.t+ih*(1-Math.min(v,ymax)/ymax);
+  let g='';
+  for(let i=0;i<=4;i++){const val=ymax*i/4;const yy=y(val);
+    g+=`<line class="gl" x1="${m.l}" y1="${yy.toFixed(1)}" x2="${W-m.r}" y2="${yy.toFixed(1)}"/>`;
+    g+=`<text class="axl" x="${m.l-8}" y="${yy+3.5}" text-anchor="end">${fmt(val)}</text>`;}
+  for(let a=A0;a<=A1;a+=5){g+=`<text class="axl" x="${x(a)}" y="${H-14}" text-anchor="middle">${a}</text>`;}
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-1}" text-anchor="middle" style="letter-spacing:.1em">AGE (YEARS HELD FROM 26)</text>`;
+  scen.forEach(s=>{
+    let pts=[];
+    for(let a=A0;a<=A1;a++){pts.push(`${x(a).toFixed(1)},${y(ageBand(a)*Math.pow(1+s.r,a-A0)).toFixed(1)}`);}
+    g+=`<polyline points="${pts.join(' ')}" fill="none" stroke="${s.color}" stroke-width="2.4" ${s.dashed?'stroke-dasharray="7 5"':''} stroke-linejoin="round"/>`;
+    const va=ageBand(A1)*Math.pow(1+s.r,A1-A0);
+    g+=`<circle cx="${x(A1).toFixed(1)}" cy="${y(va).toFixed(1)}" r="3.6" fill="${s.color}"><title>${s.name} · age 56 · ${fmt(va)}</title></circle>`;
+  });
+  svg.innerHTML=g;
+  legend('projLegend',scen);
+}
+
 // wire up SI toggle
 const seg=document.getElementById('siSeg');
 seg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
   [...seg.children].forEach(x=>x.setAttribute('aria-pressed', x===b?'true':'false'));
   renderAge(+b.dataset.si);});
 
-function renderAll(){renderAge(25);renderShape();renderLakh();
+function renderAll(){renderAge(25);renderShape();renderLakh();renderProj();
   const p=[...seg.children].find(x=>x.getAttribute('aria-pressed')==='true');if(p)renderAge(+p.dataset.si);}
 renderAll();
 // re-render on theme change (colors are token-based)

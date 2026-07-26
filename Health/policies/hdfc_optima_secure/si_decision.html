@@ -1,0 +1,330 @@
+<title>Which HDFC SI — ₹10L vs 25L vs 50L vs 1Cr</title>
+<style>
+  :root{
+    --ground:#FBFBF9; --panel:#ffffff; --ink:#181c20; --muted:#5c6672;
+    --line:#e4e3dd; --line2:#efeee9; --accent:#2f6fd0; --accent-soft:#2f6fd014;
+    --good:#1f9d63; --warn:#c9821a; --bad:#d24b52; --shadow:0 1px 2px rgba(20,25,30,.05),0 8px 24px rgba(20,25,30,.05);
+    --c10:#d8973c; --c25:#12a08f; --c50:#2f6fd0; --c100:#7b5cd6;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:ui-monospace,'SF Mono',Menlo,'Cascadia Mono',monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ground:#0d1114; --panel:#161b1f; --ink:#e7ebee; --muted:#94a0ab;
+      --line:#262d33; --line2:#1d2328; --accent:#5b93e6; --accent-soft:#5b93e61f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+      --c10:#e0a955; --c25:#2fc2b0; --c50:#5b93e6; --c100:#a488ea;}
+  }
+  :root[data-theme="light"]{ --ground:#FBFBF9;--panel:#fff;--ink:#181c20;--muted:#5c6672;--line:#e4e3dd;--line2:#efeee9;--accent:#2f6fd0;--accent-soft:#2f6fd014;--shadow:0 1px 2px rgba(20,25,30,.05),0 8px 24px rgba(20,25,30,.05);--c10:#d8973c;--c25:#12a08f;--c50:#2f6fd0;--c100:#7b5cd6;}
+  :root[data-theme="dark"]{ --ground:#0d1114;--panel:#161b1f;--ink:#e7ebee;--muted:#94a0ab;--line:#262d33;--line2:#1d2328;--accent:#5b93e6;--accent-soft:#5b93e61f;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);--c10:#e0a955;--c25:#2fc2b0;--c50:#5b93e6;--c100:#a488ea;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+  .num{font-variant-numeric:tabular-nums;font-family:var(--mono)}
+  header{padding:60px 0 28px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 15px}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(29px,5vw,48px);line-height:1.05;letter-spacing:-.01em;margin:0;text-wrap:balance}
+  .lede{font-size:clamp(16px,2vw,18px);color:var(--muted);max-width:66ch;margin:19px 0 0}
+  .profile{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+  .profile span{font-family:var(--mono);font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:100px;color:var(--muted);background:var(--panel)}
+  section{padding:46px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin:0 0 6px}
+  .sec-n{font-family:var(--mono);font-size:12.5px;color:var(--accent);letter-spacing:.1em}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(22px,3.2vw,30px);letter-spacing:-.01em;margin:0;text-wrap:balance}
+  .sub{color:var(--muted);max-width:72ch;margin:12px 0 0;font-size:15.5px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+  .chart-card{padding:22px 20px 16px;margin-top:24px}
+  .chart-title{font-family:var(--serif);font-size:19px;font-weight:600;margin:0}
+  .chart-note{font-size:13px;color:var(--muted);margin:5px 0 0}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 2px 4px;font-size:13px}
+  .legend .it{display:inline-flex;align-items:center;gap:7px;color:var(--muted)}
+  .legend .sw{width:20px;height:0;border-top-width:3px;border-top-style:solid;border-radius:2px}
+  .svgbox{width:100%;overflow-x:auto}
+  svg{display:block;width:100%;height:auto;font-family:var(--mono)}
+  .gl{stroke:var(--line);stroke-width:1}
+  .axl{fill:var(--muted);font-size:11px}
+  .flagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .flag{font-size:12px;font-family:var(--mono);padding:4px 9px;border-radius:6px;border:1px solid var(--line)}
+  .flag.v{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,var(--line))}
+  .flag.e{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,var(--line))}
+  /* rec box */
+  .rec{margin-top:26px;padding:26px 24px;border:1px solid var(--line);border-radius:16px;background:var(--panel);box-shadow:var(--shadow)}
+  .rec .pick{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .rec .pick .big{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--accent)}
+  .rec .pick .tag{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:100px;background:var(--accent-soft);color:var(--accent)}
+  .rec p{margin:12px 0 0;font-size:15px;color:var(--muted)}
+  .rec b{color:var(--ink)}
+  /* tier cards */
+  .tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+  .tier{padding:18px 16px;border-radius:14px;border:1px solid var(--line);background:var(--panel)}
+  .tier.win{border:2px solid var(--accent)}
+  .tier .badge{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent);display:inline-block;margin-bottom:10px}
+  .tier h3{font-family:var(--serif);font-size:24px;margin:0 0 2px;font-weight:600}
+  .tier .d1{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+  .tier ul{margin:0;padding:0;list-style:none;font-size:12.5px;display:flex;flex-direction:column;gap:6px}
+  .tier li{display:flex;gap:7px;color:var(--muted)}
+  .tier li i{font-style:normal;flex:none}
+  .tbl-scroll{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+  th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line2)}
+  thead th{background:var(--line2);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  tbody tr:last-child td{border-bottom:0}
+  td .num{font-family:var(--mono)}
+  .yes{color:var(--good);font-weight:600}.no{color:var(--bad)}.mid{color:var(--warn)}
+  .rowh{font-weight:600;white-space:nowrap}
+  .callout{margin-top:22px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;font-size:14.5px}
+  .callout b{color:var(--ink)}
+  footer{padding:32px 0 60px;color:var(--muted);font-size:12.5px}
+  .disc{font-size:12px;color:var(--muted);margin-top:14px;font-style:italic}
+  @media(max-width:820px){.tiers{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.tiers{grid-template-columns:1fr}}
+</style>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">HDFC ERGO Optima Secure+ · SI decision</p>
+    <h1>Which sum insured — ₹10L, ₹25L, ₹50L or ₹1 Crore?</h1>
+    <p class="lede">A deep comparison of the four SI tiers on <b>one plan</b> — HDFC Optima Secure+ — for a healthy 26-year-old, on <b>verified PolicyBazaar quotes at four ages (26/40/50/60)</b>. Two facts drive everything: its <b>Secure Benefit doubles cover on day 1</b> and its <b>uncapped Infinite Benefit adds 100% of base every year</b> — so the base mostly buys <em>early-year</em> cover. And the premium is cheap to go big <em>at 26</em>, but the gap widens sharply with age.</p>
+    <div class="profile"><span>Individual · age 26</span><span>Optima Secure+ (Infinite rung)</span><span>Bengaluru</span><span>Weighing lifelong affordability</span><span>Verified quotes · 0% GST</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">RECOMMENDATION</span></div>
+    <div class="rec">
+      <div class="pick"><span class="big">₹25 Lakh</span><span class="tag">efficiency-optimal</span><span style="font-family:var(--mono);font-size:13px;color:var(--muted)">— ₹50L if you want a ₹1Cr day-one safety margin</span></div>
+      <p><b>Once you weight lifelong affordability, the answer tilts down from ₹1Cr.</b> Because the <b>uncapped Infinite Benefit grows any base to crores</b> over the decades, the base mainly buys your <b>early-year</b> cover — and you pay for it every year, with the premium climbing steeply after 50 (₹1Cr runs ₹13,535 at 26 but <b>₹83,205 at 60</b>). <b>₹25L gives ₹50L usable day one</b> — enough for essentially any single catastrophe — grows to ~₹2.75Cr in a decade, and keeps the most sustainable premium of the adequate tiers. <b>₹50L</b> buys a ₹1Cr day-one cushion for ~₹16k/yr more at 60. <b>₹10L is too thin day-one</b> (only ₹20L); <b>₹1Cr over-buys</b> day-one cover the Infinite would build anyway, at an escalating lifelong premium.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">01</span><h2>The four tiers at a glance</h2></div>
+    <p class="sub">Same plan, same benefits (no room cap, Secure 2×, Infinite bonus apply at <em>every</em> tier). Only the base — and therefore your day-one usable cover and price — changes. Premiums are <b>verified quotes</b> (Bengaluru, age 26, 0% GST); day-one cover is <b>exact</b>.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="badge" style="background:#d8973c22;color:#b5791f">too thin</span>
+        <h3>₹10L</h3><p class="d1">₹20L usable day one</p>
+        <ul>
+          <li><i>₹</i><span><b>₹9,569</b> @26 → ₹40,685 @60</span></li>
+          <li><i>✓</i><span>Cheapest for life; full benefits</span></li>
+          <li><i>⚠</i><span>₹20L day-one too thin for a metro</span></li>
+        </ul>
+      </div>
+      <div class="tier win">
+        <span class="badge">⭐ recommended</span>
+        <h3>₹25L</h3><p class="d1">₹50L usable day one</p>
+        <ul>
+          <li><i>₹</i><span><b>₹11,073</b> @26 → ₹58,472 @60</span></li>
+          <li><i>✓</i><span>₹50L day-one clears any single episode</span></li>
+          <li><i>✓</i><span>Efficiency sweet spot; grows to ₹2.75Cr</span></li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="badge" style="background:#2f6fd022;color:#245bb0">safety margin</span>
+        <h3>₹50L</h3><p class="d1">₹1 Cr usable day one</p>
+        <ul>
+          <li><i>₹</i><span><b>₹12,343</b> @26 → ₹74,933 @60</span></li>
+          <li><i>✓</i><span>₹1Cr day-one cushion; grows to ₹5.5Cr</span></li>
+          <li><i>⚠</i><span>~₹16k/yr more than ₹25L at 60</span></li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="badge" style="background:#7b5cd622;color:#6247c0">over-buys</span>
+        <h3>₹1 Cr</h3><p class="d1">₹2 Cr usable day one</p>
+        <ul>
+          <li><i>₹</i><span><b>₹13,535</b> @26 → ₹83,205 @60</span></li>
+          <li><i>✓</i><span>Best per-lakh (₹135); most future-proof</span></li>
+          <li><i>⚠</i><span>Escalating premium; ~2× the ₹10L at 60</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">02</span><h2>The decisive graph — effective cover over time</h2></div>
+    <p class="sub">This is exact, computed from the benefit rules (not premium): usable cover = <b>base × (year + 1)</b> — because Secure adds 100% on day one and Infinite adds another 100% of base every completed year, uncapped and claim-proof. Watch how the base you pick sets the <em>whole</em> trajectory.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Usable cover, claim-free years (₹ crore)</p>
+      <p class="chart-note">Day one you already have 2× your base. The gap between tiers widens every year — but even ₹10L reaches ₹1.1Cr by year 10.</p>
+      <div class="legend" id="effLegend"></div>
+      <div class="svgbox"><svg id="effChart" viewBox="0 0 720 380" role="img" aria-label="Effective cover by SI tier over 15 years"></svg></div>
+      <div class="flagrow"><span class="flag v">● exact — from Secure + Infinite benefit rules</span></div>
+    </div>
+    <div class="callout"><b>The reframing.</b> Because Infinite is uncapped, the base mainly decides your <b>day-one and early-year</b> cover — exactly the window before the bonus has accrued. So the real question isn't "how much cover will I ever have" (all tiers grow huge); it's <b>"how big a claim could I face in the first 2–3 years, before Infinite builds up?"</b> ₹25L gives <b>₹50L day-one</b> — enough for any single catastrophe — then compounds to ₹2.75Cr in a decade. That's the efficient answer; ₹50L adds a ₹1Cr day-one cushion.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">03</span><h2>Is it enough? Day-one cover vs real metro bills</h2></div>
+    <p class="sub">The claim you're insuring against is a <b>large one in the near term</b>, before the bonus compounds. So compare each tier's <b>day-one usable cover</b> against what serious treatment actually costs in a Tier-1 private hospital today.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Treatment cost ranges vs day-one cover lines</p>
+      <p class="chart-note">Bars = typical cost span today. Vertical lines = day-one usable cover per tier. A bar extending past a line = that tier could be exhausted by one such episode early on.</p>
+      <div class="svgbox"><svg id="adqChart" viewBox="0 0 720 360" role="img" aria-label="Treatment costs versus day-one cover"></svg></div>
+      <div class="flagrow"><span class="flag e">cost ranges indicative, metro private, today's ₹ — and rising ~12–14%/yr</span></div>
+    </div>
+    <div class="callout"><b>Read:</b> ₹10L's ₹20L day-one line is crossed by cancer and transplant costs — a real early-year gap, so ₹10L is out. <b>₹25L (₹50L line) clears any single episode today</b> — which is why it's the efficient floor. <b>₹50L (₹1Cr line)</b> adds headroom for a multi-episode year or inflation — the safety-margin upgrade. Beyond that, Infinite does the compounding.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">04</span><h2>The premium over your lifetime — what you're really committing to</h2></div>
+    <p class="sub"><b>Verified quotes at four ages (26/40/50/60).</b> Going big is nearly free <em>at 26</em> — but that's a young-age effect. Premium barely moves to 40 (~1.3%/yr), then climbs ~6.7%/yr in the 40s and ~10%/yr in the 50s (plus ~6%/yr medical-inflation repricing on top). The tiers <b>fan apart with age</b>, so the base you pick is a lifelong commitment.</p>
+    <div class="panel chart-card">
+      <p class="chart-title">Annual premium vs age, by SI tier (₹)</p>
+      <p class="chart-note">Flat and bunched to 40; then the J-curve, and the bigger tiers pull away. The gap you pay for a big base is small at 26 and large at 60.</p>
+      <div class="legend" id="premLegend"></div>
+      <div class="svgbox"><svg id="premChart" viewBox="0 0 720 380" role="img" aria-label="Premium versus age by SI tier"></svg></div>
+      <div class="flagrow"><span class="flag v">● verified — PolicyBazaar quotes at 26/40/50/60, 0% GST</span></div>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>How much more the bigger base costs</th><th>Age 26</th><th>Age 60</th></tr></thead>
+        <tbody>
+          <tr><td class="rowh">₹50L ÷ ₹10L</td><td class="num">1.29×</td><td class="num mid">1.84×</td></tr>
+          <tr><td class="rowh">₹1Cr ÷ ₹10L</td><td class="num">1.41×</td><td class="num mid">2.05×</td></tr>
+          <tr><td class="rowh">₹1Cr ÷ ₹50L</td><td class="num">1.10×</td><td class="num">1.11×</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><b>Per lakh, bigger is still cheaper at every age</b> (₹1Cr = ₹135/lakh @26, ₹832 @60) — so a big base is <em>efficient</em>. But the <b>absolute</b> premium gap versus a small base is back-loaded onto the expensive decades: ₹50L costs +₹2,774/yr over ₹10L at 26, but <b>+₹34,248/yr at 60</b>. Since Infinite grows any base to crores anyway, that escalating premium mostly buys <b>day-one</b> cover — which is why the efficient choice is a <em>moderate</em> base, not a maximal one. (One step stays cheap at any age: ₹50L→₹1Cr, ~11%.)</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">05</span><h2>All factors, scored across the four tiers</h2></div>
+    <p class="sub">Every decision dimension, rated per tier. Green = strong, amber = adequate/watch, red = weak.</p>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Factor</th><th>₹10L</th><th>₹25L</th><th>₹50L</th><th>₹1 Cr</th></tr></thead>
+        <tbody>
+          <tr><td class="rowh">Day-one usable cover</td><td class="num">₹20L</td><td class="num">₹50L</td><td class="num">₹1Cr</td><td class="num">₹2Cr</td></tr>
+          <tr><td class="rowh">Premium @26 (verified)</td><td class="num">₹9,569</td><td class="num">₹11,073</td><td class="num">₹12,343</td><td class="num">₹13,535</td></tr>
+          <tr><td class="rowh">Premium @60 (verified)</td><td class="num">₹40,685</td><td class="num">₹58,472</td><td class="num">₹74,933</td><td class="num">₹83,205</td></tr>
+          <tr><td class="rowh">Lifelong affordability</td><td class="yes">easiest</td><td class="yes">sustainable</td><td class="mid">heavier at 60</td><td class="no">escalating</td></tr>
+          <tr><td class="rowh">Efficiency (₹/lakh @26)</td><td class="no">₹957</td><td class="mid">₹443</td><td class="yes">₹247</td><td class="yes">₹135 ⭐</td></tr>
+          <tr><td class="rowh">Near-term catastrophe cover</td><td class="no">thin</td><td class="yes">adequate</td><td class="yes">strong</td><td class="yes">max</td></tr>
+          <tr><td class="rowh">Grows to (10 claim-free yrs)</td><td class="mid">₹1.1Cr</td><td class="yes">₹2.75Cr</td><td class="yes">₹5.5Cr</td><td class="yes">₹11Cr</td></tr>
+          <tr><td class="rowh">Downsize-trap exposure</td><td class="yes">low</td><td class="yes">low</td><td class="mid">moderate</td><td class="no">highest</td></tr>
+          <tr><td class="rowh">80D tax (old regime)</td><td class="yes">full</td><td class="yes">full</td><td class="yes">full</td><td class="yes">full*</td></tr>
+          <tr><td class="rowh">Over-buys day-one cover?</td><td class="yes">no</td><td class="yes">no</td><td class="mid">a little</td><td class="no">yes†</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disc">*At 26 every tier's premium sits under the ₹25,000 Section 80D cap, so all are fully deductible; by later ages the higher tiers exceed ₹25k and only ₹25k is deductible — a mild extra tick against buying big. †Because Infinite grows any base to crores, a ₹1Cr base pays every year for ₹2Cr of day-one cover most people never draw on.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-n">06</span><h2>The verdict</h2></div>
+    <p class="sub" style="max-width:74ch">Ranked for your profile — healthy, 26, metro — weighting <b>lifelong affordability + the irreversibility of downsizing</b>:</p>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Tier</th><th>Verdict</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td class="rowh" style="color:var(--accent)">₹25L ⭐</td><td class="yes">Take this</td><td>₹50L usable day-one clears any single catastrophe; grows to ₹2.75Cr in a decade; the most sustainable premium of the adequate tiers (₹58k @60). Best balance of adequacy, efficiency and lifelong cost.</td></tr>
+          <tr><td class="rowh">₹50L</td><td class="yes">Safety margin</td><td>Take it if you want a ₹1Cr day-one cushion for a multi-episode / inflation-heavy year. Costs ~₹16k/yr more than ₹25L at 60 — worth it only for that extra early headroom.</td></tr>
+          <tr><td class="rowh">₹1 Cr</td><td class="mid">Over-buys</td><td>Best per-lakh, but pays every year for ₹2Cr day-one cover the Infinite Benefit would build from a smaller base anyway — at an escalating premium (₹83k @60, ~2× the ₹10L). Only if cost is genuinely never a concern.</td></tr>
+          <tr><td class="rowh">₹10L</td><td class="no">Too thin</td><td>₹20L day-one can be exhausted by one cancer/transplant before Infinite builds. Only as a base under a super top-up.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><b>Why this tilts below the earlier "₹1Cr, price no object" call:</b> at 26 going big looked nearly free, but the verified 4-age curve shows the gap widening sharply after 50, and <b>reducing SI later forfeits accumulated Infinite Benefit</b> (§2.17.v) — so the base is a lifelong, one-way commitment. Size it to a premium you can carry for 40 years. <b>If affordability ever bites, don't cut SI</b> — use the <b>Aggregate Deductible discount</b> (keeps SI + bonus), a <b>super top-up</b>, or <b>multi-year pre-payment</b>. At purchase, confirm the schedule names <b>"Optima Secure +"</b> and your chosen SI.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Basis.</b> Benefit structure (Secure +100% day-1, Infinite +100%/yr uncapped claim-proof, no room cap at any SI, base options ₹10/15/20/25/50/100/200L, max ₹2Cr) is from the binding wording, UIN HDFHLIP26058V082526, via the repo's Module-1 study. <b>Effective-cover figures are exact</b> from those rules. <b>Premiums are verified PolicyBazaar quotes</b> (base "Customize Protection" plan, individual, Bengaluru, 0% GST, healthy life, Jul 2026) at four ages — e.g. ₹1Cr: 26 ₹13,535 · 40 ₹16,268 · 50 ₹31,134 · 60 ₹83,205; ₹25L: 26 ₹11,073 · 60 ₹58,472. Treatment-cost ranges are indicative metro-private figures. Educational analysis, not financial advice; a PolicyBazaar aggregator quote is indicative — reconfirm on final proposal.</p>
+  </div>
+</footer>
+
+<script>
+const YEARS=[1,3,5,7,10,12,15];
+const COL=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function fmtCr(v){return v>=100?'₹'+(v/100).toFixed(v>=1000?0:1)+'Cr':'₹'+v+'L';}
+
+function legend(elId, series){
+  document.getElementById(elId).innerHTML=series.map(s=>
+    `<span class="it"><span class="sw" style="border-top-color:${s.color}"></span>${s.name}</span>`).join('');
+}
+
+// effective cover chart: base×(year+1), in ₹L
+function renderEff(){
+  const bases=[{n:'₹10L',b:10,c:COL('--c10')},{n:'₹25L',b:25,c:COL('--c25')},{n:'₹50L',b:50,c:COL('--c50')},{n:'₹1Cr',b:100,c:COL('--c100')}];
+  const series=bases.map(o=>({name:o.n,color:o.c,data:YEARS.map(y=>o.b*(y+1))}));
+  const svg=document.getElementById('effChart'),W=720,H=380,m={l:56,r:14,t:16,b:38};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,ymax=1700;
+  const x=i=>m.l+iw*i/(YEARS.length-1), y=v=>m.t+ih*(1-Math.min(v,ymax)/ymax);
+  let g='';
+  for(let i=0;i<=5;i++){const val=ymax*i/5,yy=y(val);g+=`<line class="gl" x1="${m.l}" y1="${yy.toFixed(1)}" x2="${W-m.r}" y2="${yy.toFixed(1)}"/><text class="axl" x="${m.l-8}" y="${yy+3.5}" text-anchor="end">${fmtCr(val)}</text>`;}
+  YEARS.forEach((yr,i)=>{g+=`<text class="axl" x="${x(i)}" y="${H-14}" text-anchor="middle">${yr}</text>`;});
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-1}" text-anchor="middle" style="letter-spacing:.1em">YEAR HELD</text>`;
+  series.forEach(s=>{const pts=s.data.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    g+=`<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+    s.data.forEach((v,i)=>{g+=`<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.3" fill="${s.color}"><title>${s.name} base · year ${YEARS[i]} · ${fmtCr(v)} usable</title></circle>`;});});
+  svg.innerHTML=g; legend('effLegend',series);
+}
+
+// adequacy chart
+function renderAdq(){
+  const costs=[
+    {n:'Common surgery',lo:1.5,hi:3},
+    {n:'Cardiac stent / angioplasty',lo:3,hi:8},
+    {n:'Bypass (CABG)',lo:6,hi:15},
+    {n:'Severe ICU (weeks)',lo:8,hi:20},
+    {n:'Cancer — full course',lo:10,hi:40},
+    {n:'Organ transplant',lo:20,hi:45}
+  ];
+  const lines=[{n:'₹10L→20L',v:20,c:COL('--c10')},{n:'₹25L→50L',v:50,c:COL('--c25')},{n:'₹50L→1Cr',v:100,c:COL('--c50')},{n:'₹1Cr→2Cr',v:200,c:COL('--c100')}];
+  const svg=document.getElementById('adqChart'),W=720,H=360,m={l:158,r:16,t:14,b:44};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,xmax=210;
+  const bh=ih/costs.length;
+  const X=v=>m.l+iw*v/xmax;
+  let g='';
+  for(let v=0;v<=200;v+=50){g+=`<line class="gl" x1="${X(v)}" y1="${m.t}" x2="${X(v)}" y2="${m.t+ih}"/><text class="axl" x="${X(v)}" y="${H-26}" text-anchor="middle">₹${v}L</text>`;}
+  costs.forEach((c,i)=>{const yy=m.t+bh*i+bh*0.22,h=bh*0.56;
+    g+=`<rect x="${X(c.lo)}" y="${yy}" width="${(X(c.hi)-X(c.lo)).toFixed(1)}" height="${h.toFixed(1)}" rx="4" fill="var(--accent)" opacity="0.28"/>`;
+    g+=`<text class="axl" x="${m.l-10}" y="${yy+h/2+3.5}" text-anchor="end" style="fill:var(--ink);font-size:11.5px">${c.n}</text>`;
+    g+=`<text x="${X(c.hi)+6}" y="${yy+h/2+3.5}" style="fill:var(--muted);font-size:10.5px;font-family:var(--mono)">₹${c.lo}–${c.hi}L</text>`;});
+  lines.forEach(l=>{g+=`<line x1="${X(l.v)}" y1="${m.t}" x2="${X(l.v)}" y2="${m.t+ih}" stroke="${l.c}" stroke-width="2" stroke-dasharray="5 4"><title>${l.n} day-one cover</title></line>`;
+    g+=`<text x="${X(l.v)}" y="${m.t-2}" text-anchor="middle" style="fill:${l.c};font-size:10px;font-family:var(--mono)">${l.v}L</text>`;});
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-8}" text-anchor="middle" style="letter-spacing:.1em">COST / DAY-ONE COVER (₹ LAKH)</text>`;
+  svg.innerHTML=g;
+}
+
+// premium vs age (verified 26/40/50/60), one line per SI tier
+function renderPrem(){
+  const A=[26,40,50,60];
+  const t=[
+    {n:'₹10L',d:[9569,12341,20031,40685],c:COL('--c10')},
+    {n:'₹25L',d:[11073,14140,24221,58472],c:COL('--c25')},
+    {n:'₹50L',d:[12343,15033,28302,74933],c:COL('--c50')},
+    {n:'₹1Cr',d:[13535,16268,31134,83205],c:COL('--c100')}
+  ];
+  const svg=document.getElementById('premChart'),W=720,H=380,m={l:58,r:16,t:16,b:38};
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,ymax=90000,a0=26,a1=60;
+  const x=a=>m.l+iw*(a-a0)/(a1-a0), y=v=>m.t+ih*(1-v/ymax);
+  let g='';
+  for(let v=0;v<=90000;v+=15000){const yy=y(v);g+=`<line class="gl" x1="${m.l}" y1="${yy.toFixed(1)}" x2="${W-m.r}" y2="${yy.toFixed(1)}"/><text class="axl" x="${m.l-8}" y="${yy+3.5}" text-anchor="end">₹${v/1000}k</text>`;}
+  A.forEach(a=>{g+=`<text class="axl" x="${x(a).toFixed(1)}" y="${H-14}" text-anchor="middle">${a}</text>`;});
+  g+=`<text class="axl" x="${m.l+iw/2}" y="${H-1}" text-anchor="middle" style="letter-spacing:.1em">AGE</text>`;
+  t.forEach(s=>{const pts=s.d.map((v,i)=>`${x(A[i]).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    g+=`<polyline points="${pts}" fill="none" stroke="${s.c}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+    s.d.forEach((v,i)=>{g+=`<circle cx="${x(A[i]).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3.3" fill="${s.c}"><title>${s.n} · age ${A[i]} · ₹${v.toLocaleString('en-IN')}</title></circle>`;});});
+  svg.innerHTML=g; legend('premLegend',t.map(s=>({name:s.n,color:s.c})));
+}
+
+function renderAll(){renderEff();renderAdq();renderPrem();}
+renderAll();
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',renderAll);
+new MutationObserver(renderAll).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>
