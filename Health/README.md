@@ -74,6 +74,13 @@ Deep study runs one module at a time; final score is the weighted sum across 6 m
 > **ACKO Platinum:** best coverage *configuration* and price in the study (**₹1Cr for ₹16,178 at 25 = ₹162/lakh**), on the **weakest contract** — "Platinum" is absent from the wording, **37 limits are delegated to a per-policy Schedule**, and the wording **contradicts itself three times** (per-claim cap, cyber-knife vs stereotactic radiosurgery, two different renewal-denial lists). **Eliminated at Stage 1 on ICR alone, then promoted by explicit decision** — which exposed that the F3 floor was mis-specified.
 
 ## Files
+
+**Decision & purchase (post-study)**
+- **`decision_record.md` — ✅ THE DECISION: HDFC ERGO Optima Secure+ (29 Aug 2026), the family-history cross-study finding, and the one still-open variable (sum insured)**
+- **`purchase_channel.md` — how to buy: agent vs corporate agent vs broker, what the channel controls on the schedule, and a full profile of Ditto & PolicyBazaar**
+- **`advisor_second_opinion.md` — the blind two-call plan for testing the decision against outside advisors**
+
+**The study**
 - `screening/methodology.md` — which variables matter for an individual buyer and why
 - `screening/stage1_hard_filters.md` — deal-breaker filters (universe → shortlist)
 - `screening/stage2_shortlist.md` — comparative scoring (shortlist → 5 finalists)

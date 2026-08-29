@@ -102,6 +102,9 @@ Insurance/
 ├── README.md                         ← you are here
 └── Health/
     ├── README.md                     ← category overview, data sources, progress
+    ├── decision_record.md            ← ✅ THE DECISION + open items
+    ├── purchase_channel.md           ← how/through whom to buy
+    ├── advisor_second_opinion.md     ← blind advisor call plan
     ├── study_plan.md                 ← the 6-module framework + rubric (living doc)
     ├── screening/
     │   ├── methodology.md            ← which variables matter for an individual
@@ -163,6 +166,20 @@ See `Health/study_plan.md` for the current, fully annotated framework.
 3. **Premium age-curves** for HDFC, Care and ACKO (26/35/45/55/65/75 × SI tiers) — **neither insurer publishes a rate chart**; ACKO's pricing is algorithmic, so these require quote-engine runs.
 4. **City-level cashless-hospital counts** for the shortlisted plan, by pin code.
 5. **ACKO's per-claim cap** (§3.1(d)(4) vs §3.3.2) and the meaning of *"moral hazard"* / *"non-cooperation"* — both to be confirmed in writing before purchase.
+
+## ✅ DECIDED — 29 August 2026
+
+> ### 🔵 **HDFC ERGO Optima Secure+** — see **[Health/decision_record.md](Health/decision_record.md)**
+
+The buyer chose HDFC, matching the study's own recommendation. **One variable remains open: the sum insured** — `decision_hdfc_vs_abhi.md` §6 says ₹1Cr, `si_decision.md` §4 says ₹25L, and they have not been reconciled.
+
+A **cross-study finding** was surfaced at decision time and is recorded there: **both parents have BP, diabetes and cholesterol**, which fires the decision tree's *"family history"* branch — but the branch is **over-broad**. Day-1 chronic cover only helps conditions held **at inception**; a condition arising later under an in-force policy is a fresh illness with no PED wait. It does not flip the pick — but it **does** argue for buying the full sum insured *now*, since any later SI increase is underwritten afresh.
+
+**Purchase in progress:**
+- **[Health/purchase_channel.md](Health/purchase_channel.md)** — agent vs corporate agent vs broker; **the channel controls the schedule** (§2.12 PED reduction, §2.13 room-rent modifier, variant naming, instalment trap); full profiles of Ditto (corporate agent CA0738, 6-insurer panel, commission + renewal-commission model) and PolicyBazaar
+- **[Health/advisor_second_opinion.md](Health/advisor_second_opinion.md)** — a **blind two-call plan** to test the decision against outside advisors, and the known blind spot it targets: **ICICI Elevate and Niva Bupa ReAssure were named as reserves and never deep-studied**
+
+---
 
 **➡️ [HEAD-TO-HEAD: HDFC vs Aditya Birla MAX — the decision document](Health/decision_hdfc_vs_abhi.md)**
 
