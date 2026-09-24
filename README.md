@@ -166,12 +166,16 @@ See `Health/study_plan.md` for the current, fully annotated framework.
 3. **Premium age-curves** for HDFC, Care and ACKO (26/35/45/55/65/75 × SI tiers) — **neither insurer publishes a rate chart**; ACKO's pricing is algorithmic, so these require quote-engine runs.
 4. **City-level cashless-hospital counts** for the shortlisted plan, by pin code.
 5. **ACKO's per-claim cap** (§3.1(d)(4) vs §3.3.2) and the meaning of *"moral hazard"* / *"non-cooperation"* — both to be confirmed in writing before purchase.
+6. 🆕 **The buyer's EXISTING employer cover was never modelled** (found 2 Sep 2026). The whole study assumes he holds no cover; he holds employer group medical, critical illness, personal accident and term life. It **does not change the plan choice**, but it changes **purchase timing**, the **sum-insured argument** and **claim ordering** — see `Health/decision_record.md` §"Existing employer cover" and the two new sections in `Health/study_plan.md`.
+7. 🆕 **Critical illness, personal accident and term life are OUT OF SCOPE and were never screened.** This is an *indemnity* study — it grades who pays your hospital bill. It says nothing about who replaces your income. A 4.55/5 here does **not** mean the buyer is fully protected. See the **Scope boundary** section in `Health/study_plan.md`.
 
 ## ✅ DECIDED — 29 August 2026
 
 > ### 🔵 **HDFC ERGO Optima Secure+** — see **[Health/decision_record.md](Health/decision_record.md)**
 
 The buyer chose HDFC, matching the study's own recommendation. **One variable remains open: the sum insured** — `decision_hdfc_vs_abhi.md` §6 says ₹1Cr, `si_decision.md` §4 says ₹25L, and they have not been reconciled.
+
+🆕 **Two findings were added on 2 September 2026** — the buyer's **existing employer cover** (which argues for buying *sooner*, not smaller) and the **scope boundary** above. Neither reopens the plan choice.
 
 A **cross-study finding** was surfaced at decision time and is recorded there: **both parents have BP, diabetes and cholesterol**, which fires the decision tree's *"family history"* branch — but the branch is **over-broad**. Day-1 chronic cover only helps conditions held **at inception**; a condition arising later under an in-force policy is a fresh illness with no PED wait. It does not flip the pick — but it **does** argue for buying the full sum insured *now*, since any later SI increase is underwritten afresh.
 

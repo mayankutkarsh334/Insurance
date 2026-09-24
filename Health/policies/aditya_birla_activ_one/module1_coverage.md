@@ -43,7 +43,7 @@ _Source: **binding policy wording** `Activ One` (UIN ADIHLIP27048V022627, `resou
 | Pre / post-hospitalisation | **90 / 180 days** | pre-hosp **beats HDFC's 60** |
 | Day-care procedures | All day-care treatments | |
 | Domiciliary / home healthcare | Both covered | domiciliary needs ≥3 days; home care cashless-only |
-| AYUSH | Inbuilt, in-patient — **no sub-limit noted** (up to SI) | better than HDFC's AYUSH sub-limit |
+| AYUSH | Inbuilt, in-patient — **no sub-limit noted** (up to SI) | 🔄 **level with HDFC** — recorded here as an ABHI advantage, but HDFC's AYUSH is schedule-set and reads full SI on an issued Secure + schedule |
 | Modern treatments | **Inbuilt, up to SI** — 13 listed (robotic, oral chemo, HIFU, deep-brain, stereotactic, etc.) | strong |
 | Day-1 cover for listed chronic conditions | **Optional in NXT** (Chronic Care Day-1) — 7 conditions: diabetes, BP, cholesterol, COPD, obesity, asthma, CAD | powerful, but not inbuilt in NXT |
 | Consumables / non-medical (**Claim Protect**) | _[corrected]_ **Available as a paid optional** in NXT (covers all 4 non-payable lists) — **not inbuilt** | vs HDFC inbuilt; MAX reportedly inbuilt |

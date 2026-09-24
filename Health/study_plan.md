@@ -7,6 +7,76 @@ Primary source for Modules 1, 2, 6 is the **policy wording PDF** (not the brochu
 
 ---
 
+## Scope boundary — what this study does NOT cover *(new — 2026-09-02)*
+
+This is an **indemnity health insurance** study: products that reimburse hospital bills.
+Three adjacent protection products are **out of scope and have never been screened,
+scored or compared** here:
+
+- **Critical illness** — a *defined-benefit* product paying a lump sum on diagnosis of a
+  listed illness, regardless of what was spent
+- **Personal accident** — lump sums for accidental death, permanent disablement and
+  temporary total disablement
+- **Term life**
+
+**These are not substitutes for indemnity cover and indemnity is not a substitute for
+them.** An indemnity policy pays the hospital what the hospital charged; it pays **nothing**
+for lost income, EMIs, a caregiver, or the years of earning capacity a serious diagnosis
+removes. Across this repo, CI and PA appear exactly once — a note in Aditya Birla M1 that
+they exist as optional riders.
+
+**Consequence for any decision made here:** a finalist scoring 5/5 on coverage still leaves
+the defined-benefit gap **entirely open**. Record it as an open item rather than letting a
+high indemnity score imply the buyer is fully protected. **The gap is largest for a buyer
+whose CI / PA / term cover is employer-funded** — see the next section.
+
+---
+
+## The buyer's EXISTING cover — ask before scoring anything *(new — 2026-09-02)*
+
+The framework opens at Stage 1 as though the buyer holds **no cover at all**. That
+assumption was never stated and, for an employed buyer, is usually false. Employer group
+cover changes four things, and none of them is visible anywhere in the module rubric:
+
+**① It inverts the waiting-period risk profile.** Employer group medical cover typically
+has **no waiting periods of any kind** — no 30-day initial wait, no specific-disease list,
+and **pre-existing diseases covered from day one**. A retail policy is the mirror image:
+permanent, but 24–36 months from being fully switched on. **So the two fail in opposite
+directions**, and the period where the retail policy is weakest is exactly the period the
+employer policy is strongest. **Ask: does the buyer hold employer cover, and does it run
+through the retail policy's specific-disease waiting period?** If yes, the retail plan's
+M2 waiting-period weakness is materially de-risked — **but only while the job lasts.**
+
+**② It makes the purchase TIMING a scored variable, not an afterthought.** Because the
+overlap above only exists while employed, **buying while still covered by the employer is
+strictly better than buying at the point of leaving** — the waiting periods run down under
+a backstop instead of naked. This is a real, quantifiable argument that the framework had
+no place to record.
+
+**③ It must NOT be used to justify a smaller sum insured.** Two reasons: employer cover is
+usually a **floater shared with dependants**, so it is not reliably the buyer's to spend;
+and it is **contingent on employment**, so sizing a 40-year policy against it is sizing
+against something a resignation letter erases. Where the plan restarts waiting periods and
+the moratorium on any later SI increase (HDFC M2/M6), this argument runs the other way —
+**buy the target cover now.**
+
+**④ It creates a claim-ordering question — which interacts with M4.** IRDAI lets the
+policyholder choose which policy settles first, and most wordings allow claiming under one
+policy amounts *disallowed* by another. Where a plan carries **claim-linked pricing** — a
+"favourable claims experience" discount **forfeited by claiming**, which HDFC has and Care,
+SBI and ACKO expressly do not — the ordering has a price: **claim the employer policy
+first, take only the balance to the retail policy**, preserving the discount. **Ask: does
+any finalist charge the buyer for claiming? If so, the existence of a second policy is
+worth more with that plan than with a rival.**
+
+> **Framework fix:** add to Stage 1 / the buyer profile — *"What cover does the buyer
+> already hold (employer group medical, CI, PA, term, top-up), what are its sum insured,
+> waiting periods and dependants, and does it end with employment?"* Then carry the answer
+> into **M2** (waiting-period bridge), **M4** (claim ordering vs claim-linked discounts)
+> and **M6** (coordination of benefits), and state the purchase-timing consequence.
+
+---
+
 ## Definitions That Decide Claims *(read Section A of every wording first)*
 Before scoring anything, extract each plan's **definitions** — these are the levers insurers use to cut or deny claims, and they vary between plans even when benefits look identical. From the Optima Secure+ wording, the ones that matter most:
 
@@ -157,7 +227,7 @@ For a **26-year-old**, the cheapest route to a large lifetime cover is often **n
 - **Non-disclosure remedies** — the 3 options (permanent exclusion / added waiting / loading) + ab-initio cancellation risk
 - **Condition Precedent to Admission of Liability** & Complete Discharge / Fraud clauses
 - **ONGOING "material change" disclosure as a condition precedent — the relocation/occupation trap** *(new — Care Supreme M6)*: the framework tests disclosure thoroughly **at inception** (non-disclosure remedies; HDFC M2's underwriting carve-out; Care M3's intimation-condition-precedent) but **never asks whether the policyholder carries a CONTINUING duty of disclosure for the next forty years.** Care Supreme §5.18 imposes exactly that and makes it **claim-defeating**: *"It is a **condition precedent** to the Company's liability that the Policyholder shall **immediately notify** the Company in writing of any material change in the risk on account of change in **nature of occupation or business or current residing address**…"*, whereupon Care may *"adjust the scope of cover and/or the premium… **/reject the claim**"*. Reinforced by §5.20 **"No constructive Notice"** — telling an agent informally is worth nothing. **A 26-year-old will change job and city repeatedly before 66, and in a ZONE-PRICED product an address change is itself a pricing event** the insurer has a financial interest in enforcing. **Ask: is there a continuing duty to notify material changes (occupation / residence / health), and is it a condition precedent? Weight it higher for zone-priced products and long holds.** **Buyer rule: notify every address and occupation change in writing and keep the acknowledgement.**
-- **Multiple policies / coordination of benefits** (matters if you also hold a top-up or corporate cover)
+- **Multiple policies / coordination of benefits** *(expanded 2026-09-02)*: matters if you also hold a top-up **or employer group cover** — and it is not a footnote. Confirm the wording lets you **choose which policy settles**, and lets you claim under this one **amounts disallowed by another** (HDFC §1.5; Care §5.5; SBI §G.A.e; ACKO §5.1.7 all do). Then read it **together with M4's claim-linked-discount check**: with a plan that shrinks a no-claim discount when you claim, the coordination clause is what lets you route small claims to the other policy and keep the discount. **See "The buyer's EXISTING cover" above.**
 - Free-look mechanics · **cancellation & refund** (pro-rata vs *no refund once a claim is admitted*) · product revision/withdrawal + migration continuity
 - **Grace-period coverage gap** *(new — Bajaj M6)*: don't assume "grace period" means you're still covered. Many plans **preserve continuity/credits** (waiting periods, NCB) if you renew within grace, **but do NOT pay claims that arise *during* the grace window** (Bajaj: no coverage during grace for annual payers; only instalment-mode gets grace-window cover). Confirm whether cover actually continues or only credits are protected — a claim in an unpaid grace window can be denied
 - **Instalment-premium claim trap** *(new — HDFC M6)*: if you pay premium monthly/quarterly and then claim, the insurer can make **all remaining instalments of the year fall due at once and deduct them from your payout** — a hidden cost of "affordable EMI" that undercuts the M4 instalment benefit

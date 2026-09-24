@@ -143,7 +143,7 @@ Super Credit promises "6× your Base SI," but there's a **hard ₹3 Cr ceiling o
 ### 🌿 AYUSH — 🟢 **up to full SI, NO sub-limit** ⭐
 - ✅ **Included:** in-patient Ayurveda/Yoga-Naturopathy/Unani/Siddha/Homeopathy at a registered hospital, **up to full SI**.
 - ❌ **Excluded:** spas, wellness retreats, OPD/outpatient AYUSH.
-- 💰 **Saving example:** a ₹1.5L Ayurvedic in-patient course → **full ₹1.5L paid.** ⭐ **This beats HDFC**, which sub-limits AYUSH — on a ₹50,000 HDFC sub-limit you'd lose ₹1L there. **MAX saves ₹1L in this scenario.**
+- 💰 **Saving example:** a ₹1.5L Ayurvedic in-patient course → **full ₹1.5L paid.** 🔄 **Correction: this no longer beats HDFC.** HDFC's AYUSH sub-limit is schedule-set, and an issued Secure + schedule reads **"Covered upto sum insured"** — so both plans pay the full ₹1.5L. **No MAX advantage here.**
 
 ### 🚑 Road ambulance 🟢 (uncapped) · Air ambulance 🔵/⚪ (not inbuilt in MAX)
 - ✅ **Included:** **road ambulance at actuals, up to SI** (⭐ uncapped — beats HDFC's structure), to nearest hospital, tied to an admitted claim.

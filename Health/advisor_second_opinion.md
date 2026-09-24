@@ -224,7 +224,7 @@ Open by dropping the constraint: *"I've shortlisted HDFC ERGO Optima Secure+ and
 
 - "What do you actually do for me at claim time?"
 - "What's your commission on this, and does it differ between insurers?"
-- "What should I check on the schedule during the 15-day free-look?"
+- "What should I check on the schedule during the 30-day free-look?"
 
 
 ---

@@ -52,6 +52,81 @@ HDFC **restarts the PED waiting periods and the 5-year moratorium on any later s
 
 ---
 
+## 🏢 Existing employer cover — found 2 September 2026, after the decision
+
+**The study was conducted as though the buyer held no cover. He does.** He is covered by an
+employer group programme comprising **group medical (a ₹7L floater shared with both
+parents), critical illness ₹10L, group personal accident at 5× CTC and group term life at
+5× CTC** — the last two **employer-funded at zero cost to him.** None of this appears
+anywhere in the seven plan studies.
+
+> 🔒 **The identifying detail — insurer, TPA, member IDs, dependants, premium split — is
+> deliberately NOT in this repo, which has a public remote.** It lives in the local-only
+> Health repo at `~/IdeaProjects/Health/Company Insurance/` (`README.md` for the policy,
+> `corporate_vs_hdfc_analysis.md` for the full comparison).
+
+### It does not change the plan choice. It changes three other things.
+
+**① Timing — buy now, not on exit.** Employer group cover has **no waiting periods at
+all**, including day-1 PED. Optima Secure+ has a 30-day initial wait, a **24-month
+specific-disease list** (cataract, hernia, stones, gallbladder, joint replacement, GERD,
+cirrhosis, benign tumours) and a 36-month PED wait it **cannot shorten** (§2.12 is
+channel-only). **The two policies fail in opposite directions**, and the employer cover is
+strongest exactly where Optima Secure+ is weakest. Buying while still employed runs those
+24 months down under a backstop. **This argument did not exist in the study and is now the
+strongest reason not to defer the purchase.**
+
+**② It must not shrink the sum insured — it argues the other way.** The ₹7L is a *floater
+shared with two parents*, so one parental admission can consume it; and it is *contingent
+on employment*. Sizing a 40-year policy against it is sizing against something a
+resignation letter erases. This **reinforces** the family-history finding above: whatever
+cover is wanted at 45 should be bought now, because HDFC restarts PED waiting and the
+moratorium on any later increase.
+
+**③ Claim ordering, worth real money on this plan specifically.** HDFC is **the only
+finalist with claim-linked pricing** — a Favourable Claims Experience discount of up to
+18–21% that shrinks when you claim (M4). The employer policy has no such penalty. IRDAI
+lets the policyholder choose which policy settles first, and §1.5 lets him claim under
+Optima Secure+ amounts *disallowed* by another policy. **Rule: claim the employer policy
+first, take only the balance to HDFC.**
+
+### What HDFC does *not* replace
+
+Optima Secure+ is **indemnity only**. It pays the treatment cost of a critical illness or
+an accident — **up to full SI, with no disease-wise caps and all 12 modern treatments
+uncapped**, which is materially better than the employer plan's percentage caps (oral chemo
+max ₹1L, immunotherapy max ₹2L, robotic surgery max ₹5L). Accidents are covered **from day
+1**, exempt from both waiting tiers.
+
+But it pays **no cash on diagnosis, no death benefit, no disability payout, no income
+replacement.** For the same cancer the employer programme pays **twice** — the bill *and*
+₹10L in cash. **Buying Optima Secure+ replaces the hospitalisation limb of the employer
+programme and none of the roughly 10× CTC of defined-benefit protection sitting alongside
+it — all of which ends on the same day.** See the new *Scope boundary* section in
+[`study_plan.md`](study_plan.md).
+
+### Two conditions where the employer cover is genuinely irreplaceable
+
+**Maternity** (₹1L, 9-month wait waived; HDFC excludes it, and the Parenthood add-on
+carries its own 2–4 year wait — so it must be added early) and **mental health** (explicit
+IPD ₹3L + OPD ₹75k, against HDFC's M2 finding that parity is **insurer-stated, not
+wording-backed** — no "Mental Illness" or "Mental Health Establishment" definition, and a
+Hospital definition demanding an operation theatre).
+
+### 🚩 New open items
+
+1. **Standalone CI / PA / term cover** — never studied here (see the *Scope boundary*
+   section in `study_plan.md`). The exposure is largest precisely because GPA and GTL
+   currently cost him nothing, so the true cost of losing them is invisible.
+2. **Verify against the binding wording** that *"all forms of cirrhosis"* and *"benign
+   tumours"* sit on the 24-month specific-disease list — read off the study's extracted
+   list, not re-read from the PDF.
+3. **The parents' cover ends with the job**, and at 60 and 54 with BP, diabetes and
+   cholesterol their retail optionality is closing while his is not. **On timing this
+   outranks his own purchase** — see [`../Parents/`](../Parents/README.md).
+
+---
+
 ## 🚩 Still open — the sum insured
 
 **The repo contradicts itself, and this is now the only genuinely undecided variable.**
@@ -86,14 +161,14 @@ Everything here lives on the **policy schedule**, not the wording, which means t
 - [ ] **Annual premium, not instalments** — M6's instalment trap: claim while on EMI and the remaining instalments are netted off the payout
 - [ ] **§2.12 PED-waiting reduction** — channel-level only; ask whether the channel can attach it (expect no)
 - [ ] **Pin-code-level cashless list** for the buyer's Bengaluru neighbourhood — the 620 figure is PolicyBazaar's; other sources give 378/360
-- [ ] Verify all of the above again during the **15-day free-look**
+- [ ] Verify all of the above again during the **30-day free-look** 🔄 *(corrected from 15 — M6 and §1.8 of the wording both give **30 days from receipt of the policy document**, and an issued policy confirms it)*
 
 ---
 
 ## 📌 Status
 
 - ✅ **Plan decided** — HDFC ERGO Optima Secure+
-- 🚩 **Open — sum insured** (₹25L / ₹50L / ₹1Cr); the two documents disagree
+- ✅ **Closed — sum insured: ₹25L.** The two documents disagreed (`si_decision.md` §4 ₹25L · `decision_hdfc_vs_abhi.md` §6 ₹1Cr); **the policy was issued at ₹25L base**, following `si_decision.md` as the later and more specific analysis. Day-one usable cover **₹50L** (base + Secure Benefit). ⚠️ **The ₹50L argument does not disappear — it converts into a watch-item:** enhancing the base SI later restarts a **36-month PED clock and the 60-month moratorium on the increment**, so a step-up is expensive in a way a bigger day-one base would not have been. **Mitigant:** Infinite Benefit adds 100% of base every year with no clock reset, reaching ~₹2.75Cr usable by year 10 — so enhancement should not be needed
 - ⏳ **In progress** — blind second opinions from Ditto and PolicyBazaar ([`advisor_second_opinion.md`](advisor_second_opinion.md))
 - ⏳ **Open** — **ICICI Elevate** and **Niva Bupa ReAssure** were named as Stage-2 reserves and **never deep-studied.** Both sit on Ditto's panel. This is the study's known blind spot
 - ⏳ **Open (carried forward)** — re-pull **Bajaj M3** (ICR 87% vs FY24-25's 74.59%); ABHI's credit rating and core solvency ex-sub-debt

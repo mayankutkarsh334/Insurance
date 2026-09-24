@@ -184,7 +184,7 @@ You set the priority order at the top of this study as **Claims reliability › 
 | Modern treatments | ✅ up to SI | ✅ up to SI | ⚖️ **Tie** — both save ~₹7L vs a ₹5L-capped plan |
 | **Pre-hospitalisation** | 60 days | ⭐ **90 days** | 🟠 **ABHI** — ~**₹10k** more early work-up captured |
 | Post-hospitalisation | 180 days | 180 days | ⚖️ **Tie** |
-| **AYUSH** | ⚠️ **sub-limited** | ⭐ **full SI** | 🟠 **ABHI** — ~**₹1L** saved on a ₹1.5L Ayurvedic course *(only if you use AYUSH)* |
+| **AYUSH** | 🔄 **schedule-set — full SI on an issued schedule** | ⭐ **full SI** | ⚪ **Tie** *(corrected — HDFC's "sub-limit" was inferred from the wording's delegation and never observed on an issued document)* |
 | **Mental illness** | 🚩 not named; Hospital-def gap | ⭐ **named covered benefit** | 🟠 **ABHI** — up to **the full claim** (e.g. ₹3L) where HDFC's is contestable |
 | **Air ambulance** | ⭐ **₹5L inbuilt** | ⚠️ **VIP+ only (not in MAX)** | 🔵 **HDFC** — ~**₹4L** on a Gaya/Patna air lift · **live for your geography** |
 | **Day-1 chronic cover** | ❌ none | 🔵 optional, 7 conditions | 🟠 **ABHI** — a year-1 ₹2L claim vs ₹0 · **only if you already have the condition** |
@@ -195,7 +195,7 @@ You set the priority order at the top of this study as **Claims reliability › 
 
 > **The honest read: both score 5/5, and the feature-level detail confirms why — their wins cancel out.** But cancelling out *for the average buyer* is not the same as *for you*:
 >
-> - **ABHI's coverage wins are mostly inert for your profile:** AYUSH (only if you choose it), day-1 chronic (only if already diabetic/hypertensive), pre-hosp (~₹10k, marginal), HealthReturns/max-SI (cost no concern). Its one **unconditional** win is **mental-illness cover** — that stands regardless.
+> - **ABHI's coverage wins are mostly inert for your profile:** day-1 chronic (only if already diabetic/hypertensive), pre-hosp (~₹10k, marginal), HealthReturns/max-SI (cost no concern). 🔄 *(AYUSH was listed here and has been withdrawn — an issued HDFC schedule gives full SI, so it is a tie, not an ABHI win.)* Its one **unconditional** win is **mental-illness cover** — that stands regardless.
 > - **HDFC's one coverage win that is *live* for you is air ambulance** — ₹5L inbuilt vs not-in-MAX — and it matters precisely because you split time between Bengaluru and a **Gaya/Patna** home region where an air lift is the realistic emergency-transport scenario.
 > - **The uncapped bonus (HDFC) and the ₹3 Cr cap (ABHI)** are a real structural difference but **~₹0 in practice** until cover runs into multiple crores.
 >
